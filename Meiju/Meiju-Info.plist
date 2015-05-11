@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>zh_CN</string>
+	<key>CFBundleDisplayName</key>
+	<string>魅車商城</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>appIcon</string>
+	<key>CFBundleIconFiles</key>
+	<array>
+		<string>appIcon.png</string>
+		<string>appSmallIcon.png</string>
+		<string>appIcon@2x.png</string>
+		<string>appSmallIcon@2x.png</string>
+	</array>
+	<key>CFBundleIdentifier</key>
+	<string>com.lexun.${PRODUCT_NAME:rfc1034identifier}</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>2.0</string>
+	<key>LSRequiresIPhoneOS</key>
+	<false/>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
+	<key>UILaunchImageFile</key>
+	<string>appLaunch</string>
+	<key>UIPrerenderedIcon</key>
+	<true/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array/>
+	<key>Partner</key>
+	<string>2088702509567348</string>
+	<key>Seller</key>
+	<string>2088702509567348</string>
+	<key>RSA private key</key>
+	<string></string>
+	<key>RSA public key</key>
+	<string>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCqz/ay7ZGUqWxJ3jhEnSZ5rp5J2B5N1V7MrvET hoJQZTDLs/ZtIFzw5bz1Xp6cFl9CPAzp1yOUM0UNg4aAgrtUMNYMsgAPqDf5Nvr0T4r1bOcsBmd8 6D0CiPq69P0N50us0U5tfezSaZV2rHwAbe+1yR1g4tWcBCVAiyWcWJ9aOwIDAQAB</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string></string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>xrl</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
