@@ -1,0 +1,68 @@
+{
+  "images" : [
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 1,
+          "height" : 1
+        },
+        "capInsets" : {
+          "bottom" : 5,
+          "top" : 7,
+          "right" : 5,
+          "left" : 6
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "lxsdk_img_btn_main_nor.png",
+      "scale" : "1x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 1,
+          "height" : 1
+        },
+        "capInsets" : {
+          "bottom" : 8,
+          "top" : 8,
+          "right" : 6,
+          "left" : 8
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "lxsdk_img_btn_main_nor@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "fill",
+          "width" : 1,
+          "height" : 1
+        },
+        "capInsets" : {
+          "bottom" : 3,
+          "top" : 4,
+          "right" : 3,
+          "left" : 3
+        }
+      },
+      "filename" : "lxsdk_img_btn_main_norx.png",
+      "unassigned" : true
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
