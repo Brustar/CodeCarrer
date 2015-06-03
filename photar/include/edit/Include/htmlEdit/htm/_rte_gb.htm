@@ -1,0 +1,1652 @@
+<HTML>
+<HEAD>
+<TITLE>jlhuang</TITLE>
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "css/theme.css">
+<LINK REL = "stylesheet" TYPE = "text/css" HREF = "/_style.msnw?lid=3076&v=9.02.0310.0601">
+</HEAD>
+<TABLE class=ThmBgStandard border=0 width=100% cellpadding=0 cellspacing=0>
+<TR>
+        <TD valign=top height=100% width=100%>
+<BODY rightmargin=0 bottommargin=0 leftmargin=0 topmargin=0 marginheight=0 marginwidth=0 >
+<SCRIPT LANGUAGE=javascript>var nEditorialCatId = 23;</SCRIPT>
+
+<HTML>
+<TITLE>MSN Editor</TITLE>
+<META HTTP-EQUIV="Content-Type" Content="text/html; Charset=utf-8">
+<HEAD>
+    <!--
+    // Copyright (C) 2000, Microsoft, Corp. All rights reserved.
+    // File: rte.htm
+    // Author: Scott Isaacs
+    // Contents: RTE Component
+    -->
+    
+    <SCRIPT language=javascript>
+
+<pre>
+
+var L_RTECANCEL_TEXT = '取消';
+var L_RTEINSERT_TEXT = '插入';
+var L_RTELINKIMGBORDER_TEXT = '显示影像连结外框';
+var L_RTELINKSELECT_TEXT = '选择社群网页：';
+var L_RTELINKSELECTPAGE_TEXT = '选择网页';
+var L_RTELINKWEB_TEXT = '或输入外部网页的 URL：';
+var L_RTEPUTITLEBGCOLOR_TEXT = '设定背景颜色';
+var L_RTEPUTITLEFONTFACE_TEXT = '设定字型样式';
+var L_RTEPUTITLEFONTSIZE_TEXT = '设定字型大小';
+var L_RTEPUTITLEIMAGE_TEXT = '插入 / 编辑图片';
+var L_RTEPUTITLELINK_TEXT = '插入 / 编辑连结';
+var L_RTEPUTITLENEWTABLE_TEXT = '建立 / 编辑表格';
+var L_RTEPUTITLEPARAGRAPHSTYLE_TEXT = '设定段落样式';
+var L_RTEPUTITLETEXTCOLOR_TEXT = '设定文字颜色';
+var L_RTEPUTITLEEMOTICON_TEXT = '插入表情符号';
+var L_RTESTYLEFORMATTED_TEXT = '预先格式的';
+var L_RTESTYLEHEADING_TEXT = '标题 ';
+var L_RTESTYLENORMAL_TEXT = '一般';
+var L_RTESTYLESAMPLE_TEXT = 'ABCabc012...  ';
+var L_RTETABLEBG_TEXT = '背景';
+var L_RTETABLEBORDERS_TEXT = '边框';
+var L_RTETABLEINPUTBGCOLOR_TEXT = '背景颜色：';
+var L_RTETABLEINPUTBGIMGURL_TEXT = '背景图片 URL：';
+var L_RTETABLEINPUTBORDER_TEXT = '边框宽度：';
+var L_RTETABLEINPUTBORDERCOLOR_TEXT = '边框颜色：';
+var L_RTETABLEINPUTCELLPADDING_TEXT = '储存格与储存格边框之距离：';
+var L_RTETABLEINPUTCELLSPACING_TEXT = '储存格与表格边框之距离：';
+var L_RTETABLEINPUTCOLUMNS_TEXT = '栏：';
+var L_RTETABLEINPUTROWS_TEXT = '列：';
+var L_RTETABLEPADDINGANDSPACING_TEXT = '储存格与储存格及表格边框之距离';
+var L_RTETABLEROWSANDCOLS_TEXT = '列与栏';
+var L_RTETABLEINSERTROW_TEXT = '插入列';
+var L_RTETABLEINSERTCELL_TEXT = '插入栏';
+var L_RTETABLEINSERT_TEXT = '插入表格';
+var L_RTETABLEUPDATE_TEXT = '更新表格';
+var L_RTETABLENEW_TEXT = '新表格';
+var L_RTETABLEEDIT_TEXT = '编辑表格';
+var L_RTETIPB_TEXT = '粗体';
+var L_RTETIPBGCOLOR_TEXT = '背景颜色';
+var L_RTETIPCJ_TEXT = '置中对齐';
+var L_RTETIPCOPY_TEXT = '复制文字';
+var L_RTETIPCUT_TEXT = '剪下文字';
+var L_RTETIPDINDENT_TEXT = '减少缩排';
+var L_RTETIPFGCOLOR_TEXT = '文字颜色';
+var L_RTETIPFSIZE_TEXT = '字型大小';
+var L_RTETIPFSTYLE_TEXT = '字型样式';
+var L_RTETIPI_TEXT = '斜体';
+var L_RTETIPIINDENT_TEXT = '增加缩排';
+var L_RTETIPLINE_TEXT = '插入线条';
+var L_RTETIPLINK_TEXT = '插入连结';
+var L_RTETIPLJ_TEXT = '靠左对齐';
+var L_RTETIPOL_TEXT = '编号清单';
+var L_RTETIPP_TEXT = '段落样式';
+var L_RTETIPPASTE_TEXT = '贴上文字';
+var L_RTETIPPICTURE_TEXT = '插入图片';
+var L_RTETIPRJ_TEXT = '靠右对齐';
+var L_RTETIPTABLE_TEXT = '插入表格';
+var L_RTETIPU_TEXT = '加底线';
+var L_RTETIPUL_TEXT = '项目清单';
+var L_RTETIPEMOTICON_TEXT = '表情符号';
+var L_RTEMODETITLE_TEXT = '使用 HTML 格式建立网页';
+var L_RTEMODEDESC_TEXT = ' - 直接以 HTML 格式的命令来编辑。';
+var L_RTECUSTOMFONT_TEXT = '其他字型...';
+var L_RTECUSTOMFONTENTRY_TEXT = '输入字型名称：';
+var L_RTESAMPLEFONTENTRY_TEXT = 'PMingLiU';
+var L_RTECLOSEBUTTON_TEXT = 'x';
+
+var L_RTETBDATABINDING_TEXT = '栏位';
+var L_RTETBDATALABEL_TEXT   = '新增选取栏位的配置区';
+
+var L_RTEDEFAULTHTML_TEXT = '<DIV></DIV>';
+
+// List of emoticon gifs. Add or remove to change selection
+// arEmoticons - 19x19 pixels
+var arEmoticons = new Array("emsmile.gif","emteeth.gif","emwink.gif", "emsmileo.gif","emsmilep.gif","emsmiled.gif","emangry.gif","emembarrassed.gif","emcrook.gif","emsad.gif","emcry.gif","emdgust.gif","emangel.gif","emlove.gif","emunlove.gif","emmessag.gif","emcat.gif","emdog.gif","emmoon.gif","emstar.gif","emfilm.gif","emnote.gif","emrose.gif","emrosesad.gif","emclock.gif","emlips.gif","emgift.gif","emcake.gif","emphoto.gif","emidea.gif","emtea.gif","emphone.gif","emhug.gif","emhug2.gif","embeer.gif","emcocktl.gif","emmale.gif","emfemale.gif","emthup.gif","emthdown.gif","emvamp.gif","emhot.gif","emrainbow.gif","ememail.gif");
+
+// Customize Font List
+// FONTNAME_TEXT - Displayed in the pop-up
+// FONTNAMEDEF_TEXT - The font definition used in the HTML
+var L_RTEFONTARIAL_TEXT = 'PMingLiU';
+var L_RTEFONTARIALDEF_TEXT = 'PMingLiU';
+var L_RTEFONTARIALBLACK_TEXT = 'Arial Black';
+var L_RTEFONTARIALBLACKDEF_TEXT = 'Arial Black, Geneva, Arial, Sans-serif';
+var L_RTEFONTCOURIERNEW_TEXT = 'Courier New';
+var L_RTEFONTCOURIERNEWDEF_TEXT = 'Courier New, Courier, Monospace';
+var L_RTEFONTTIMESNEWROMAN_TEXT = 'Times New Roman';
+var L_RTEFONTTIMESNEWROMANDEF_TEXT = 'Times New Roman, Times, Serif';
+var L_RTEFONTVERDANA_TEXT = 'Verdana';
+var L_RTEFONTVERDANADEF_TEXT = 'Verdana, Geneva, Arial, Sans-serif';
+var L_RTELUCIDAHAND_TEXT = 'Lucida Handwriting';
+var L_RTELUCIDAHANDDEF_TEXT = 'Lucida Handwriting, Cursive';
+var L_RTEGARAMOND_TEXT = 'Garamond';
+var L_RTEGARAMONDDEF_TEXT = 'Garamond, Times, Serif';
+var L_RTEWEBDINGS_TEXT = 'Webdings';
+var L_RTEWEBDINGSDEF_TEXT = 'Webdings';
+var L_RTEWINGDINGS_TEXT = 'Wingdings';
+var L_RTEWINGDINGSDEF_TEXT = 'Wingdings';
+// Add/ Remove fonts by modifying array
+// _CFont(Definition, Display Text, Symbol)
+// Set Symbol=true for non-alphabetic fonts to append display text in default font to the sample string
+function _CFont(szDef,szText,bSymbol) {
+    return new Array(szDef,szText,bSymbol);
+};
+
+defaultFonts = new Array();
+defaultFonts[0] = _CFont(L_RTEFONTARIALDEF_TEXT, L_RTEFONTARIAL_TEXT, false);
+defaultFonts[1] = _CFont(L_RTEFONTARIALBLACKDEF_TEXT, L_RTEFONTARIALBLACK_TEXT, false);
+defaultFonts[2] = _CFont(L_RTEFONTVERDANADEF_TEXT, L_RTEFONTVERDANA_TEXT, false);
+defaultFonts[3] = _CFont(L_RTEFONTTIMESNEWROMANDEF_TEXT, L_RTEFONTTIMESNEWROMAN_TEXT, false);
+defaultFonts[4] = _CFont(L_RTEGARAMONDDEF_TEXT,L_RTEGARAMOND_TEXT, false);
+defaultFonts[5] = _CFont(L_RTELUCIDAHANDDEF_TEXT,L_RTELUCIDAHAND_TEXT, false);
+defaultFonts[6] = _CFont(L_RTEFONTCOURIERNEWDEF_TEXT, L_RTEFONTCOURIERNEW_TEXT, false);
+defaultFonts[7] = _CFont(L_RTEWEBDINGSDEF_TEXT, L_RTEWEBDINGS_TEXT, true);
+defaultFonts[8] = _CFont(L_RTEWINGDINGSDEF_TEXT, L_RTEWINGDINGS_TEXT, true);
+
+// Width of each toolbar button
+// Entry 5-8 are specify "Paragraph","Font Style", and "Font Size" respectively
+// Update widths if localized
+var L_RTETOOLBARGIF_TEXT = "http://sc.groups.msn.com/themes/R9c/pby/img/zh-hk/rte_tb.gif";
+var L_RTEPHOTO_URL = "_photos.msnw";
+var aSizes = new Array(25,25,25,7,80,76,71,7,25,25,25,8,25,25,25,8,25,25,25,25,8,25,25,25,25,8,25,25,8,25);
+
+
+
+// Copyright (C) 2000, Microsoft, Corp. All rights reserved.
+// File: rte.js
+// Author: Scott Isaacs
+// Contents: RTE Management Code
+
+
+//  EDITOR PUBLIC (API)
+ 
+var isIE4 = (navigator.appVersion.indexOf("MSIE 4")>0)
+
+function setHTML(szHTML) 
+{
+    if (szHTML=="") szHTML = L_RTEDEFAULTHTML_TEXT
+    if (g_state.bMode)
+        idEditbox.document.body.innerHTML = szHTML
+    else
+        idEditbox.document.body.innerText = szHTML
+    if (g_state.bLoaded)
+        setSelection(true)
+}
+
+function setTitle(szHTML) {
+    document.title = szHTML
+}
+
+function getHTML(bMakeLinksRelative) 
+{
+    var sHtml = _CUtil_TrimCR(g_state.bMode ? _CUtil_CleanHTML() : idEditbox.document.body.innerText)
+    if (bMakeLinksRelative)
+        sHtml = _CUtil_MakeLinkRel(sHtml)
+    return sHtml
+}
+
+function getText() {
+    var szRet = ""
+    if (g_state.bMode)
+        szRet = idEditbox.document.body.innerText
+    else {
+        setMode(true)
+        szRet = idEditbox.document.body.innerText
+        setMode(false)
+    }
+    return szRet
+}
+
+function getBody() 
+{
+    var oRet = idEditbox.document.body
+    return oRet
+}
+
+function getWidth() 
+{
+    var nRet = document.body.offsetWidth
+    return nRet
+}
+
+function getHeight() 
+{
+    var nRet = document.body.offsetHeight
+    return nRet
+}
+
+function insertHTML(szHTML) 
+{
+    var sType
+
+    var sel = g_state.GetSelection()
+    sType = sel.type
+    if (g_state.bMode) {
+        if (sType=="Control")
+            sel.item(0).outerHTML = szHTML
+        else 
+            sel.pasteHTML(szHTML)
+    }
+    else
+        sel.text = szHTML
+    g_state.selection = null
+}
+
+function setFocus() {
+    idEditbox.focus()
+}
+
+function appendHTML(szHTML) {
+    if (g_state.bMode) 
+        idEditbox.document.body.insertAdjacentHTML("beforeEnd",szHTML)
+    else
+        idEditbox.document.body.insertAdjacentText("beforeEnd",szHTML)
+}
+
+function setBGColor(szValue) 
+{
+    g_state.bgColor = szValue
+
+    if (g_state.bMode)
+        idEditbox.document.body.bgColor = g_state.bgColor
+}
+
+function setSelection(bDir) {
+    var tr = idEditbox.document.body.createTextRange()
+    tr.collapse(bDir)
+    tr.select()
+    g_state.SaveSelection()
+}
+
+function getBGColor() 
+{
+    var szRet = g_state.bgColor
+    return szRet
+}
+
+function setDefaultStyle(szValue) 
+{
+    g_state.css = szValue
+    if (g_state.bMode)
+        idEditbox.document.body.style.cssText = g_state.css
+}
+
+function getDefaultStyle() 
+{
+    var oRet = g_state.css
+    return oRet
+}
+
+function setSkin(szSkin) 
+{
+    if (szSkin == null)
+        document.styleSheets.skin.cssText = g_state.defaultSkin
+    else
+        document.styleSheets.skin.cssText = szSkin
+    document.styleSheets.skin.disabled = false
+}
+
+function appendSkin(szSkin)
+{
+    document.styleSheets.appendSkin.cssText = szSkin
+}
+
+function setPopupSkin(szSkin) 
+{
+    if (szSkin == null)
+        document.styleSheets.popupSkin.cssText = g_state.popupSkin
+    else
+        document.styleSheets.popupSkin.cssText = szSkin
+
+    _CPopup_Init()
+}
+
+function setToolbar(id,g_state) 
+{
+    var el = document.all[id]
+    if (el)
+        el.style.display = (g_state) ? "" : "none"  
+    if (id=="tbmode") {
+        _setSize()
+    }
+}
+
+function setLinks(arLinks) 
+{
+    g_state.aLinks = arLinks
+}
+
+function setBindings(aBindings) 
+{
+    if ((aBindings) && (aBindings.length>0)) 
+    {
+        g_state.aBindings = aBindings
+
+        for (var iField = DBSelect.length-1; iField > 0; iField--)
+            DBSelect[iField] = null
+
+        for (var iField = 0; iField < g_state.aBindings.length; iField++)
+            DBSelect.add(new Option(g_state.aBindings[iField]))
+
+        tbDBSelect.style.display = "inline"
+    }
+    else
+        tbDBSelect.style.display = ""
+}
+
+function setMode(bMode) 
+{
+    if (bMode!=g_state.bMode) {
+        g_state.bMode = bMode
+    
+        var objBody = idEditbox.document.body
+        if (!bMode&& !g_state.bMode) 
+        {
+            _CPopup_Hide()
+            objBody.bgColor = objBody.style.cssText = ""
+            if (g_state.customButtons)
+                idStandardBar.style.display = "none"
+            else
+                idToolbar.style.display = "none"
+    
+            objBody.innerText = idEditbox.document.body.innerHTML
+            objBody.className = "textMode"
+        }
+        if ((bMode) && (g_state.bMode)) 
+        {
+            setDefaultStyle(g_state.css)
+            setBGColor(g_state.bgColor)
+            objBody.className = idStandardBar.style.display = idToolbar.style.display = ""
+            objBody.innerHTML = idEditbox.document.body.innerText
+        }
+        _setSize()
+        cbMode.checked = !bMode
+        setSelection(true)
+        setFocus()
+    }   
+    return bMode
+}
+
+function addButton(sID,sButton) 
+{
+    if (!sID)
+        tbButtons.insertAdjacentHTML("beforeEnd","<BR>")
+    else    
+        tbButtons.insertAdjacentHTML("beforeEnd","<BUTTON TYPE=\"button\" ONCLICK=\"_userButtonClick(this)\" CLASS=\"userButton\" ID=\"" + sID + "\">" + sButton + "\</BUTTON>&nbsp;")
+    
+    g_state.customButtons = true
+    return tbButtons.all[sID]
+}
+
+//  EDITOR PRIVATE
+
+function _Format(szHow, szValue) {
+    var oSel    = g_state.GetSelection()
+    var sType   = oSel.type 
+    var oTarget = (sType == "None" ? idEditbox.document : oSel)
+    var oBlock  = (oSel.parentElement != null ? _CUtil_GetBlock(oSel.parentElement()) : oSel.item(0))
+    setFocus()
+    switch(szHow)
+    {
+        case "BackColor":
+            var el = null
+            if (oSel.parentElement != null) {
+                el =  _CUtil_GetElement(oSel.parentElement(),"TD")
+                if (!el) el =  _CUtil_GetElement(oSel.parentElement(),"TH")
+                if (!el) el =  _CUtil_GetElement(oSel.parentElement(),"TR")
+                if (!el) el =  _CUtil_GetElement(oSel.parentElement(),"TABLE")
+            }
+            else 
+                el = _CUtil_GetElement(oSel.item(0),"TABLE")
+            if (el)
+                el.bgColor = szValue
+            else
+                setBGColor(szValue)
+            break;
+        case "Justify":
+            if (oBlock) 
+            {
+                oBlock.style.textAlign = ""
+                if (((oBlock.tagName=="TABLE") || (oBlock.tagName=="IMG")) && (("left"==oBlock.align) && ("Left"==szValue))) {
+                    oBlock.align = ""
+                    break;
+                }   
+                oBlock.align = szValue
+                if ((oBlock.tagName=="HR") || ((oBlock.tagName=="IMG") && szValue!="Center")) break;
+            }
+            szHow=szHow+szValue
+            szValue=""
+            // Fall through
+        default:
+            oTarget.execCommand(szHow, false, szValue)
+            break
+    }
+    g_state.RestoreSelection()
+    setFocus()
+    return true
+}
+
+function _fireFocus() {
+    if (self.parent.RTEFocus)
+        self.parent.RTEFocus(self)
+}
+
+function _initEditor() {
+    g_state = new _CState()
+    window.onresize = _setSize
+
+    var sz  =   ""
+    sz  +=  ""
+    +   "<STYLE>"
+    +      ".DataBound{border:1 solid #999999;margin:1;font-family:" + L_RTEFONTCOURIERNEWDEF_TEXT + ";background:#F1F1F1}\n"
+    +      ".textMode {border-top: 1px black solid;font: 9pt Courier New, Courier, Monospace}\n.NOBORDER TD {border:1px gray solid}"
+    +      "BODY {border: 1px black solid;border-top: none;}"
+    +   "</STYLE>"
+    +   "<BODY bgcolor=#FFFFFF background=#ffffff ONCONTEXTMENU=\"return false\">"
+    +       L_RTEDEFAULTHTML_TEXT 
+    +   "</BODY>"
+    _CPopup_Init()
+    idEditbox.document.designMode = "on"
+    idEditbox.document.open("text/html","replace")
+    idEditbox.document.write(sz)
+    idEditbox.document.close()
+    idEditbox.document.body.onblur = idEditbox.onblur = g_state.SaveSelection   
+    idEditbox.document.onkeydown = _Editor_KeyDownHandler
+    idEditbox.document.onmousedown = _Editor_ClickHandler
+    idEditbox.document.ondblclick = _Editor_DblClickHandler
+    setTimeout("_pageReady()",0)
+}
+
+function _Editor_ClickHandler() {
+    g_state.selection = null
+}
+
+function _Editor_KeyDownHandler() {
+    var ev = this.parentWindow.event
+    if ((ev.keyCode==78 || ev.keyCode==72) && ev.ctrlKey) {
+        if (ev.keyCode==78)
+            window.open(parent.location)
+        ev.keyCode=0;ev.returnValue=false
+    }
+
+    if (ev.keyCode==9)
+        g_state.SaveSelection() 
+    else 
+        g_state.selection=null
+}
+
+function _Editor_DblClickHandler() {
+    // Shortcuts
+    var el = this.parentWindow.event.srcElement
+    if (el.tagName=="IMG")  {
+        el.removeAttribute("width")
+        el.removeAttribute("height")
+        el.style.removeAttribute("width")
+        el.style.removeAttribute("height")
+        el.width = el.width
+        el.height = el.height
+    }
+    if (el.tagName=="TABLE") 
+        _CPopup_Show('Table')
+}
+
+function _setSize() {
+    document.all.idEditbox.style.pixelHeight = document.body.clientHeight - idToolbar.offsetHeight - document.all.idMode.offsetHeight
+    document.all.idPopup.style.pixelLeft = (document.body.clientWidth - idPopup.document.all.puRegion.offsetWidth) / 2  
+}
+
+function _pageReady() 
+{
+    idEditbox.document.body.oncontextmenu = new Function("return false");
+    
+    if (self.parent.RTELoaded)
+        self.parent.RTELoaded(self)
+    if (document.styleSheets.skin.disabled) 
+        setSkin(null)
+    _setSize()
+    idEditor.style.visibility=""
+    g_state.bLoaded = true
+    var tr = idEditbox.document.body.createTextRange()
+    tr.select()
+    g_state.SaveSelection()
+    setSelection(false)
+    
+}
+
+function _userButtonClick(el) 
+{
+    if (parent.RTEButton) parent.RTEButton(self, el.id)
+}
+
+function _drawToolbar()
+{
+    var aIds = new Array("cut","copy","paste","bar1","formatblock","fontstyle","fontsize","bar2","bold","italic","underline","bar3","left","center","right","bar4","orderedlist","unorderedlist","outdent","indent","bar5","line","link","table","image","bar6","bgcolor","textcolor","bar7","emoticon")
+    var aTips = new Array(L_RTETIPCUT_TEXT,L_RTETIPCOPY_TEXT,L_RTETIPPASTE_TEXT,"",L_RTETIPP_TEXT,L_RTETIPFSTYLE_TEXT,L_RTETIPFSIZE_TEXT,"",L_RTETIPB_TEXT,L_RTETIPI_TEXT,L_RTETIPU_TEXT,"",L_RTETIPLJ_TEXT,L_RTETIPCJ_TEXT,L_RTETIPRJ_TEXT,"",L_RTETIPOL_TEXT,L_RTETIPUL_TEXT,L_RTETIPDINDENT_TEXT,L_RTETIPIINDENT_TEXT,"",L_RTETIPLINE_TEXT,L_RTETIPLINK_TEXT,L_RTETIPTABLE_TEXT,L_RTETIPPICTURE_TEXT,"",L_RTETIPBGCOLOR_TEXT,L_RTETIPFGCOLOR_TEXT,"",L_RTETIPEMOTICON_TEXT)
+    var aCommand = new Array("_Format('cut')","_Format('copy')","_Format('paste')",null,"_CPopup_Show('formatblock')","_CPopup_Show('font')","_CPopup_Show('fontsize')",null,"_Format('bold')","_Format('italic')","_Format('underline')",null,"_Format('Justify','Left')","_Format('Justify','Center')","_Format('Justify','Right')",null,"_Format('insertorderedlist')","_Format('insertunorderedlist')","_Format('outdent')","_Format('indent')",null,"_Format('InsertHorizontalRule')","_CPopup_Show('Link')","_CPopup_Show('Table')","_CModal_Show('Image')",null,"_CPopup_Show('BackColor')","_CPopup_Show('ForeColor')",null,"_CPopup_Show('Emoticon')")
+    var sz = "<DIV ID=idStandardBar><NOBR>", iLeft=0, iHeight=24
+    for (var i = 0 ; i < aSizes.length; i++) 
+    {
+        sz  +=  ""
+        +   "<SPAN CLASS=tbButton ONKEYPRESS=\"if (event.keyCode==13) {" + aCommand[i] + ";event.keyCode=0}\" "
+        +      "ID=\"tb" + aIds[i] + "\" "
+        +      "STYLE=\"width: " + aSizes[i] + ";height:" + iHeight
+        +      "\""
+        +   ">" 
+        +      "<SPAN " + (aTips[i]=="" ? "" : "TABINDEX=" + (i+2))
+        +          " STYLE=\""
+        +              "position:absolute;"
+        +              "width:" + aSizes[i] + ";height:" + iHeight + ";"
+        +              "clip: rect(0 " + aSizes[i] + " " + iHeight + " 0)"
+        +          "\""
+        +      ">"
+        +          "<IMG ALT=\"" + aTips[i] + "\" "
+        +              "TITLE=\"" + aTips[i] + "\" "
+        +              "ONCLICK=\"" + aCommand[i] + "; event.cancelBubble=true\" "
+        +              "ONMOUSEDOWN=\"if (event.button==1) this.style.pixelTop=-" + (iHeight*2) + "\" "
+        +              "ONMOUSEOVER=\"this.style.pixelTop=-" + iHeight + "\" "
+        +              "ONMOUSEOUT=\"this.style.pixelTop=0\" "
+        +              "ONMOUSEUP=\"this.style.pixelTop=-" + iHeight + "\" "
+        +              "SRC=\"" + L_RTETOOLBARGIF_TEXT + "\" "
+        +              "STYLE=\"position:absolute;top:0;left:-" + iLeft + "\""
+        +          ">"
+        +      "</SPAN>"
+        +   "</SPAN>" 
+        +  (aTips[i]=="" ?  "</NOBR><NOBR>" : "")
+
+        iLeft += aSizes[i]
+    }
+    sz  +=  ""
+    +   "</NOBR>"
+    +   "<SPAN CLASS=tbButton ID=\"tbDBSelect\"><NOBR>&nbsp;&nbsp;" 
+    +   L_RTETBDATALABEL_TEXT + " <SELECT "
+    +          "ID=DBSelect "
+    +          "ONCLICK='event.cancelBubble=true;' "
+    +          "ONCHANGE='_CPopup_InsertDatabound(this)' "
+    +      ">"
+    +          "<OPTION>"
+    +              "- " + L_RTETBDATABINDING_TEXT + " -"
+    +          "</OPTION>"
+    +      "</SELECT></NOBR></SPAN>"
+    document.write(sz + "</DIV>")
+}
+
+function _drawModeSelect() {
+    var sz = "<TABLE CELLSPACING=0 CELLPADDING=0 ID=idMode>"
+    +   "<TR><TD><INPUT TYPE=checkbox ID=cbMode ONCLICK=\"setMode(!this.checked)\"></TD>"
+    +   "<TD><LABEL FOR=cbMode TITLE=\""+L_RTEMODETITLE_TEXT+"\">" + L_RTEMODETITLE_TEXT + "</LABEL>" + L_RTEMODEDESC_TEXT
+
+    +   "</TD></TR></TABLE>"
+
+    document.write(sz)
+    cbMode.checked = false
+}
+
+
+//  _CState 
+
+function _CState()
+{
+    this.selection      = null
+    this.bMode          = true
+    this.customButtons  = false
+    this.css = this.bgColor = ""
+    this.defaultSkin    = document.styleSheets.skin.cssText
+    this.popupSkin      = document.styleSheets.popupSkin.cssText
+    this.aLinks         = new Array()
+    this.aBindings      = new Array()
+    this.aListPopups    = new Object()
+    this.aCache         = new Object()
+    this.bLoaded = false
+    this.oPhoto = null
+    
+    this.RestoreSelection   = _CState_RestoreSelection
+    this.GetSelection   = _CState_GetSelection
+    this.SaveSelection  = _CState_SaveSelection
+}
+
+
+function _CState_RestoreSelection() 
+{
+    if (this.selection) this.selection.select()
+}
+
+function _CState_GetSelection() 
+{
+    var oSel = this.selection
+
+    if (!oSel) {
+        oSel = idEditbox.document.selection.createRange()
+        oSel.type = idEditbox.document.selection.type
+    }
+    return oSel
+}
+
+function _CState_SaveSelection() 
+{
+    g_state.selection = idEditbox.document.selection.createRange()
+
+    if (!g_state.selection ||
+        (g_state.selection.parentElement && g_state.selection.parentElement() && 
+         !(g_state.selection.parentElement() == idEditbox.document.body || idEditbox.document.body.contains(g_state.selection.parentElement()))))
+    {
+        g_state.selection = idEditbox.document.body.createTextRange()
+        g_state.selection.collapse(false)
+        g_state.selection.type = "None"
+    }
+    else
+    {
+        g_state.selection.type = idEditbox.document.selection.type
+    }
+}
+
+//  POPUP (Link, table and image popup need to be worked on)
+function displayIE4PhotoPage() {
+    if ((g_state.oPhoto) && (!g_state.oPhoto.closed))
+        g_state.oPhoto.close()
+
+    g_state.oPhoto = window.open(L_RTEPHOTO_URL,"photos","location=no,menubar=no,resizable=no,toolbar=no,width=500,height=450")
+}
+
+function _CModal_Show(szType) {
+    _CPopup_Hide()
+    if (szType=="Image") {
+        if (isIE4) {
+            setTimeout("displayIE4PhotoPage()",0)
+        }
+        else {
+            var rValue = showModalDialog(L_RTEPHOTO_URL,true,"scroll:no;center:yes;help:no;")
+            if (rValue && rValue[0]!="")
+            {
+                insertHTML(rValue[0]);
+
+                if (rValue[1] != "")
+                {
+                    parent.addImageAttachment(rValue[1], rValue[2]);
+                }
+            }
+            else
+                setFocus()
+        }
+    }
+}
+
+function IMAGESelect(w,rValue) {
+    if (rValue[0]!="") 
+    {
+        insertHTML(rValue[0]);
+
+        if (rValue[1] != "")
+        {
+            parent.addImageAttachment(rValue[1], rValue[2]);
+        }
+    }
+
+    window.setFocus()
+}
+
+function _CPopup_Init() 
+{
+    var sz  =   ""
+    +   "<HTML ID=popup>"
+    +      "<STYLE>" 
+    +          document.styleSheets.defPopupSkin.cssText 
+    +          "\n" 
+    +          document.styleSheets.popupSkin.cssText 
+    +      "</STYLE>"
+    +      "<BODY background=#ffffff "
+    +   "ONCONTEXTMENU=\"return false\" "
+    +          "ONSCROLL=\"return false\" SCROLL=no TABINDEX=-1 "
+    +          "ONSELECTSTART=\"return event.srcElement.tagName=='INPUT'\" "
+    +      "><DIV ID=puRegion>"
+    +          "<TABLE ID=header>"
+    +              "<TR>"
+    +                  "<TH NOWRAP ID=caption></TH>"
+    +                  "<TH VALIGN=middle ALIGN=RIGHT><DIV ID=close ONCLICK=\"parent._CPopup_Hide()\">"
+    +                      L_RTECLOSEBUTTON_TEXT
+    +                  "</DIV></TH>"
+    +              "</TR>"
+    +          "</TABLE>"
+    +          "<DIV ALIGN=CENTER ID=content></DIV>"
+    +      "</DIV></BODY>"
+    +   "</HTML>"
+
+    idPopup.document.open("text/html","replace")
+    idPopup.document.write(sz)
+    idPopup.document.close()
+}
+
+function _CPopup_InsertDatabound(eSelect)
+{
+    if (eSelect.selectedIndex != 0)
+    {
+        var sElemName = eSelect.options[eSelect.selectedIndex].text;
+        var iLen = sElemName.length
+        sElemName = sElemName.replace(/"/g, '&#034;')
+        insertHTML('<INPUT CLASS=DataBound SIZE=' + (iLen + 2) + ' NAME="' + sElemName +'" VALUE=" ' + sElemName + ' ">')
+        eSelect.selectedIndex = 0;
+        idEditbox.focus()   
+    }
+}
+
+function _CPopup_Hide() 
+{
+    document.all.idPopup.style.zIndex=-1
+    document.all.idPopup.style.visibility = "hidden"    
+    idPopup.document._type = ""
+    idPopup.document.onkeydown=idPopup.document.onmouseover=idPopup.document.onclick = null
+    idEditbox.focus()
+}
+
+function _CPopup_Show(szType) 
+{
+    var oRenderer, szCacheKey = "PopupRenderer." + szType
+    if (!isIE4)
+        g_state.SaveSelection()
+    if (idPopup.document._type == szType)
+        _CPopup_Hide()
+    else
+    {
+        document.all.idPopup.style.zIndex = -1
+        oRenderer = g_state.aCache[szCacheKey]
+        
+        if ((!oRenderer) || ("Link"==szType))
+            g_state.aCache[szCacheKey] = oRenderer = new _CPopupRenderer(szType)
+        // Force Sizing
+        document.all.idPopup.style.visibility = ""
+        document.all.idPopup.style.pixelHeight = document.all.idPopup.style.pixelWidth = idPopup.document.all.puRegion.style.pixelHeight = idPopup.document.all.puRegion.style.pixelWidth = 50
+        
+        idPopup.document._type                  = szType
+        idPopup.document._renderer              = oRenderer
+        idPopup.document.all.caption.innerText  = oRenderer.GetCaption()
+        idPopup.document.all.content.innerHTML  = oRenderer.GetHTML()
+        idPopup.document.onkeydown              = new Function("this._renderer.OnKeyDown()")
+        idPopup.document.onmouseover            = new Function("this._renderer.OnMouseOver()")
+        idPopup.document.onclick                = new Function("this._renderer.OnClick()")
+        oRenderer.ResetContext(idPopup.document)
+        setTimeout("_CPopupRenderer_Display('" + szType + "')",0)
+    }
+}
+
+function _CPopupRenderer_Display(szType) {
+    var oRenderer, szCacheKey = "PopupRenderer." + szType
+    oRenderer = g_state.aCache[szCacheKey]
+    if (oRenderer.autoSize) {   
+//      alert(idPopup.document.all.puRegion.innerHTML)
+
+        idPopup.document.all.puRegion.style.pixelHeight = document.all.idPopup.style.pixelHeight = idPopup.document.all.puRegion.offsetHeight
+        idPopup.document.all.puRegion.style.pixelWidth = document.all.idPopup.style.pixelWidth = idPopup.document.all.puRegion.offsetWidth + 50
+        document.all.idPopup.style.pixelLeft = (document.body.clientWidth - idPopup.document.all.puRegion.offsetWidth) / 2
+    }
+    else { 
+        idPopup.document.all.puRegion.style.pixelHeight  = document.all.idPopup.style.pixelHeight = document.body.clientHeight - idToolbar.offsetHeight- document.all.idMode.offsetHeight-20
+        idPopup.document.all.puRegion.style.pixelWidth  = document.all.idPopup.style.pixelWidth = document.body.clientWidth - 50
+        document.all.idPopup.style.pixelLeft = 25
+    }
+    document.all.idPopup.style.zIndex=2
+    idPopup.focus()
+}
+
+function _CPopupRenderer(szType)
+{
+    this.szType     =  szType
+    this.elCurrent  =  this.oDocument  = null
+
+    this.ResetContext   =  _CPopupRenderer_ResetContext
+    this.GetCaption = _CPopupRenderer_GetCaption    
+    this.GetHTML    = _CPopupRenderer_GetHTML
+    this.autoSize   = true
+    this.OnMouseOver = new Function()
+    this.OnKeyDown  = _CListPopupRenderer_GenericOnKeyDown
+    switch(szType)
+    {
+        case "formatblock":
+        case "font":
+        case "fontsize":
+            this.OnMouseOver= _CListPopupRenderer_OnMouseOver
+            this.OnKeyDown  = _CListPopupRenderer_OnKeyDown
+        case "BackColor": 
+        case "ForeColor":
+            this.OnClick    = _CListPopupRenderer_OnClick
+            this.Highlight  = _CListPopupRenderer_Highlight
+            this.Select     = _CListPopupRenderer_Select
+            break
+        default:
+            this.OnClick    = new Function()
+            break   
+    }
+
+    switch(szType)
+    {
+        case "formatblock":
+            this.szCaption      = L_RTEPUTITLEPARAGRAPHSTYLE_TEXT
+            this.PrepareHTML    = _CFormatBlockPopupRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        case "font":
+            this.szCaption      = L_RTEPUTITLEFONTFACE_TEXT
+            this.PrepareHTML    = _CFontFacesPopupRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        case "fontsize":
+            this.szCaption      = L_RTEPUTITLEFONTSIZE_TEXT
+            this.PrepareHTML    =_CFontSizesPopupRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        case "Link":
+            this.szCaption      = L_RTEPUTITLELINK_TEXT
+            this.PrepareHTML    = _CLinkPopupRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        case "Table": 
+            this.szCaption      = L_RTEPUTITLENEWTABLE_TEXT
+            this.PrepareHTML    = _CTablePopupRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        case "BackColor": 
+            this.szCaption      = L_RTEPUTITLEBGCOLOR_TEXT
+            this.szHTML         = "<DIV ID=ColorPopup ALIGN=CENTER>" + _CUtil_BuildColorTable("") + "</DIV>"
+            break
+        case "ForeColor":
+            this.szCaption      = L_RTEPUTITLETEXTCOLOR_TEXT
+            this.szHTML         = "<DIV ID=ColorPopup ALIGN=CENTER>" + _CUtil_BuildColorTable("") + "</DIV>"
+            break
+        case "Emoticon":
+            this.szCaption      = L_RTEPUTITLEEMOTICON_TEXT
+            this.PrepareHTML    = _CEmoticonRenderer_PrepareHTML
+            this.szHTML         = this.PrepareHTML()
+            break
+        default:
+            this.szCaption      = ""
+            break
+    }
+}
+
+
+function _CPopupRenderer_ResetContext(oDoc)
+{
+    this.oDocument  = oDoc
+    this.elCurrent  = null
+
+    if (this.szType=="Table") {
+            var oSel    = idEditbox.document.selection.createRange() 
+        var oBlock  = (oSel.parentElement != null ? _CUtil_GetElement(oSel.parentElement(),"TABLE") : _CUtil_GetElement(oSel.item(0),"TABLE"))
+        if (oBlock!=null) {
+            oDoc.all.tabEdit.className=""
+            oDoc.all.tabEditBodytxtPadding.value = oBlock.cellPadding
+            oDoc.all.tabEditBodytxtSpacing.value = oBlock.cellSpacing
+            oDoc.all.tabEditBodytxtBorder.value = oBlock.border
+            oDoc.all.tabEditBodytxtBorderColor.value = oBlock.borderColor
+            oDoc.all.tabEditBodytxtBackgroundImage.value = oBlock.background
+            oDoc.all.tabEditBodytxtBackgroundColor.value = oBlock.bgColor
+        }
+        oDoc.elCurrent = oBlock
+    }
+}
+
+function _CPopupRenderer_GetCaption()
+{
+    return this.szCaption
+}
+
+function _CPopupRenderer_GetHTML()
+{
+    return this.szHTML
+}
+
+function _CEmoticonRenderer_PrepareHTML() {
+    var sz = "<TABLE><TR><TD>"
+    
+    var emoticonpath = 'images/emoticons/';
+
+    for (var i=0; i < arEmoticons.length; i++) 
+    {
+        sz  +=  "<IMG TABINDEX=" + (i+1) + " ONCLICK=\"parent._CEmoticonRenderer_Select(this)\" CLASS=emoticon SRC=\"" + emoticonpath + arEmoticons[i] + "\" WIDTH=19 HEIGHT=19 HSPACE=3 VSPACE=3>"
+        if ((i+1)%8==0) sz+="<BR>"
+    }           
+    if (i%8!=0) sz+="<BR>"
+    
+    return sz + "</TD></TR></TABLE>"
+}
+
+function _CEmoticonRenderer_Select(elImg) {
+    insertHTML("<IMG SRC=\"" + elImg.src + "\" WIDTH=" + elImg.width + " HEIGHT=" + elImg.height + ">")
+    g_state.RestoreSelection()
+    _CPopup_Hide()
+}
+
+function _CFontSizesPopupRenderer_PrepareHTML()
+{   
+    var sz  =  "<TABLE ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+    for (var i=1; i <= 7; i++) 
+    {
+        sz  +=  ""
+        +   "<TR>"
+        +      "<TD NOWRAP "
+        +          "_item=" + i + " "
+        +          "ALIGN=center "
+        +          "STYLE=\"margin:0pt;padding:0pt\""
+        +      ">"
+        +          "<FONT SIZE=" + i + ">" 
+        +              L_RTESTYLESAMPLE_TEXT + "(" + i + ")"
+        +          "</FONT>"
+        +      "</TD>"
+        +   "</TR>"
+    }           
+    sz  +=  "</TABLE>"
+    return sz
+}
+
+function _CFontFacesPopupRenderer_PrepareHTML()
+{   
+    var sz  =  "<TABLE ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+    for (var i=0; i < defaultFonts.length; i++) 
+    {
+        sz  +=  ""
+        +   "<TR>"
+        +      "<TD NOWRAP "
+        +          "_item=" + i + " "
+        +          "ALIGN=center "
+        +          "STYLE=\"margin:0pt;padding:0pt\""
+        +      ">"
+        +          "<FONT FACE=\"" + defaultFonts[i][0] + "\">" 
+        +              defaultFonts[i][1] 
+        +          "</FONT>"
+        +           (defaultFonts[i][2] ? ("(" + defaultFonts[i][1] + ")") : "")
+        +      "</TD>"
+        +   "</TR>"
+    }
+    sz += "<TR><TD ONCLICK=\"parent._CFontFacesPopupRenderer_InsertOther(this)\"  ALIGN=center _item=\"custom\" STYLE=\"margin:0pt;padding:0pt\" NOWRAP ID=customFont>" + L_RTECUSTOMFONT_TEXT + "</TD></TR>"
+    sz  +=  "</TABLE>"
+
+    return sz
+}
+
+function _CFontFacesPopupRenderer_InsertOther() {
+    var szFont = prompt(L_RTECUSTOMFONTENTRY_TEXT,L_RTESAMPLEFONTENTRY_TEXT)
+    if ((szFont!=null) && (szFont!=""))
+        _Format("FontName",szFont)
+    _CPopup_Hide()
+}
+
+function _CFormatBlockPopupRenderer_PrepareHTML()
+{   
+    var sz, defaultParagraphs   = new Array()
+
+    defaultParagraphs[0] = new Array("<P>", L_RTESTYLENORMAL_TEXT + " (P)") 
+    for (var i=1; i <= 6; i++) 
+        defaultParagraphs[i] = new Array("<H"+i+">", L_RTESTYLEHEADING_TEXT + i + " (H" + i + ")")  
+    defaultParagraphs[7] = new Array("<PRE>", L_RTESTYLEFORMATTED_TEXT + "(PRE)")
+
+    sz  =  "<TABLE CLASS=block ALIGN=center ID=idList CELLSPACING=0 CELLPADDING=0>"
+    for (var i=0; i < defaultParagraphs.length; i++) 
+    {
+        sz  +=  ""
+        +   "<TR>"
+        +      "<TD NOWRAP "
+        +          "_item=" + i + " "
+        +          "ALIGN=center "
+        +          "STYLE=\"margin:0pt;padding:0pt\""
+        +      ">"
+        +          defaultParagraphs[i][0] 
+        +          defaultParagraphs[i][1] 
+        +          "</" + defaultParagraphs[i][0].substring(1) 
+        +      "</TD>"
+        +   "</TR>"
+    }
+    sz  +=  "</TABLE>"
+    return sz
+}
+
+
+function _CTablePopupRenderer_PrepareHTMLPage(szID,bDisplay) {
+    var sz=""
+    +   "<TABLE height=100% " + ((!bDisplay) ? " style=\"display: none\"" : "") + " width=100% CELLSPACING=0 CELLPADDING=0 ID=" + szID + ">"
+    +      "<TR ID=tableContents>"
+    +          "<TD ID=tableOptions VALIGN=TOP NOWRAP WIDTH=150 ROWSPAN=2>"
+    +              "<A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'" + szID + "','prop1')\">"
+    +                  L_RTETABLEROWSANDCOLS_TEXT
+    +              "</A>"
+    +              "<BR>"
+    +              "<A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'" + szID + "','prop2')\">"
+    +                  L_RTETABLEPADDINGANDSPACING_TEXT
+    +              "</A>"
+    +              "<BR>"
+    +              "<A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'" + szID + "','prop3')\">"
+    +                  L_RTETABLEBORDERS_TEXT
+    +              "</A>"
+    +              "<BR>"
+    +              "<A HREF=\"javascript:parent._CTablePopupRenderer_Select(this,'" + szID + "','prop4')\">"
+    +                  L_RTETABLEBG_TEXT
+    +              "</A>"
+    +              "<BR>"
+    +          "</TD>"
+    +          "<TD BGCOLOR=black ID=puDivider ROWSPAN=2>"
+    +          "</TD>"
+    +          "<TD ID=tableProps VALIGN=TOP>"
+    if (szID=="tabNewBody") {
+        sz+= "<DIV ID='" + szID + "prop1'>"
+        +   "<P CLASS=tablePropsTitle>" + L_RTETABLEROWSANDCOLS_TEXT + "</P>"
+        +  "<TABLE><TR><TD>"
+        +                  L_RTETABLEINPUTROWS_TEXT
+        +                  "</TD><TD><INPUT SIZE=2 MAXLENGTH=2 TYPE=text ID=" + szID + "txtRows VALUE=2 >"
+        +                  "</TD></TR><TR><TD>"
+        +                  L_RTETABLEINPUTCOLUMNS_TEXT
+        +                  "</TD><TD><INPUT SIZE=2 MAXLENGTH=2 TYPE=text ID=" + szID + "txtColumns VALUE=2 >"
+        +              "</TD></TR></TABLE></DIV>" 
+    } 
+    else  {
+        sz+= "<DIV ID='" + szID + "prop1'>"
+            +   "<P CLASS=tablePropsTitle>" + L_RTETABLEROWSANDCOLS_TEXT + "</P>"   
+            +   "<INPUT type=button ID=" + szID + "txtRows VALUE=\"" + L_RTETABLEINSERTROW_TEXT + "\" ONCLICK=\"parent._CTablePopupRenderer_AddRow(this)\"><P>"
+            +   "<INPUT type=button ID=" + szID + "txtCells VALUE=\"" + L_RTETABLEINSERTCELL_TEXT + "\" ONCLICK=\"parent._CTablePopupRenderer_AddCell(this)\"><BR>"
+            +   "</DIV>" 
+
+    }
+
+    sz +=              "<DIV ID='" + szID + "prop2' STYLE=\"display: none\">"
+    +                   "<P CLASS=tablePropsTitle>" + L_RTETABLEPADDINGANDSPACING_TEXT + "</P>"
+    +                  L_RTETABLEINPUTCELLPADDING_TEXT
+    +                  "<INPUT SIZE=2 TYPE=text ID=" + szID + "txtPadding VALUE=1>"
+    +                  "<BR>"
+    +                  L_RTETABLEINPUTCELLSPACING_TEXT
+    +                  "<INPUT SIZE=2 TYPE=text ID=" + szID + "txtSpacing VALUE=1>"
+    +              "</DIV>"
+    +              "<DIV ID=" + szID + "prop3 STYLE=\"display: none\">"
+    +                   "<P CLASS=tablePropsTitle>" + L_RTETABLEBORDERS_TEXT + "</P>"
+    +                  L_RTETABLEINPUTBORDER_TEXT
+    +                  "<INPUT SIZE=2 TYPE=text ID=" + szID + "txtBorder VALUE=1>"
+    +                  "<BR>"
+    +                  L_RTETABLEINPUTBORDERCOLOR_TEXT
+    +                  "<INPUT SIZE=4 TYPE=text ID=" + szID + "txtBorderColor value=#000000><BR>" 
+    +                  _CUtil_BuildColorTable("idBorder"+szID, "", "parent._CTablePopupRenderer_ColorSelect(this,'" + szID + "txtBorderColor')") 
+    +              "</DIV>"
+    +              "<DIV ID=" + szID + "prop4 SIZE=12 STYLE=\"display: none\">"
+    +                   "<P CLASS=tablePropsTitle>" + L_RTETABLEBG_TEXT + "</P>"
+    +                  L_RTETABLEINPUTBGIMGURL_TEXT
+    +                  "<INPUT TYPE=text ID=" + szID + "txtBackgroundImage SIZE=15>"
+    +                  "<BR>"
+    +                  L_RTETABLEINPUTBGCOLOR_TEXT  
+    +                  "<INPUT TYPE=text SIZE=4 ID=" + szID + "txtBackgroundColor><BR>" 
+    +                  _CUtil_BuildColorTable("idBackground"+szID, "", "parent._CTablePopupRenderer_ColorSelect(this,'" + szID + "txtBackgroundColor')") 
+    +              "</DIV>"
+    +          "</TD>"
+    +      "</TR><TR><TD align=center ID=tableButtons valign=bottom>"
+    if (szID=="tabNewBody") {
+        sz +=   "<INPUT TYPE=submit ONCLICK=\"parent._CTablePopupRenderer_BuildTable('" + szID + "',this.document)\" VALUE=\"" + L_RTETABLEINSERT_TEXT + "\">"
+            +   " <INPUT TYPE=reset VALUE=\"" + L_RTECANCEL_TEXT + "\" ONCLICK=\"parent._CPopup_Hide()\">"
+    } else {
+        sz +=   "<INPUT TYPE=submit ONCLICK=\"parent._CTablePopupRenderer_BuildTable('" + szID + "',this.document)\" VALUE=\"" + L_RTETABLEUPDATE_TEXT + "\">"
+            +   " <INPUT TYPE=reset VALUE=\"" + L_RTECANCEL_TEXT + "\" ONCLICK=\"parent._CPopup_Hide()\">"
+    }
+    sz+=   "</TD></TR></TABLE>"
+    return sz
+}
+
+function _CTablePopupRenderer_PrepareHTML()
+{   
+    var sz  = "<TABLE CLASS=tabBox ID=\"tabSelect\" CELLSPACING=0 CELLPADDING=0 WIDTH=95%><TR HEIGHT=15><TD CLASS=tabItem STYLE=\"border-bottom: none\" NOWRAP><DIV ONCLICK=\"if (tabEdit.className!='disabled') {this.className='selected';this.parentElement.style.borderBottom = tabEdit.className=tabNewBody.style.display='';tabEditBody.style.display='none';tabEdit.parentElement.style.borderBottom='1px black solid'}\" CLASS=selected ID=tabNew>" + L_RTETABLENEW_TEXT + "</DIV></TD>"
+    +   "<TD CLASS=tabItem NOWRAP><DIV ONCLICK=\"if (this.className!='disabled') {this.className='selected';this.parentElement.style.borderBottom = tabNew.className=tabEditBody.style.display='';tabNew.parentElement.style.borderBottom='1px black solid';tabNewBody.style.display='none'}\" CLASS=disabled ID=tabEdit>" + L_RTETABLEEDIT_TEXT + "</DIV></TD><TD CLASS=tabSpace WIDTH=100%>&nbsp;</TD></TR><TR><TD VALIGN=TOP CLASS=tabBody COLSPAN=3>"
+    +   _CTablePopupRenderer_PrepareHTMLPage("tabNewBody",true)
+    +   _CTablePopupRenderer_PrepareHTMLPage("tabEditBody",false)
+    +   "</TD></TR></TABLE>"
+    return sz
+}
+
+function _CTablePopupRenderer_Select(el,szID, id) 
+{
+    var d = el.document
+
+    for (var i = 1; i < 5; i++)
+        d.all[szID + "prop" + i].style.display = "none"
+
+    d.all[szID + id].style.display = ""
+}
+
+
+function _CTablePopupRenderer_ColorSelect(el,id) 
+{
+    el.document.all[id].value = el.bgColor
+}   
+
+function _CTablePopupRenderer_AddRow(el) {
+    var elRow = el.document.elCurrent.insertRow()
+    for (var i=0;i<el.document.elCurrent.rows[0].cells.length;i++) {
+        var elCell = elRow.insertCell()
+        elCell.innerHTML = "&nbsp;"
+    }
+}
+
+function _CTablePopupRenderer_AddCell(el) {
+    for (var i=0;i<el.document.elCurrent.rows.length;i++) {
+        var elCell = el.document.elCurrent.rows[i].insertCell()
+        elCell.innerHTML = "&nbsp;"
+    }
+}
+
+function _CTablePopupRenderer_BuildTable(szID, d) 
+{
+    if (szID=="tabNewBody") {
+        var sz =   ""
+        +   "<TABLE "
+        +  (((d.all[szID + "txtBorder"].value=="") || (d.all[szID + "txtBorder"].value=="0")) ? "class=\"NOBORDER\"" : "")
+        +      (d.all[szID + "txtPadding"].value != "" ? "cellPadding=\"" + d.all[szID + "txtPadding"].value + "\" " : "")
+        +      (d.all[szID + "txtSpacing"].value != "" ? "cellSpacing=\"" + d.all[szID + "txtSpacing"].value + "\" " : "")
+
+        +      (d.all[szID + "txtBorder"].value != "" ? "border=\"" + d.all[szID + "txtBorder"].value + "\" " : "")
+        +      (d.all[szID + "txtBorderColor"].value != "" ? "bordercolor=\"" + d.all[szID + "txtBorderColor"].value + "\" " : "")
+        +      (d.all[szID + "txtBackgroundImage"].value != "" ? "background=\"" + d.all[szID + "txtBackgroundImage"].value + "\" " : "")
+
+        +      (d.all[szID + "txtBackgroundColor"].value != "" ? "bgColor=\"" + d.all[szID + "txtBackgroundColor"].value + "\" " : "")
+        +   ">"
+        if (d.all[szID + "txtRows"].value>99) d.all[szID + "txtRows"].value=99
+        if (d.all[szID + "txtColumns"].value>99) d.all[szID + "txtColumns"].value=50
+
+        for (var r=0; r < parseInt(d.all[szID + "txtRows"].value); r++) 
+        {
+            sz +=  "<TR>"
+            
+            for (var c=0; c < parseInt(d.all[szID + "txtColumns"].value); c++)
+                sz +=  "<TD>&nbsp;</TD>"
+            
+            sz +=  "</TR>"
+        }
+
+        sz +=  "</TABLE>"
+        insertHTML(sz)
+   } else
+        if (d.elCurrent) {
+            d.elCurrent.cellPadding = d.all.tabEditBodytxtPadding.value
+            d.elCurrent.cellSpacing = d.all.tabEditBodytxtSpacing.value
+            d.elCurrent.border = d.all.tabEditBodytxtBorder.value
+            d.elCurrent.className = (d.elCurrent.border=="" || d.elCurrent.border==0) ? "NOBORDER" : ""
+            d.elCurrent.borderColor = d.all.tabEditBodytxtBorderColor.value
+            d.elCurrent.bgColor = d.all.tabEditBodytxtBackgroundColor.value
+            d.elCurrent.background = d.all.tabEditBodytxtBackgroundImage.value
+   }
+   g_state.RestoreSelection()
+    _CPopup_Hide()  
+}
+
+function _CListPopupRenderer_OnClick() 
+{
+    var elTD = _CUtil_GetElement(this.oDocument.parentWindow.event.srcElement, "TD") 
+
+    if (elTD && elTD._item) this.Select(elTD)
+}
+
+function _CListPopupRenderer_GenericOnKeyDown() {
+    var ev      = this.oDocument.parentWindow.event
+    if (ev.keyCode==27) _CPopup_Hide()
+}
+
+function _CListPopupRenderer_OnKeyDown() 
+{
+    var el
+    var iRow = iCell    = 0
+    var ev      = this.oDocument.parentWindow.event
+    var idList  = this.oDocument.all.idList
+    var elTR    = _CUtil_GetElement(this.elCurrent,"TR")
+    var elTD    = _CUtil_GetElement(this.elCurrent,"TD")
+    
+    
+    if (elTR != null) 
+    {
+        iRow    = elTR.rowIndex
+        iCell   = elTD.cellIndex
+    }
+    switch (ev.keyCode) 
+    {
+        case 37:
+            iCell--
+            if (iCell < 0) 
+                iCell = idList.rows[iRow].cells.length-1
+            break
+        case 38:
+            iRow--
+            if (iRow < 0) 
+                iRow = idList.rows.length-1
+            break
+        case 39:
+            iCell++
+            if (iCell > idList.rows[iRow].cells.length-1) 
+                iCell = 0
+            break
+        case 40:
+            iRow++
+            if (iRow > idList.rows.length-1) 
+                iRow = 0
+            break
+        case 13:
+            break;
+        case 27:
+            _CPopup_Hide()
+            break;
+        default:
+            return;
+    }
+
+    el = idList.rows[iRow].cells[iCell]
+    if (el && el._item)
+        if (13 == ev.keyCode) {
+            ev.keyCode=0        
+            this.Select(el)
+        }
+        else
+            this.Highlight(el)
+}
+
+function _CListPopupRenderer_OnMouseOver() 
+{
+    var el = _CUtil_GetElement(this.oDocument.parentWindow.event.srcElement, "TD") 
+
+    if (el && el._item && el != this.elCurrent)
+        this.Highlight(el)
+}
+
+function _CListPopupRenderer_Highlight(el) 
+{
+    var elC = this.elCurrent
+    if (elC) elC.style.borderWidth =  elC.style.borderColor = elC.style.borderStyle  =   ""
+    el.style.borderWidth    =   "1px"
+    el.style.borderColor    =   "green"
+    el.style.borderStyle    =   "solid"
+    this.elCurrent          =   el
+}
+
+function _CListPopupRenderer_Select(elTD) 
+{
+    g_state.RestoreSelection()
+
+    var el = elTD.children[0]
+    switch (this.szType) 
+    {
+        case "font":
+            if (!el)
+                parent._CFontFacesPopupRenderer_InsertOther(this)
+            else
+                _Format("FontName",el.face)
+            break
+        case "fontsize":
+            _Format("FontSize",el.size)         
+            break
+        case "formatblock":
+            _Format("FormatBlock","<" + el.tagName + ">")
+            break
+        case "ForeColor":
+            _Format("ForeColor", elTD.bgColor)
+            break
+        case "BackColor":
+            _Format("BackColor",elTD.bgColor)
+            break
+    }
+    _CPopup_Hide()
+}
+
+function _CLinkPopupRenderer_AddLink(d) 
+{
+    var szURL = d.all.urlValue.value
+    var szType = d.all.urlType[d.all.urlType.selectedIndex].text
+    var oSel = g_state.GetSelection()
+    var sType = oSel.type
+
+    szURL = ((0 == szURL.indexOf("mailto:") || 0 == szURL.indexOf("http://") || 0 == szURL.indexOf("ftp://")) ? "" : szType) + szURL
+
+    if (szURL!="") 
+    {
+        if ((oSel.parentElement) && (oSel.text==""))
+        {
+            oSel.expand("word")
+            if (oSel.text=="") 
+            {
+                var sText = ""
+                var oStore = oSel.duplicate()
+                if (d.all.pageList) {
+                    var idx = d.all.pageList.selectedIndex
+                    if ("http://" + d.all.pageList[idx].value == szURL)
+                        sText = d.all.pageList[idx].text
+                    else
+                        sText = szURL
+                }
+                else
+                        sText = szURL
+
+                oSel.pasteHTML('<A HREF="' + szURL + '">' + sText + '</A>')
+                oSel.setEndPoint("StartToStart",oStore)
+                oSel.select()
+                setFocus()
+                return
+            } 
+            oSel.select()
+        }
+        else
+            if ((oSel.item) && (oSel.item(0).tagName=="IMG")) 
+            {
+                    oSel.item(0).width = oSel.item(0).offsetWidth
+                    oSel.item(0).height = oSel.item(0).offsetHeight
+                    oSel.item(0).border = (d.all.displayBorder.checked) ? 1 : ""
+            }
+        
+        if (d.all.urlValue.value!="")
+            oSel.execCommand("CreateLink",false,szURL)  
+        else
+            oSel.execCommand("UnLink",false,szURL)          
+    }
+
+    setFocus()  
+}
+
+function _CLinkPopupRenderer__UpdateURL(oDoc,szURL) {
+    var szType = szURL.substring(0,szURL.indexOf(":"))
+    for (var i=0;i<oDoc.all.urlType.length;i++) 
+        if (oDoc.all.urlType[i].value==szType)
+            oDoc.all.urlType.selectedIndex = i
+    if (("http"==szType) || ("ftp"==szType)) 
+            szURL = szURL.substring(szURL.indexOf("//")+2)
+    else
+            szURL = szURL.substring(szURL.indexOf(":")+1)
+    oDoc.all.urlValue.value = szURL
+}
+
+function _CLinkPopupRenderer_PrepareHTML() 
+{
+    var d = this.oDocument
+    var oSel = g_state.GetSelection()
+    var oEl, sType = oSel.type, bImg = false, szURL = sz = ""
+    if (oSel.parentElement)  
+    {
+        oEl = _CUtil_GetElement(oSel.parentElement(),"A")
+    }
+    else 
+    {
+
+        oEl = _CUtil_GetElement(oSel.item(0),"A")
+        bImg = oSel.item(0).tagName=="IMG"
+    }
+
+    if (oEl)
+        szURL = oEl.href
+    
+    sz  ="<TABLE ALIGN=center>" 
+    
+    if (g_state.aLinks.length>0) 
+    {
+        sz  +=  ""
+        +   "<TR>"
+        +      "<TD>" 
+        +          L_RTELINKSELECT_TEXT 
+        +          "<SELECT ID=pageList ONCHANGE=\"parent._CLinkPopupRenderer__UpdateURL(this.document,this[this.selectedIndex].value)\">"
+        +              "<OPTION VALUE=''>" 
+        +                  "=="
+        +                  L_RTELINKSELECTPAGE_TEXT
+        +                  "=="
+        +              "</OPTION>"
+        
+        for (var i = 0; i < g_state.aLinks.length; i++) 
+        {
+            sz  +=  ""
+            +   "<OPTION VALUE=\"" + g_state.aLinks[i][0] + "\" "
+            +      (oEl && (g_state.aLinks[i][0]==oEl.href) ? "SELECTED" : "")
+            +   ">"
+            +      g_state.aLinks[i][1]
+            +   "</OPTION>"
+        }
+
+        sz  +=  "</SELECT>"
+    }
+    var arTypes = new Array("http","ftp","mailto")
+    var arText = new Array("http://","ftp://","mailto:")
+    var szType = szURL.substring(0,szURL.indexOf(":"))
+    if (("http"==szType) || ("ftp"==szType)) 
+            szURL = szURL.substring(szURL.indexOf("//")+2)
+    else
+            szURL = szURL.substring(szURL.indexOf(":")+1)
+
+    sz  += ""
+    +   "<BR>" 
+    +   L_RTELINKWEB_TEXT 
+    +   "<NOBR><SELECT ID=urlType>"
+    
+    for (var i=0;i<arTypes.length;i++) {
+        sz+= "<OPTION VALUE='" + arTypes[i] + "' "
+        +   (arTypes[i]==szType ? " SELECTED " : "")
+        + ">" + arText[i]
+    }
+    sz += "</SELECT><INPUT ID=urlValue SIZE=45 VALUE=\"" + szURL + "\" TYPE=text></NOBR>"
+
+    if (bImg)
+    {
+        sz  +=  ""
+        +   "<BR>"
+        +   "<INPUT TYPE=checkbox ID=displayBorder " + ((oSel.item(0).border!=0) ? " checked " : "") + ">" 
+        +   L_RTELINKIMGBORDER_TEXT
+    }
+
+    sz  +=  ""
+    +          "</TD>"
+    +      "</TR>"
+    +      "<TR>"
+    +          "<TD ALIGN=center>"
+    +              "<INPUT ONCLICK=\"parent._CLinkPopupRenderer_AddLink(this.document)\" TYPE=submit ID=idSave VALUE=\"" + L_RTEINSERT_TEXT + "\"> <INPUT ONCLICK=\"parent._CPopup_Hide()\" TYPE=reset ID=idCancel VALUE=\"" + L_RTECANCEL_TEXT + "\">"
+    +          "</TD>"
+    +      "</TR>"
+    +   "</TABLE>"
+    return sz
+}
+
+//  UTIL
+
+function _CUtil_GetElement(oEl,sTag) 
+{
+    while (oEl!=null && oEl.tagName!=sTag)
+        oEl = oEl.parentElement
+    return oEl
+}
+
+function _CUtil_BuildColorTable(sID,fmt,szClick) 
+{
+    var sz, cPick = new Array("00","33","66","99","CC","FF"), iCnt=2
+    var iColors = cPick.length, szColor = ""
+
+
+    sz = "<TABLE CELLSPACING=0 CELLPADDING=0><TR><TD VALIGN=middle><DIV CLASS=currentColor ID=\"" + sID + "Current\">&nbsp;</DIV></TD><TD>"
+    +   "<TABLE ONMOUSEOUT=\"document.all." + sID + "Current.style.backgroundColor = ''\" ONMOUSEOVER=\"document.all." + sID + "Current.style.backgroundColor = event.srcElement.bgColor\" CLASS=colorTable CELLSPACING=0 CELLPADDING=0 ID=\"" + sID + "\">"
+    for (var r=0;r<iColors;r++) {
+        sz+="<TR>"
+        for (var g=iColors-1;g>=0;g--)
+            for (var b=iColors-1;b>=0;b--) {
+                szColor = cPick[r]+cPick[g]+cPick[b] 
+                sz+="<TD"
+                        + " BGCOLOR=\"#" + szColor + "\""
+                        + "_item=\"" + szColor + "\" "
+                        + "TITLE=\"#" + szColor + "\" "
+                        + (szClick ? "ONCLICK=\"" + szClick + "\" " : "")
+                        + ">&nbsp;</TD>"
+            }
+        sz+="</TR>"
+    }
+    sz+="</TABLE></TD></TR></TABLE>"
+    return sz
+}
+
+function replace(str, replace_what, replace_with)
+{
+  var ndx = str.indexOf(replace_what);
+  var delta = replace_with.length - replace_what.length;
+
+  while (ndx >= 0)
+  {
+    str = str.substring(0,ndx) + replace_with + str.substring(ndx + replace_what.length);
+    ndx = str.indexOf(replace_what, ndx + delta + 1);
+  }
+  return str;
+}
+
+function _CUtil_MakeLinkRel(str)
+{
+  var root = 'http://groups.msn.com/'
+  str = replace(str, '=' + root, '=/')
+  str = replace(str, '="' + root, '="/')
+  return replace(str, "='" + root, "='/")
+}
+
+function _CUtil_TrimCR(sValue) {
+    return replace(sValue,"\r\n", " ")
+}
+
+function _CUtil_GetBlock(oEl) 
+{
+    var sBlocks = "|H1|H2|H3|H4|H5|H6|P|PRE|LI|TD|DIV|BLOCKQUOTE|DT|DD|TABLE|HR|IMG|"
+
+    while ((oEl!=null) && (sBlocks.indexOf("|"+oEl.tagName+"|")==-1))
+        oEl = oEl.parentElement
+    return oEl
+}
+
+function _CUtil_DomainSuffix(szHost) {
+    var idx = szHost.indexOf("commun")
+    if (idx>=0) {
+        idx = szHost.indexOf(".",idx)
+        return szHost.substring(idx+1)
+    } else
+    {
+        idx = szHost.lastIndexOf(".",szHost.length-5)
+        return szHost.substring(idx+1)
+    }
+    return szHost   
+}
+
+function _CUtil_CleanHTML() {
+    var bBindings = (g_state.aBindings.length>0) 
+    var elAll = idEditbox.document.all
+    var iCount = elAll.length
+    for (var i=iCount-1;i>=0;i--) {
+        if (elAll[i].tagName=="IMG") {
+                            elAll[i].width = elAll[i].offsetWidth;
+                elAll[i].height = elAll[i].offsetHeight;
+                    }
+        if ((elAll[i].tagName=="INPUT") && (bBindings))
+            elAll[i].outerHTML = '[' + elAll[i].name + ']';
+
+    }
+    return idEditbox.document.body.innerHTML
+}
+
+
+
+function _CUitil_CleanImageTag() {
+
+    var elAll = idEditbox.document.all
+    var iCount = elAll.length
+    for (var i=iCount-1;i>=0;i--) {
+        if (elAll[i].tagName=="IMG") {
+            elAll[i].width = elAll[i].offsetWidth;
+            elAll[i].height = elAll[i].offsetHeight;
+        }
+    }
+}
+
+    </SCRIPT>
+
+    <STYLE>
+        body {margin:0pt;border:none;padding:0pt; background-color:#ffffff;}
+        #tbDBSelect {display:none;text-align:left;width: 100;margin-right: 1pt;margin-bottom: 0pt;margin-top: 0pt;padding: 0pt;font: 9pt PMingLiU}
+        #DBSelect, #idMode, .userButton {font:9pt PMingLiU}
+        #DBSelect {width:100}
+        #idMode {margin-top:0pt}
+        .tbButton {text-align:left;margin:0pt 1pt 0pt 0pt;padding:0pt}
+        #EditBox {position: relative}
+        #idEditRegion {margin:0px;padding:0px}
+    </STYLE>
+    <STYLE ID=skin DISABLED>
+        #idEditRegion {margin: 0px 8px 0px 8px;padding:0px}
+        #tbUpRight, #tbUpLeft {width:13px}  
+        #idMode {margin-left:11px;padding:0pt}
+        #idMode LABEL {color: navy;text-decoration: underline}
+        #tbTopBar {height:13px}
+        #tbUpLeft {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/up_left.gif)}
+        #tbUpMiddle {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/up_mid.gif)}
+        #tbUpRight {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/up_right.gif)}
+        #tbMidLeft {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/mid_left.gif)}
+        #tbButtons, #tbContents {vertical-align: top}
+        #tbContents {padding:0px 5px}
+        #tbMidRight {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/mid_right.gif)}
+        #tbBottomBar {height:6px}
+        #tbLowLeft {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/low_left.gif)}
+        #tbLowMiddle {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/low_mid.gif)}
+        #tbLowRight {background:URL(http://sc.groups.msn.com/themes/R9c/pby/img/richedit/border/low_right.gif)}       
+    </STYLE>
+    <STYLE ID=appendSkin>
+    </STYLE>
+    <STYLE ID=defPopupSkin>
+        #popup BODY {margin:0px;padding: 0pt;border-top:none}
+        #popup .colorTable {height:91px}
+        #popup #header {width:100%}
+        #popup #close {cursor:default;font:bold 9pt PMingLiU;width:16px;text-align: center}
+        #popup #content {padding:0pt}
+        #popup TABLE {vertical-align:top}
+        #popup .tabBody {border:1px black solid;border-top: none}
+        #popup .tabItem, #popup .tabSpace {border-bottom:1px black solid;border-left:1px black solid}
+        #popup .tabItem {border-top:1px black solid;font:9pt PMingLiU;}
+        #popup .currentColor {width:20px;height:20px; margin: 0pt;margin-right:15pt;border:1px black solid}
+        #popup .tabItem DIV {margin:3px;padding:0px;cursor: hand}
+        #popup .tabItem DIV.disabled {color: gray;cursor: default}
+        #popup .selected {font-weight:bold}
+        #popup .emoticon {cursor:hand}
+        #customFont {font: bold 9pt PMingLiU}
+    </STYLE>
+    <STYLE ID=popupSkin>
+        #popup BODY {border: 3px #006699 solid; background: #F1F1F1}
+        #popup #header {background: #006699; color: white}
+        #popup #caption {text-align: left;font: bold 9pt PMingLiU}
+        #popup .ColorTable, #popup #idList TD#current {border: 1px black solid}
+        #popup #idList TD{cursor: hand;border: 1px #F1F1F1 solid}
+        #popup #close {border: 1px #99CCFF solid;cursor:hand;color: #99CCFF;font-weight: bold;margin-right: 6px;padding:0px 4px 2px}
+        #popup #tableProps .tablePropsTitle {color:#006699;text-align:left;margin:0pt;border-bottom: 1px black solid;margin-bottom:5pt}
+        #tableButtons, #tableProps {padding:5px}
+        #popup #tableContents {height:175px}
+        #popup #tableProps .tablePropsTitle, #popup #tableProps, #popup #tableProps TABLE {font:bold 9pt PMingLiU}
+        #popup #tableOptions  {font:9pt PMingLiU;padding:15pt 5pt}
+        #popup #puDivider {background:black;width:1px}
+        #popup #content {margin: 0pt;padding:5pt 3pt 8pt 3pt}
+        #popup #ColorPopup {width: 250px}
+        #popup .ColorTable TR {height:6px}
+        #popup .ColorTable TD {width:6px;cursor:hand}
+        #popup .block P,#popup .block H1,#popup .block H2,#popup .block H3,
+        #popup .block H4, #popup .block H5,#popup .block H6,#popup .block PRE {margin:0pt;padding:0pt}
+    </STYLE>
+    <SCRIPT>
+        var g_state
+
+        window.onload   = _initEditor
+
+        function _drawIE4Focus() {
+            if (isIE4)
+                document.write("<INPUT TYPE=textbox STYLE=\"width:0;height:0;left:0;position:absolute\">");
+        }
+    </SCRIPT>
+</HEAD>                                                 
+<BODY bgcolor=#FFFFFF background=#ffffff oncontextmenu="return false" TABINDEX  ="-1" SCROLL ="no" ONSELECTSTART ="return false" ONDRAGSTART="return false" ONSCROLL="return false">
+    <DIV ID="idEditor" STYLE="VISIBILITY: hidden">
+        <TABLE ID=idToolbar WIDTH="100%" CELLSPACING=0 CELLPADDING=0 ONCLICK="_CPopup_Hide()">
+            <TR ID=tbTopBar><TD ID=tbUpLeft></TD><TD COLSPAN=2 ID=tbUpMiddle></TD><TD ID=tbUpRight></TD></TR>
+            <TR><TD ID=tbMidLeft></TD>
+                <TD ID=tbContents><SCRIPT>_drawToolbar()</SCRIPT></TD>
+                <TD ID=tbButtons ALIGN=right></TD><TD ID=tbMidRight></TD>
+            </TR>
+            <TR ID=tbbottomBar><TD ID=tbLowLeft></TD><TD COLSPAN=2 ID=tbLowMiddle></TD><TD ID=tbLowRight></TD></TR>
+        </TABLE>
+        <IFRAME NAME="idPopup" STYLE="HEIGHT: 200px; LEFT: 25px; MARGIN-TOP: 8px; POSITION: absolute; VISIBILITY: hidden; WIDTH: 200px; Z-INDEX: -1"></IFRAME>
+        <DIV ID="idEditRegion">
+        <IFRAME TABINDEX=1 ID="EditBox" NAME="idEditbox" STYLE="VISIBILITY: visible;" WIDTH="100%" HEIGHT="100%" ONLOAD="document.body.click();" ONFOCUS="_CPopup_Hide();_fireFocus();"></IFRAME>
+        </DIV>
+        <SCRIPT>_drawIE4Focus()</SCRIPT>
+        <DIV ID="tbmode"><SCRIPT>_drawModeSelect()</SCRIPT></DIV>
+    </DIV>
+</BODY> 
+</HTML>
+
+        </TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+<SCRIPT LANGUAGE=javascript>
+document.cookie = "WStz=" + (new Date()).getTimezoneOffset() + "; path=/; expires=Mon, 16 Aug 2010 10:20:00 UTC;";
+</SCRIPT>

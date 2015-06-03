@@ -1,0 +1,4 @@
+[Jabber]
+jabberIp =${jabberIp}
+jabberName =${jabberName}
+jabberdport=${jabberdport}

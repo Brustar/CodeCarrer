@@ -1,0 +1,25 @@
+/* MSN Framing - Header Footer Leftnav Colors */
+BODY {BACKGROUND:#503562;}
+.FRHdBG {background-color:#503562;}
+.FRHdSFB {background-color:#9c9db1;}
+.FRSf {COLOR: white; background-color:#503562;}
+.FRSf A {COLOR: white; text-decoration:none;}
+.FRSf A:hover {text-decoration:underline;}
+.FRSfL {FONT-SIZE: 24px; BORDER-BOTTOM: #856999 1px solid; WHITE-SPACE: nowrap}
+.FRSfM {BORDER-BOTTOM: #9884a7 1px solid}
+.FRSfR {FONT-SIZE: 1px}
+.FRSfI {BORDER-RIGHT: #4f395f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #856999 1px solid; PADDING-LEFT: 0px; BACKGROUND:#6b4f80; PADDING-BOTTOM: 9px; PADDING-TOP: 0px; BORDER-BOTTOM: #9884a7 1px solid}
+.FRSfLb {FONT-SIZE: 1px; BACKGROUND: #6b4f80; BORDER-BOTTOM: #9884a7 1px solid}
+.FRtb {BACKGROUND: #846a9f; COLOR: #ffffff; padding-left:12px; padding-right:11px;}
+.FRtb A {COLOR: #ffffff; text-decoration:none;}
+.FRtb A:visited {COLOR: #ffffff}
+.FRtb A:hover {COLOR: #ffffff; text-decoration:underline;}
+.FRnav {background:#e6e1ec;}
+.FRvnav {color:black; margin-top:6px;}
+.FRvnav a {color:#000000; text-decoration:none;}
+.FRvnav a:hover {color:#503562; text-decoration:underline}
+.FRvnav td {border-bottom: 1px solid #c8bcd4;height:20px;padding-left:7px;}
+.FRvnav .FRtds {background:#ffffff}
+.FRvnav .FRtdsi {background:#f2f0f5;padding-left:7px}
+.FRvnav .FRtdsh {background:white;padding-left:7px}
+.FRvnav .FRtdsub {padding-left:14px;}

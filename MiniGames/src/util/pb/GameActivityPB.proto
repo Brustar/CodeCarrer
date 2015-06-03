@@ -1,0 +1,128 @@
+import "ServerBasePB.proto";
+
+//-----------Start基本奖励-------------//
+message PBGift {
+    optional int32 giftid = 1;// 奖品id
+    optional int32 typeid = 2;// 奖品类型
+    optional string name = 3;// 奖品名称
+    optional double quantity = 4;// 奖励数值
+    optional int32 propsid = 5;// 道具卡id
+    optional int32 lxshowid = 6;// 乐秀id(男)
+    optional int32 lxshowid2 = 7;// 乐秀id(女)
+    optional int32 maxnum = 8;
+}
+message PBGiftList {
+    repeated PBGift list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//------------End基本奖励------------//
+
+
+//-----------Start礼包-------------//
+message PBGiftbag {
+    optional int32 bagid = 1;// 礼包id
+    optional string name = 2;// 礼包名称
+    optional string description = 3;// 礼包奖励描述
+    optional string remark = 4;// 礼包说明
+    optional int32 maxnum = 5;// 每日上限
+    optional int32 isopen = 6;// 是否开启
+}
+message PBGiftbagList {
+    repeated PBGiftbag list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//------------End礼包------------//
+
+
+//-----------Start礼包详情-------------//
+message PBGiftbagDetail {
+    optional int32 rid = 1;// rid
+    optional int32 bagid = 2;// 礼包id
+    optional int32 giftid = 3;// 礼物id
+}
+message PBGiftbagDetailList {
+    repeated PBGiftbagDetail list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//------------End礼包详情------------//
+
+message PBUserGiftbagStat {
+    optional int32 rid = 1;// rid
+    optional int32 gameid = 2;// 游戏id
+    optional int32 userid = 3;// 用户id
+    optional int32 bagnum = 4;// 礼包个数
+    optional string dateflag = 5;// 时间
+}
+message PBUserGiftbagStatList {
+    repeated PBUserGiftbagStat list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+
+//------------Start游戏活动------------//
+//http://lxgame.lexun.com/interface/gameactivity.aspx
+//返回对象：PBGameActivity
+message PBGameActivty_Params{
+	optional int32 ishome  = 1;//首页展示的活动
+	optional int32 gameid  = 2;//游戏id
+}
+
+message PBGameActivity {
+    optional int32 acrid = 1;// 活动id
+    optional string acname = 2;// 活动名称
+    optional int32 gameid = 3;// 游戏id
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 condition = 6;// 活动条件
+    optional string conditionname = 7;// 条件名称
+    optional string conditiondesc = 8;// 条件描述
+    optional int32 conditionval = 9;// 条件数值
+    optional int32 symbol = 10;// 判断符号
+    optional string symboldes = 11;// 判断符号描述
+    optional int32 awardtype = 12;// 0:无 1:基本奖励 2:游戏礼包 3:
+    optional string awardtypename = 13;// 奖励类型名称
+	optional string awarddesc = 14;// 奖励描述
+    optional int32 relationid = 15;// 奖项id或礼包id
+    optional int32 maxcount = 16;// 每人每天可获得数量
+    optional string remark = 17;// 活动说明
+    optional int32 isopen = 18;// 是否开启
+    optional int32 ishome = 19;// 首页开启
+    optional string addtime = 20;// 时间
+}
+message PBGameActivityList {
+    repeated PBGameActivity list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBGameActivityGift {
+    optional int32 rid = 1;// rid
+    optional int32 acrid = 2;// 活动id
+    optional int32 days = 3;// 第几天
+    optional string dateflag = 4;// 时间
+    optional int32 awardtype = 5;// 1：基本奖项 2：礼包
+    optional int32 relationid = 6;// 奖项id或礼包id
+}
+message PBGameActivityGiftList {
+    repeated PBGameActivityGift list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//------------End游戏活动------------//
+
+
+message PBGiftStat {
+    optional int32 rid = 1;// rid
+    optional int32 gameid = 2;// 游戏id
+    optional int32 giftid = 3;// 奖品id
+    optional string giftname = 4;// 奖品名称
+    optional int32 total = 5;// 发放数量
+    optional string dateflag = 6;// 时间标识
+}
+
+message PBGiftbagStat {
+    optional int32 rid = 1;// rid
+    optional int32 gameid = 2;// 游戏id
+    optional int32 bagid = 3;// 礼包id
+    optional string bagname = 4;// 礼包名称
+    optional int32 total = 5;// 发放数量
+    optional string dateflag = 6;// 时间标识
+}

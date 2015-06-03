@@ -1,0 +1,843 @@
+TThreeChessGame
+v7
+r0
+t363355203.242699
+cCheck dependencies
+cProcessInfoPlistFile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/Info.plist ThreeChessGame-Info.plist
+cCompileXIB /Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_B_R.png images/chess_B_R.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_B.png images/chess_B.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_BS.png images/chess_BS.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_R_B.png images/chess_R_B.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_R.png images/chess_R.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_RS.png images/chess_RS.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/start.png images/start.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/stop.png images/stop.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/disk.png images/disk.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/b_box.png images/b_box.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/r_box.png images/r_box.png
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/down.wav wav/down.wav
+cCpResource build/Debug-iphonesimulator/ThreeChessGame.app/eat.wav wav/eat.wav
+cProcessPCH /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch.gch ThreeChessGame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/main.o /Users/brustar/Desktop/chesses/ThreeChessGame/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ConstantUtil.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/GameView.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame normal i386
+cGenerateDSYMFile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app.dSYM /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame
+cTouch /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
+c000000004D5C9B4E0000000000000110
+t1297914702
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004D54CF5D0000000000205F50
+t1297403741
+s2121552
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004D54CF4A0000000000000A23
+t1297403722
+s2595
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54CFFA00000000002999B0
+t1297403898
+s2726320
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54CFE5000000000029DA70
+t1297403877
+s2742896
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54CFB80000000000001466
+t1297403832
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.h
+c000000004D5EBF360000000000000294
+t1298054966
+s660
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004D5EBF5300000000001C31B0
+t1298054995
+s1847728
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004D54D2DD00000000000000C4
+t1297404637
+s196
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004D54D4200000000000162C50
+t1297404960
+s1453136
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h
+c000000004D54CEF80000000000001A58
+t1297403640
+s6744
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5615B40000000000000AA1
+t1297487284
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5616030000000000766870
+t1297487363
+s7759984
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/usr/include/netdb.h
+c000000004D54C504000000000000307F
+t1297401092
+s12415
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.h
+c000000004FE4595600000000000000EA
+t1340365142
+s234
+i<Foundation/Foundation.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m
+c000000004FE4596C00000000000000B8
+t1340365164
+s184
+i"Chess.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.h
+c000000004FF7DBF100000000000003CB
+t1341643761
+s971
+i<Foundation/Foundation.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m
+c000000004FF092D700000000000025B0
+t1341166295
+s9648
+i"Chess.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.h
+c000000004FE52AC30000000000000849
+t1340418755
+s2121
+i<Foundation/Foundation.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m
+c000000004FCC497E0000000000000945
+t1338788222
+s2373
+i"ConstantUtil.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.h
+c000000004FF7CBA8000000000000022A
+t1341639592
+s554
+i<UIKit/UIKit.h>
+i"UIMakerUtil.h"
+i"Chess.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m
+c000000004FF822900000000000002350
+t1341661840
+s9040
+i"GameView.h"
+i<AudioToolbox/AudioToolbox.h>
+i<MediaPlayer/MediaPlayer.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.h
+c000000004FE4395F0000000000000204
+t1340356959
+s516
+i<UIKit/UIKit.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m
+c000000004FE4395F0000000000000829
+t1340356959
+s2089
+i"ThreeChessGameAppDelegate.h"
+i"ThreeChessGameViewController.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.h
+c000000004FE6E285000000000000012B
+t1340531333
+s299
+i<UIKit/UIKit.h>
+i"UIMakerUtil.h"
+i"GameView.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m
+c000000004FEEDC8E0000000000000467
+t1341054094
+s1127
+i"ThreeChessGameViewController.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.h
+c000000004FE525940000000000000CC4
+t1340417428
+s3268
+i<Foundation/Foundation.h>
+i"ConstantUtil.h"
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m
+c000000004FE6E626000000000000386B
+t1340532262
+s14443
+i"UIMakerUtil.h"
+i<SystemConfiguration/SystemConfiguration.h>
+i<netdb.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib
+c000000004FE4395F0000000000004D4F
+t1340356959
+s19791
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGameViewController.xib
+c000000004FE4395F0000000000003EFD
+t1340356959
+s16125
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame_Prefix.pch
+c000000004FE4395F00000000000000C5
+t1340356959
+s197
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app
+t1341662403
+s646
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app.dSYM
+t1341662403
+s102
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/Info.plist
+t1341662395
+s759
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/MainWindow.nib
+t1341662398
+s1696
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/PkgInfo
+t1341662395
+s8
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame
+t1341662403
+s81760
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGameViewController.nib
+t1340357338
+s1232
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/b_box.png
+t1341662396
+s3382
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_B.png
+t1341662395
+s4827
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_BS.png
+t1341662395
+s2130
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_B_R.png
+t1341662395
+s7057
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_R.png
+t1341662395
+s4663
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_RS.png
+t1341662395
+s2027
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/chess_R_B.png
+t1341662395
+s6589
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/disk.gif
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/disk.png
+t1341662396
+s215534
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/down.wav
+t1341662396
+s50044
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/eat.wav
+t1341662396
+s88704
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/r_box.png
+t1341662396
+s23349
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/start.png
+t1341662395
+s2643
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/stop.png
+t1341662395
+s1265
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o
+t1341662403
+s62760
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ConstantUtil.o
+t1341662402
+s17208
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/GameView.o
+t1341662403
+s77996
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGame.LinkFileList
+c000000004FF824BB000000000000042A
+t1341662395
+s1066
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate-B1AC8F2F07267887.o
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate.o
+t1341662402
+s51252
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController-A2AF4D836A169889.o
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController.o
+t1341662402
+s41988
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil-84B4CA2C2FF6D88D.o
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil.o
+t1341662402
+s98728
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/main.o
+t1341662402
+s6324
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/Chess.plist
+t1341145150
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ConstantUtil.plist
+t1341054039
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/GameView.plist
+t1341145150
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ThreeChessGameAppDelegate.plist
+t1341145150
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ThreeChessGameViewController.plist
+t1341145150
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/UIMakerUtil.plist
+t1341054039
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/main.plist
+t1341054039
+s276
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/b_box.png
+c000000004FE6E0840000000000000D36
+t1340530820
+s3382
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B.png
+c000000004F0DA77800000000000012DB
+t1326294904
+s4827
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_BS.png
+c00000000618DFBEE0000000000000852
+t1636695022
+s2130
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B_R.png
+c000000004F08FEF20000000000001B91
+t1325989618
+s7057
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R.png
+c000000004F08FB1C0000000000001237
+t1325988636
+s4663
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_RS.png
+c00000000618DFBDC00000000000007EB
+t1636695004
+s2027
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R_B.png
+c000000004F08FEF000000000000019BD
+t1325989616
+s6589
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.gif
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.png
+c000000004FE43F6800000000000349EE
+t1340358504
+s215534
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/r_box.png
+c000000004F55B6E20000000000005B35
+t1331017442
+s23349
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/start.png
+c00000000618DFDBA0000000000000A53
+t1636695482
+s2643
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/images/stop.png
+c00000000618E06A000000000000004F1
+t1636697760
+s1265
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/main.m
+c000000004FE4395F000000000000016B
+t1340356959
+s363
+i<UIKit/UIKit.h>
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/wav/down.wav
+c000000004FEEB0F4000000000000C37C
+t1341042932
+s50044
+
+N/Users/brustar/Desktop/chesses/ThreeChessGame/wav/eat.wav
+c000000004FEEB0FC0000000000015A80
+t1341042940
+s88704
+
+N/var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch.gch
+t1341662402
+s15814064
+
+N/var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch.pth
+t1341054039
+s3353012
+
+NThreeChessGame-Info.plist
+c000000004FE57EA90000000000000459
+t1340440233
+s1113
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m
+s362837950.474995
+e362837950.574299
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m
+lSLF07#2@69"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m362837950#362837950#0(0"0(0#0#61"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m8622836928#2150"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/Chess.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m
+s362746839.568615
+e362746839.618682
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m
+lSLF07#2@76"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m362746839#362746839#0(0"0(0#0#68"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m8622654016#2164"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ConstantUtil.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m
+s362837950.468921
+e362837950.608733
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m
+lSLF07#2@72"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m362837950#362837950#0(0"0(0#0#64"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m8626758656#2156"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/GameView.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m
+s362837949.476765
+e362837950.468682
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m
+lSLF07#2@89"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m362837949#362837950#0(0"0(0#0#81"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m8618448224#2190"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ThreeChessGameAppDelegate.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m
+s362837949.987203
+e362837950.474902
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m
+lSLF07#2@92"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m362837949#362837950#0(0"0(0#0#84"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m8620986048#2196"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/ThreeChessGameViewController.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m
+s362746839.516899
+e362746839.797661
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m
+lSLF07#2@75"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m362746839#362746839#0(0"0(0#0#67"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m8623634528#2162"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/UIMakerUtil.plist0#
+
+CAnalyze /Users/brustar/Desktop/chesses/ThreeChessGame/main.m
+s362746839.373133
+e362746839.516798
+r1
+xAnalyze
+x/Users/brustar/Desktop/chesses/ThreeChessGame/main.m
+lSLF07#2@60"Analyze /Users/brustar/Desktop/chesses/ThreeChessGame/main.m362746839#362746839#0(0"0(0#0#52"/Users/brustar/Desktop/chesses/ThreeChessGame/main.m8624264096#2140"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch --analyze /Users/brustar/Desktop/chesses/ThreeChessGame/main.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/StaticAnalyzer/normal/i386/main.plist0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies363355195#363355195#0(0"0(0#1#0"8629902656#0"0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.914239
+e363355203.063279
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m363355202#363355203#0(0"0(0#0#61"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m8635876544#2141"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ConstantUtil.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.706482
+e363355202.794293
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ConstantUtil.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m363355202#363355202#0(0"0(0#0#68"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m8631091968#2155"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ConstantUtil.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ConstantUtil.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/GameView.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.794400
+e363355203.039078
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/GameView.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m363355202#363355203#0(0"0(0#0#64"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m8629202496#2147"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/GameView.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/GameView.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate-B1AC8F2F07267887.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.393291
+e363355202.635062
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m363355202#363355202#0(0"0(0#0#81"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m8625750272#2181"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameAppDelegate.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameAppDelegate.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController-A2AF4D836A169889.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.616555
+e363355202.706379
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@92"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m363355202#363355202#0(0"0(0#0#84"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m8633829792#2187"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/ThreeChessGameViewController.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGameViewController.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil-84B4CA2C2FF6D88D.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.635170
+e363355202.914133
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@75"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m363355202#363355202#0(0"0(0#0#67"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m8633581152#2153"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/UIMakerUtil.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/UIMakerUtil.o0#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/bChess.o /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/bChess.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s362058048.108918
+e362058048.393689
+r0
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/bChess.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/bChess.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m:9:18: error: Chess.h: No such file or directory
+o/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m:14: warning: cannot find interface declaration for 'Chess'
+lSLF07#2@70"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/bChess.m362058048#362058048#0(233"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m:9:18: error: Chess.h: No such file or directory/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m:14: warning: cannot find interface declaration for 'Chess'2(4@34"Chess.h: No such file or directory362058048#0#111#0(6@62"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m362057964#9#0#9#0#28"*: No such file or directory0(22@45"Cannot find interface declaration for 'Chess'362058048#111#122#0(6@62"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m362057964#14#0#14#0#0"0(0#0#62"/Users/brustar/Desktop/chesses/ThreeChessGame/Classes/bChess.m8622324512#2143"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/Classes/Chess.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/Chess.o1#
+
+CCompileC build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/main.o /Users/brustar/Desktop/chesses/ThreeChessGame/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355202.391707
+e363355202.616440
+r1
+xCompileC
+xbuild/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/main.o
+x/Users/brustar/Desktop/chesses/ThreeChessGame/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@60"Compile /Users/brustar/Desktop/chesses/ThreeChessGame/main.m363355202#363355202#0(0"0(0#0#52"/Users/brustar/Desktop/chesses/ThreeChessGame/main.m8630733792#2131"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -include /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch -c /Users/brustar/Desktop/chesses/ThreeChessGame/main.m -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib
+s363355195.816225
+e363355199.133954
+r1
+xCompileXIB
+x/Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib363355195#363355199#0(0"0(0#0#60"/Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib8631633728#598"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/MainWindow.nib /Users/brustar/Desktop/chesses/ThreeChessGame/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGameViewController.xib
+s362050138.485284
+e362050138.971489
+r1
+xCompileXIB
+x/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGameViewController.xib
+lSLF07#2@43"CompileXIB ThreeChessGameViewController.xib362050138#362050138#0(0"0(0#0#78"/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGameViewController.xib8616043456#634"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGameViewController.nib /Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGameViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/b_box.png images/b_box.png
+s363355195.885266
+e363355196.001876
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/b_box.png
+ximages/b_box.png
+lSLF07#2@21"Copy images/b_box.png363355195#363355196#0(0"0(0#0#62"/Users/brustar/Desktop/chesses/ThreeChessGame/images/b_box.png8601047328#502"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/b_box.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_B.png images/chess_B.png
+s363355195.817834
+e363355195.935211
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_B.png
+ximages/chess_B.png
+lSLF07#2@23"Copy images/chess_B.png363355195#363355196#0(0"0(0#0#64"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B.png8630799392#504"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_BS.png images/chess_BS.png
+s363355195.844601
+e363355195.885143
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_BS.png
+ximages/chess_BS.png
+lSLF07#2@24"Copy images/chess_BS.png363355195#363355195#0(0"0(0#0#65"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_BS.png8630404800#505"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_BS.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_B_R.png images/chess_B_R.png
+s363355195.817004
+e363355195.948788
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_B_R.png
+ximages/chess_B_R.png
+lSLF07#2@25"Copy images/chess_B_R.png363355195#363355196#0(0"0(0#0#66"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B_R.png8631355680#506"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_B_R.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_R.png images/chess_R.png
+s363355195.848343
+e363355195.958583
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_R.png
+ximages/chess_R.png
+lSLF07#2@23"Copy images/chess_R.png363355195#363355196#0(0"0(0#0#64"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R.png8629561152#504"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_RS.png images/chess_RS.png
+s363355195.850182
+e363355195.889305
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_RS.png
+ximages/chess_RS.png
+lSLF07#2@24"Copy images/chess_RS.png363355195#363355195#0(0"0(0#0#65"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_RS.png8628983584#505"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_RS.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/chess_R_B.png images/chess_R_B.png
+s363355195.846520
+e363355195.949114
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/chess_R_B.png
+ximages/chess_R_B.png
+lSLF07#2@25"Copy images/chess_R_B.png363355195#363355196#0(0"0(0#0#66"/Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R_B.png8629953888#506"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/chess_R_B.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/disk.gif images/disk.gif
+s362051331.399268
+e362051331.412271
+r0
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/disk.gif
+ximages/disk.gif
+opbxcp: disk.gif: No such file or directory
+lSLF07#2@20"Copy images/disk.gif362051331#362051331#0(43"pbxcp: disk.gif: No such file or directory1(4@42"pbxcp: disk.gif: No such file or directory362051331#18446744073709551615#0#0(6@0"362051331#0#0#0#0#0"0(0#0#61"/Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.gif8619340064#501"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.gif /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app1#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/disk.png images/disk.png
+s363355195.855553
+e363355196.715919
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/disk.png
+ximages/disk.png
+lSLF07#2@20"Copy images/disk.png363355195#363355196#0(0"0(0#0#61"/Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.png8602759904#501"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/disk.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/down.wav wav/down.wav
+s363355195.892623
+e363355196.098144
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/down.wav
+xwav/down.wav
+lSLF07#2@17"Copy wav/down.wav363355195#363355196#0(0"0(0#0#58"/Users/brustar/Desktop/chesses/ThreeChessGame/wav/down.wav8603783392#498"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/wav/down.wav /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/eat.wav wav/eat.wav
+s363355195.904867
+e363355196.362755
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/eat.wav
+xwav/eat.wav
+lSLF07#2@16"Copy wav/eat.wav363355195#363355196#0(0"0(0#0#57"/Users/brustar/Desktop/chesses/ThreeChessGame/wav/eat.wav8603722240#497"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/wav/eat.wav /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/r_box.png images/r_box.png
+s363355195.889397
+e363355196.214349
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/r_box.png
+ximages/r_box.png
+lSLF07#2@21"Copy images/r_box.png363355195#363355196#0(0"0(0#0#62"/Users/brustar/Desktop/chesses/ThreeChessGame/images/r_box.png8603945696#502"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/r_box.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/start.png images/start.png
+s363355195.851850
+e363355195.892528
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/start.png
+ximages/start.png
+lSLF07#2@21"Copy images/start.png363355195#363355195#0(0"0(0#0#62"/Users/brustar/Desktop/chesses/ThreeChessGame/images/start.png8612862784#502"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/start.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CCpResource build/Debug-iphonesimulator/ThreeChessGame.app/stop.png images/stop.png
+s363355195.853644
+e363355195.904770
+r1
+xCpResource
+xbuild/Debug-iphonesimulator/ThreeChessGame.app/stop.png
+ximages/stop.png
+lSLF07#2@20"Copy images/stop.png363355195#363355195#0(0"0(0#0#61"/Users/brustar/Desktop/chesses/ThreeChessGame/images/stop.png8604158144#501"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/brustar/Desktop/chesses/ThreeChessGame/images/stop.png /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+
+CGenerateDSYMFile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app.dSYM /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame
+s363355203.184239
+e363355203.239016
+r1
+xGenerateDSYMFile
+x/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app.dSYM
+x/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame
+lSLF07#2@130"GenerateDSYMFile build/Debug-iphonesimulator/ThreeChessGame.app.dSYM build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame363355203#363355203#0(0"0(0#0#107"/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame8631301664#425"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app.dSYM0#
+
+CLd /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame normal i386
+s363355203.063376
+e363355203.184104
+r1
+xLd
+x/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame
+xnormal
+xi386
+lSLF07#2@112"Link /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame363355203#363355203#0(0"0(0#0#0"8633598848#1039"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -filelist /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/Objects-normal/i386/ThreeChessGame.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -framework MediaPlayer -framework AudioToolbox -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/ThreeChessGame0#
+
+CProcessInfoPlistFile /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/Info.plist ThreeChessGame-Info.plist
+s363355195.448983
+e363355195.816135
+r1
+xProcessInfoPlistFile
+x/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/Info.plist
+xThreeChessGame-Info.plist
+lSLF07#2@33"Process ThreeChessGame-Info.plist363355195#363355195#0(0"0(0#0#71"/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame-Info.plist8633596160#521"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ThreeChessGame-Info.plist -genpkginfo /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app/Info.plist0#
+
+CProcessPCH /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch.gch ThreeChessGame_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s363355199.134162
+e363355202.391363
+r1
+xProcessPCH
+x/var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch.gch
+xThreeChessGame_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile ThreeChessGame_Prefix.pch363355199#363355202#0(0"0(0#0#71"/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame_Prefix.pch8614254240#2009"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -c /Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame_Prefix.pch -o /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-bbqzpbpybzxhvedromlohankeqkg/ThreeChessGame_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch.pth ThreeChessGame_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s362746836.371286
+e362746839.372006
+r1
+xProcessPCH
+x/var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch.pth
+xThreeChessGame_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@36"Precompile ThreeChessGame_Prefix.pch362746836#362746839#0(0"0(0#0#71"/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame_Prefix.pch8600534944#2000"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fasm-blocks -mmacosx-version-min=10.6 -gdwarf-2 -fvisibility=hidden -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-generated-files.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-own-target-headers.hmap -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-all-target-headers.hmap -iquote /Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/ThreeChessGame-project-headers.hmap -F/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/include -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources/i386 -I/Users/brustar/Desktop/chesses/ThreeChessGame/build/ThreeChessGame.build/Debug-iphonesimulator/ThreeChessGame.build/DerivedSources -c /Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame_Prefix.pch -o /var/folders/0i/0iR+AkkGGGeXToBYucuYCk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/ThreeChessGame_Prefix-cpfnbgaiwyappffjpdhohfsfuxzn/ThreeChessGame_Prefix.pch.pth0#
+
+CTouch /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app
+s363355203.239106
+e363355203.242643
+r1
+xTouch
+x/Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app
+lSLF07#2@98"Touch /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app363355203#363355203#0(0"0(0#0#0"8629517568#299"    cd /Users/brustar/Desktop/chesses/ThreeChessGame    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/brustar/Desktop/chesses/ThreeChessGame/build/Debug-iphonesimulator/ThreeChessGame.app0#
+

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<SCRIPT LANGUAGE="JavaScript">
+        // 网站的简体链接
+        var jt_url = "http://127.0.0.1";
+        // 网站的繁体链接
+        var ft_url = "http://fjt.51big5.com/gate/big5/10.10.10.25/";
+
+        // 下面的代码不需要改动
+        var nav_lng = "";
+        var cur_url = document.URL;
+        if (navigator.language) nav_lng = navigator.language+"1";
+        if (navigator.systemlanguage) nav_lng = navigator.systemlanguage+"2";
+        if (navigator.browserLanguage) nav_lng = navigator.browserLanguage+"3";
+        if (navigator.userLanguage) nav_lng = navigator.userLanguage+"4";
+        if (window.navigator.language) nav_lng = window.navigator.language+"5";
+		alert(nav_lng+cur_url);
+        if (cur_url.indexOf("gate") < 0) {
+                if (nav_lng.indexOf("zh-cn") >= 0 && cur_url.indexOf(jt_url) < 0) 
+                { 
+                        window.location = jt_url; 
+                } 
+                else if ((nav_lng.indexOf("zh-hk") >= 0 ||
+                          nav_lng.indexOf("zh-tw") >= 0)
+                        && cur_url.indexOf(ft_url) < 0) { 
+                        window.location = ft_url;
+                } 
+        } 
+</script>
+
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body>
+
+</body>
+</html>

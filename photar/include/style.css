@@ -1,0 +1,50 @@
+.normal { letter-spacing: 1; font-size:12px;text-decoration:none;line-height: 20px; color: #000000}
+
+.fontpx12 {font-size:12px;line-height: 150%; color: #000000}
+.fontpx14 {font-size:14px;line-height: 100%}
+.efonts_min{ face="Geneva, Arial, Sans Serif" size=1 style="TEXT-DECORATION: none";}
+.efontpx8 { font-size:8px;font-family: "Verdana";}
+.efontpx12 { font-size:12px;font-family: "Verdana";}
+
+.text1 {  font-size: 12px; background-color: #DEDFDE; border: 1px solid}
+.button {  font-size: 12px; background-color: #DEDFDE; border: 1px solid; color: #666666; text-decoration: none; height: 18px}
+.button1 {  font-size: 12px; background-color: #DEDFDE; border: 1px solid; color: #666666; text-decoration: none}
+.text2 {  font-size: 12px; background-color: #0099CC; height: 18px; width: 25px; color: #FFFFFF}
+.white	{color:#646464}
+a.fontpx12:hover {  font-size: 12px; color: #FF6633; text-decoration: none}
+.cpx12lan {  font-size: 12px; color: #C2CEED; text-decoration: none}
+a.cpx12lan:hover {  font-size: 12px; color: #CCCCCC; text-decoration: underline}
+.cpx12black {  font-size: 12px; color: #666666; text-decoration: none}
+a.cpx12black:hover {  font-size: 12px; color: #666666; text-decoration: underline}
+.input1 {  height: 18px; font-size: 12px;font-size: 12px; background-color: #FFFFFF; border-style: solid; border-width: 1px}
+.submit {  background-color: #FFFFFF; height: 18px; font-size: 12px; color: #000000; border: 1px E7E7E7 dotted}
+.cpx14pxblack {  font-size: 14px; color: #666666; text-decoration: none}
+.text3 { font-size: 12px; background-color: #FFFFFF; border-style: solid; border-width: 1px }
+.cpx14pxblack1 { font-size: 14px; color: #000000; text-decoration: none }
+.unnamed1 {  font-family: "ËÎÌו"; font-size: 12px; color: #FFFFFF; text-decoration: none}
+table {  font-size: 12px; line-height: 18px}
+table {  }
+.cpx12blackbold { font-size: 12px; color: #666666; text-decoration: none ; font-weight: normal}
+BODY {scrollbar-face-color: #87D2DE; 
+scrollbar-shadow-color:#000000; 
+scrollbar-highlight-color: #000000; 
+scrollbar-3dlight-color: #E6E6E6; 
+scrollbar-darkshadow-color: #E6E6E6; 
+scrollbar-track-color: #E6E6E6; 
+scrollbar-arrow-color: #000000;
+.cpx12blue {  font-size: 12px; color: #596ACC}
+.cpx12blue {  font-size: 12px; color: 5A69CE}
+.cn_en12 {  font-size: 12px; color: #666666; text-decoration: none; font-family: "Arial", "ËÎÌו"}
+a.cn_en12:hover {  font-family: "Arial", "ËÎÌו"; font-size: 12px; color: #666666; text-decoration: underline}
+.shadow1 { font-size: 
+12px; color: #ffffff; filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)} 
+.shadow2 { font-size: 12px; color: #054A6A; filter: DropShadow(Color=#ffffff, 
+OffX=1, OffY=1, Positive=1); text-decoration: none} .shadow3 { font-size: 
+12px; color: #ffffff; filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)}
+.shadow2_over {  color: 054a6a; text-decoration: none}
+.unnamed2 {  }
+a.shadow2_over:hover {  color: #000000; text-decoration: none}
+.shadow_on {  font-size: 12px; color: #000000; text-decoration: none}
+.bgcolor {  background-color: #DDE8FF}
+.data {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 13px; color: #666666; text-decoration: none; font-weight: bold}
+a.data:hover {  font-family: "Arial", "Helvetica", "sans-serif"; font-size: 13px; color: #007373; text-decoration: none}

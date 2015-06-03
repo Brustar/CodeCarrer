@@ -1,0 +1,373 @@
+<HTML>
+<HEAD>
+<meta http-equiv="Content-Type" Content="text/html;charset=gb2312">
+<TITLE>选择日期</TITLE>
+<style>
+div	{font-size:9pt}
+td.CalendarDateNormal	{font-size:9pt;background-color:#FFFFFF;cursor:default;text-align:center}
+td.CalendarDateSelected	{font-size:9pt;background-color:#FF6600;cursor:default;text-align:center}
+td.CalendarDateToday	{font-size:9pt;background-color:#AECBEE;cursor:default;text-align:center}
+td.CalendarDateTitle	{font-size:9pt;background-color:#0C89A7;cursor:default;text-align:center}
+span.ChangeDate			{color:blue;cursor:hand;}
+INPUT.buttonface
+	{
+		FONT-SIZE: 9pt
+	}
+
+</style>
+<script language=javascript>
+var today; //object
+var todayMonth;
+var todayYear;
+var todayDay;
+var todayWeekday;
+
+var todayIndex;
+var currentYear;
+var currentMonth;
+var currentDay;
+
+
+//var args = window.dialogArguments;
+
+var MaxDate;
+
+var firstDayOffset; //月第一天在周中的偏移
+
+//var returnValue;
+
+</script>
+</HEAD>
+<BODY>
+<div align=center><span title="上一年" class="ChangeDate" onclick="PreviousYear()">上年</span>&nbsp;<span title="上一月" class="ChangeDate" onclick="PreviousMonth()">上月</span>&nbsp;<span ID="currentDateDisplay" Name="currentDateDisplay"></span>&nbsp;<span title="下一月" class="ChangeDate" onclick="NextMonth()">下月</span>&nbsp;<span title="下一年" class="ChangeDate" onclick="NextYear()">下年</span></div>
+<table border=0 cellspacing=1 cellpadding=3 bgColor="#CCCCCC" width=200 align=center ondblclick="finished();" onClick="clearArguments();">
+	<tr>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">日</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">一</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">二</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">三</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">四</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">五</td>
+		<td bgColor="white" ID= "CalendarDateTitle" Name="CalendarDateTitle"  class="CalendarDateTitle">六</td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(0)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(1)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(2)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(3)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(4)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(5)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(6)"></td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(7)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(8)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(9)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(10)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(11)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(12)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(13)"></td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(14)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(15)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(16)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(17)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(18)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(19)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(20)"></td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(21)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(22)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(23)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(24)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(25)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(26)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(27)"></td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(28)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(29)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(30)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(31)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(32)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(33)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(34)"></td>
+	</tr>
+	<tr>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(35)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(36)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(37)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(38)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(39)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(40)"></td>
+		<td bgColor="white" ID= "CalendarDate" Name="CalendarDate"  class="CalendarDateNormal" onclick="SelectDate(41)"></td>
+	</tr>
+</table>
+<div align=center>
+<input type="button" onclick="finished();" value="选定" class=buttonface>&nbsp;
+<input type="button" onclick="window.close();" value="取消" class=buttonface>
+</div>
+<!-- <script language=vbscript>
+function parseArgs(dt,byRef y,byRef m,byRef d)
+	if isDate(dt) then
+'		y = year(dt)
+'		m = month(dt)
+''		d = day(dt)
+		currentYear = year(dt)
+		currentMonth = month(dt)
+		currentDay = Day(dt)
+		parseArgs = true
+	else
+		parseArgs = false
+	end if
+end function
+</script> -->
+<script language=javascript>
+//update all calendar data
+today = new Date();
+todayDay = today.getDate();
+todayYear = today.getFullYear();
+todayMonth = today.getMonth() + 1;
+todayWeekday = today.getDay();
+
+//如果传递参数为合法的日期，则选择指定当前日期为参数指示日期
+
+//if (!parseArgs(args,currentYear,currentMonth,currentDay)){
+	currentDay = todayDay;
+	currentYear = todayYear;
+	currentMonth = todayMonth;
+//}
+
+updateAllData();
+
+
+
+function updateAllData()
+{
+
+	currentDateDisplay.innerHTML = "<span style='cursor:hand' onclick='ShowYearSelect()'>" + currentYear + "</span>年<span style='cursor:hand' onclick='ShowMonthSelect()'>" + currentMonth + "</span>月";
+	firstDayOffset = getFirstDayOffset(currentYear,currentMonth);
+
+	MaxDate = getMaxDate(currentYear,currentMonth);
+	for (i = 0;i < firstDayOffset;i++)
+	{
+		CalendarDate[i].innerHTML = "&nbsp;"
+	}
+	for (i = firstDayOffset,d = 0;i<firstDayOffset + MaxDate;i++,d++)
+	{
+		CalendarDate[i].innerHTML = "" + (d+1);
+	}
+	for(;i<=36;i++)
+	{
+		CalendarDate[i].innerHTML = "&nbsp;"
+	}
+	if ((currentYear == todayYear) && (currentMonth == todayMonth))
+	{
+		todayIndex = todayDay + firstDayOffset - 1;
+//		SelectDate(todayIndex);
+	}
+	else
+	{
+		setDefaultClass(currentDay + firstDayOffset - 1);
+	}
+	SelectDate(currentDay + firstDayOffset - 1);
+
+}
+
+function setDefaultClass()
+{
+	var i;
+	for (i=0;i<CalendarDate.length;i++)
+	{
+		if ((todayMonth == currentMonth) && (todayYear == currentYear) && (i == todayIndex))
+			CalendarDate[i].className = "CalendarDateToday";
+		else
+			CalendarDate[i].className = "CalendarDateNormal";
+
+	}
+}
+
+function SelectDate(id)
+{
+	if ((id < firstDayOffset) || (id > firstDayOffset + MaxDate - 1))
+		return;
+	setDefaultClass();
+	CalendarDate[id].className = "CalendarDateSelected";
+	currentDay = id - firstDayOffset + 1
+	//alert("" + currentYear + "-" + currentMonth + "-" + (id - firstDayOffset + 1));
+}
+
+function getMaxDate(y,m)
+{
+	//获取该月的最大日期值
+	switch (m) 
+	{
+		case 2: //2月
+			if (y % 100 == 0)
+			{
+				if (y % 400 ==0)
+				{
+					return 29;
+				}
+				else
+				{
+					return 28;
+				}
+			}
+			else
+			{
+				if (y % 4 == 0)
+				{
+					return 29;
+				}
+				else
+				{
+					return 28;
+				}
+			}
+			break;
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			return 31;
+		default:
+			return 30;
+	}
+}
+
+function getFirstDayOffset(y,m)
+{
+	var tempDate = new Date(y,m-1,1);
+	return tempDate.getDay();
+}
+
+function PreviousYear()
+{
+	currentYear--;
+	updateAllData();
+}
+function NextYear()
+{
+	currentYear++;
+	updateAllData();
+}
+
+function PreviousMonth()
+{
+	if (currentMonth == 1)
+	{
+		currentMonth = 12;
+		currentYear--;
+	}
+	else
+	{
+		currentMonth--;
+	}
+	updateAllData();
+}
+
+function NextMonth()
+{
+	if (currentMonth == 12)
+	{
+		currentMonth = 1;
+		currentYear++;
+	}
+	else
+	{
+		currentMonth++;
+	}
+	updateAllData();
+}
+
+function finished()
+{
+	returnValue = "" + currentYear + "-" + getFullDate(currentMonth) + "-" + getFullDate(currentDay);
+	opener.DateValue.value=returnValue;
+	window.close();
+}
+
+function getFullDate(d)
+{
+	if (d < 10)
+		return "0" + d;
+	else
+		return "" + d;
+}
+
+function clearArguments(){
+	if(MonthSelectArea.style.display=="")
+		MonthSelectArea.style.display="none";
+	if(YearSelectArea.style.display=="")
+		YearSelectArea.style.display="none";
+}
+
+</script>
+
+<Div ID="YearSelectArea" Name="YearSelectArea" style="Position:absolute;display:none">
+</Div>
+<Div ID="MonthSelectArea" Name="MonthSelectArea" style="Position:absolute;display:none">
+</Div>
+<script language=javascript>
+var YearHTML = "";
+YearHTML = "<select size=1 Name='YearSelect' ID='YearSelect' onchange='ChangeYear(this.value)'>";
+for (i = 1970;i<2050;i++)
+  YearHTML += "<option value='" + i + "'>" + i + "</option>";
+YearHTML += "</select>";
+YearSelectArea.innerHTML = YearHTML;
+
+var MonthHTML = "";
+MonthHTML = "<select size=1 Name='MonthSelect' ID='MonthSelect' onchange='ChangeMonth(this.value)'>";
+for (i=1;i<=12;i++)
+{
+	if (i<10)
+	{
+		MonthHTML += "<option value='" + i + "'>0" + i + "</option>";
+	}
+	else
+	{
+		MonthHTML += "<option value='" + i + "'>" + i + "</option>";
+	}
+}
+MonthHTML += "</select>";
+MonthSelectArea.innerHTML = MonthHTML;
+
+
+function ChangeYear(NewYear){
+	YearSelectArea.style.display="none";
+	currentYear = parseInt(NewYear);
+	updateAllData();
+}
+
+function ShowYearSelect()
+{
+	YearSelect.value = 	"" + currentYear;
+	YearSelectArea.style.left=window.event.x;
+	YearSelectArea.style.top=window.event.y;
+	YearSelectArea.style.display="";
+}
+
+function ChangeMonth(NewMonth)
+{
+	MonthSelectArea.style.display = "none";
+	currentMonth = parseInt(NewMonth);//如果不用parseInt会出现2月份有30号
+	updateAllData();
+}
+
+function ShowMonthSelect(){
+	MonthSelect.value = "" + currentMonth;
+	MonthSelectArea.style.left=window.event.x;
+	MonthSelectArea.style.top=window.event.y;
+	MonthSelectArea.style.display="";
+}
+
+</script>
+
+</BODY>
+</HTML>

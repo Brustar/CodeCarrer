@@ -1,0 +1,79 @@
+@charset "UTF-8";
+body{
+	text-align:center;
+}
+
+.rim{
+	border:1px dotted red;
+}
+
+img{
+	display:block;
+}
+
+div.chess{
+	position:absolute;
+}
+
+.chess{
+	width:50px;
+	height:50px;	
+	cursor:pointer;
+}
+
+#room{
+	position:absolute;
+	width: 930px; 
+	height:600px;
+	border:1px dotted red;
+}
+
+#ot{
+	float:left;
+}
+
+#st{
+	float:left;
+}
+
+#game{
+	margin:0 auto;
+	width: 650px; 
+}
+
+#disk {
+	position : relative;
+	width: 650px; 
+	height: 650px;
+	background: url('../images/disk.gif') no-repeat scroll center;	
+	clear:right;
+}
+
+.text{
+	font: bold 12px arial;
+	height:20px;
+	float:left;
+	clear:left;
+	margin:10px 0px 0px 0px;
+	_margin:15px 0px 0px 0px;
+}
+
+.icon{
+	float:left;
+	margin:0px 10px;
+}
+
+.help{
+	font: 12px arial;
+	float:right;
+}
+
+#client{
+	font: bold 14px arial;
+	float:right;
+	margin:5px 0px 8px 0px;
+}
+
+.input{
+	width:80px;
+}

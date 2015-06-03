@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://flvplayer/skin/flvPlayer.css" type="text/css"?>
+
+<overlay id="flvplayer-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  		<script src="overlay.js"/>
+
+  <menupopup id="menu_ToolsPopup">
+    <menuitem id="flvplayer-show" label="play embed flv" oncommand="flvplayer.play(event);"/>
+  </menupopup>   
+  
+ <popup id="contentAreaContextMenu">
+ 	<menuitem id="play" label="play embed flv" oncommand="flvplayer.play(event);" insertafter="context-stop"/>
+	<menuitem id="playMedia" label="play this media" oncommand="flvplayer.playMedia(event);" insertbefore="context-stop"/>
+ </popup> 
+ 
+ <toolbarpalette id="BrowserToolbarPalette">
+    <toolbarbutton id="modeButton"
+                   label="browser mode"
+                   tooltiptext="config browser mode."
+                   oncommand="flvplayer.openModeWindow();"
+                   class="toolbarbutton-1 chromeclass-toolbar-additional" />
+  </toolbarpalette>
+
+</overlay>

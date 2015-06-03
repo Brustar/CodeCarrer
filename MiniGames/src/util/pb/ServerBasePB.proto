@@ -1,0 +1,27 @@
+
+//基本信息
+message PBBaseInfo{
+	optional int32 softid = 1;//软件id
+	optional int32 softvs = 2;//软件版本
+	optional string imei = 3;//IMEI
+	optional string phonebrand = 4;//手机品牌  XIAOMI
+	optional string phonemode = 5;//手机型号 MI4
+	optional string phoneversion = 6;//机型版本号 MIUI V5
+	optional string lxt = 7;//乐讯串号
+	optional string ip = 8;
+	optional string network = 9; //网络类型
+	optional string mac = 10;//MAC
+}
+
+//服务器返回消息给客户端
+message PBMessage {
+    optional string outmsg = 1; //输出信息
+    optional int32 errtype = 2; //错误类型
+	optional bool noerror = 3;
+}
+
+message PBPageInfo{
+	optional int32 page = 1;//页码
+	optional int32 pagesize = 2;//每页条数
+	optional int32 total = 3;//总条数
+}

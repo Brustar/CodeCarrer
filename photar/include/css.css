@@ -1,0 +1,7 @@
+.cpx12bai { font-size: 12px; color: #FFFFFF; text-decoration: none} .cpx12black 
+{ font-size: 12px; color: #000000; text-decoration: none} a.cpx12black:hover { 
+font-size: 12px; color: #006699; text-decoration: none} 
+.shadow1 { font-size: 12px; color: #ffffff; filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)} 
+.shadow2 { font-size: 12px; color: #054A6A; filter: DropShadow(Color=#ffffff, OffX=1, OffY=1, Positive=1)} 
+.shadow3 { font-size: 12px; color: #ffffff; filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1)}
+a.cpx12bai:hover {  font-size: 12px; color: #CCCCCC; text-decoration: none}

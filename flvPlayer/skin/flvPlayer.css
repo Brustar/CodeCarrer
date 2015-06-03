@@ -1,0 +1,7 @@
+#modeButton {
+  list-style-image: url("chrome://flvplayer/skin/mode.png");
+}
+
+toolbar[iconsize="small"] #modeButton {
+  list-style-image: url("chrome://flvplayer/skin/mode_small.png");
+}

@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F709CD01596BD8700670CB3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F709CCF1596BD8700670CB3 /* QuartzCore.framework */; };
+		0F709DC61597186900670CB3 /* chess_Box_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F709DC41597186900670CB3 /* chess_Box_B.png */; };
+		0F709DC71597186900670CB3 /* chess_Box_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F709DC51597186900670CB3 /* chess_Box_R.png */; };
+		0FACD7BC159472BE007F5F74 /* UIMakerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FACD7B8159472BE007F5F74 /* UIMakerUtil.m */; };
+		0FACD7C11594739C007F5F74 /* ConstantUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FACD7C01594739C007F5F74 /* ConstantUtil.m */; };
+		0FACD7CF1594754B007F5F74 /* chess_B_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7C61594754B007F5F74 /* chess_B_R.png */; };
+		0FACD7D01594754B007F5F74 /* chess_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7C71594754B007F5F74 /* chess_B.png */; };
+		0FACD7D11594754B007F5F74 /* chess_BS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7C81594754B007F5F74 /* chess_BS.png */; };
+		0FACD7D21594754B007F5F74 /* chess_R_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7C91594754B007F5F74 /* chess_R_B.png */; };
+		0FACD7D31594754B007F5F74 /* chess_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7CA1594754B007F5F74 /* chess_R.png */; };
+		0FACD7D41594754B007F5F74 /* chess_RS.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7CB1594754B007F5F74 /* chess_RS.png */; };
+		0FACD7D61594754B007F5F74 /* start.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7CD1594754B007F5F74 /* start.png */; };
+		0FACD7D71594754B007F5F74 /* stop.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7CE1594754B007F5F74 /* stop.png */; };
+		0FACD7FA15947721007F5F74 /* disk.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FACD7F915947721007F5F74 /* disk.png */; };
+		0FACD82115947A23007F5F74 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FACD82015947A23007F5F74 /* GameView.m */; };
+		0FACD8721594916A007F5F74 /* Chess.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FACD8711594916A007F5F74 /* Chess.m */; };
+		0FCF698715A87825002377D6 /* Box_B.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCF698515A87825002377D6 /* Box_B.png */; };
+		0FCF698815A87825002377D6 /* Box_R.png in Resources */ = {isa = PBXBuildFile; fileRef = 0FCF698615A87825002377D6 /* Box_R.png */; };
+		0FE6AC8C159EE8DB00B61E3D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE6AC8B159EE8DB00B61E3D /* MediaPlayer.framework */; };
+		0FE6AC8E159EE8F800B61E3D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FE6AC8D159EE8F800B61E3D /* AudioToolbox.framework */; };
+		0FE6AC9F159EEB0500B61E3D /* down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6AC9D159EEB0500B61E3D /* down.wav */; };
+		0FE6ACA0159EEB0500B61E3D /* eat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0FE6AC9E159EEB0500B61E3D /* eat.wav */; };
+		1D3623260D0F684500981E51 /* ThreeChessGameAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* ThreeChessGameAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* ThreeChessGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* ThreeChessGameViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F709CCF1596BD8700670CB3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		0F709DC41597186900670CB3 /* chess_Box_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_Box_B.png; path = images/chess_Box_B.png; sourceTree = "<group>"; };
+		0F709DC51597186900670CB3 /* chess_Box_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_Box_R.png; path = images/chess_Box_R.png; sourceTree = "<group>"; };
+		0FACD7B7159472BE007F5F74 /* UIMakerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIMakerUtil.h; sourceTree = "<group>"; };
+		0FACD7B8159472BE007F5F74 /* UIMakerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIMakerUtil.m; sourceTree = "<group>"; };
+		0FACD7BF1594739C007F5F74 /* ConstantUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantUtil.h; sourceTree = "<group>"; };
+		0FACD7C01594739C007F5F74 /* ConstantUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantUtil.m; sourceTree = "<group>"; };
+		0FACD7C61594754B007F5F74 /* chess_B_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_B_R.png; path = images/chess_B_R.png; sourceTree = "<group>"; };
+		0FACD7C71594754B007F5F74 /* chess_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_B.png; path = images/chess_B.png; sourceTree = "<group>"; };
+		0FACD7C81594754B007F5F74 /* chess_BS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_BS.png; path = images/chess_BS.png; sourceTree = "<group>"; };
+		0FACD7C91594754B007F5F74 /* chess_R_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_R_B.png; path = images/chess_R_B.png; sourceTree = "<group>"; };
+		0FACD7CA1594754B007F5F74 /* chess_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_R.png; path = images/chess_R.png; sourceTree = "<group>"; };
+		0FACD7CB1594754B007F5F74 /* chess_RS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = chess_RS.png; path = images/chess_RS.png; sourceTree = "<group>"; };
+		0FACD7CD1594754B007F5F74 /* start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = start.png; path = images/start.png; sourceTree = "<group>"; };
+		0FACD7CE1594754B007F5F74 /* stop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stop.png; path = images/stop.png; sourceTree = "<group>"; };
+		0FACD7F915947721007F5F74 /* disk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = disk.png; path = images/disk.png; sourceTree = "<group>"; };
+		0FACD81F15947A23007F5F74 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		0FACD82015947A23007F5F74 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		0FACD8701594916A007F5F74 /* Chess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chess.h; sourceTree = "<group>"; };
+		0FACD8711594916A007F5F74 /* Chess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chess.m; sourceTree = "<group>"; };
+		0FCF698515A87825002377D6 /* Box_B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Box_B.png; path = images/Box_B.png; sourceTree = "<group>"; };
+		0FCF698615A87825002377D6 /* Box_R.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Box_R.png; path = images/Box_R.png; sourceTree = "<group>"; };
+		0FE6AC8B159EE8DB00B61E3D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		0FE6AC8D159EE8F800B61E3D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0FE6AC9D159EEB0500B61E3D /* down.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = down.wav; sourceTree = "<group>"; };
+		0FE6AC9E159EEB0500B61E3D /* eat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = eat.wav; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* ThreeChessGameAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeChessGameAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* ThreeChessGameAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeChessGameAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* ThreeChessGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThreeChessGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* ThreeChessGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeChessGameViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* ThreeChessGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreeChessGameViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* ThreeChessGame_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreeChessGame_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* ThreeChessGame-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ThreeChessGame-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				0F709CD01596BD8700670CB3 /* QuartzCore.framework in Frameworks */,
+				0FE6AC8C159EE8DB00B61E3D /* MediaPlayer.framework in Frameworks */,
+				0FE6AC8E159EE8F800B61E3D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0FACD7AF159472A8007F5F74 /* util */,
+				1D3623240D0F684500981E51 /* ThreeChessGameAppDelegate.h */,
+				1D3623250D0F684500981E51 /* ThreeChessGameAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* ThreeChessGameViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* ThreeChessGameViewController.m */,
+				0FACD81F15947A23007F5F74 /* GameView.h */,
+				0FACD82015947A23007F5F74 /* GameView.m */,
+				0FACD8701594916A007F5F74 /* Chess.h */,
+				0FACD8711594916A007F5F74 /* Chess.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0FACD7AC1594711D007F5F74 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				0FCF698515A87825002377D6 /* Box_B.png */,
+				0FCF698615A87825002377D6 /* Box_R.png */,
+				0F709DC41597186900670CB3 /* chess_Box_B.png */,
+				0F709DC51597186900670CB3 /* chess_Box_R.png */,
+				0FACD7F915947721007F5F74 /* disk.png */,
+				0FACD7C61594754B007F5F74 /* chess_B_R.png */,
+				0FACD7C71594754B007F5F74 /* chess_B.png */,
+				0FACD7C81594754B007F5F74 /* chess_BS.png */,
+				0FACD7C91594754B007F5F74 /* chess_R_B.png */,
+				0FACD7CA1594754B007F5F74 /* chess_R.png */,
+				0FACD7CB1594754B007F5F74 /* chess_RS.png */,
+				0FACD7CD1594754B007F5F74 /* start.png */,
+				0FACD7CE1594754B007F5F74 /* stop.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		0FACD7AF159472A8007F5F74 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				0FACD7BF1594739C007F5F74 /* ConstantUtil.h */,
+				0FACD7C01594739C007F5F74 /* ConstantUtil.m */,
+				0FACD7B7159472BE007F5F74 /* UIMakerUtil.h */,
+				0FACD7B8159472BE007F5F74 /* UIMakerUtil.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		0FE6AC9C159EEB0500B61E3D /* wav */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6AC9D159EEB0500B61E3D /* down.wav */,
+				0FE6AC9E159EEB0500B61E3D /* eat.wav */,
+			);
+			path = wav;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* ThreeChessGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* ThreeChessGame_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0FE6AC9C159EEB0500B61E3D /* wav */,
+				0FACD7AC1594711D007F5F74 /* images */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* ThreeChessGame-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F709CCF1596BD8700670CB3 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+				0FE6AC8B159EE8DB00B61E3D /* MediaPlayer.framework */,
+				0FE6AC8D159EE8F800B61E3D /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* ThreeChessGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ThreeChessGame" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ThreeChessGame;
+			productName = ThreeChessGame;
+			productReference = 1D6058910D05DD3D006BFB54 /* ThreeChessGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ThreeChessGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* ThreeChessGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				0FACD7CF1594754B007F5F74 /* chess_B_R.png in Resources */,
+				0FACD7D01594754B007F5F74 /* chess_B.png in Resources */,
+				0FACD7D11594754B007F5F74 /* chess_BS.png in Resources */,
+				0FACD7D21594754B007F5F74 /* chess_R_B.png in Resources */,
+				0FACD7D31594754B007F5F74 /* chess_R.png in Resources */,
+				0FACD7D41594754B007F5F74 /* chess_RS.png in Resources */,
+				0FACD7D61594754B007F5F74 /* start.png in Resources */,
+				0FACD7D71594754B007F5F74 /* stop.png in Resources */,
+				0FACD7FA15947721007F5F74 /* disk.png in Resources */,
+				0F709DC61597186900670CB3 /* chess_Box_B.png in Resources */,
+				0F709DC71597186900670CB3 /* chess_Box_R.png in Resources */,
+				0FE6AC9F159EEB0500B61E3D /* down.wav in Resources */,
+				0FE6ACA0159EEB0500B61E3D /* eat.wav in Resources */,
+				0FCF698715A87825002377D6 /* Box_B.png in Resources */,
+				0FCF698815A87825002377D6 /* Box_R.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* ThreeChessGameAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* ThreeChessGameViewController.m in Sources */,
+				0FACD7BC159472BE007F5F74 /* UIMakerUtil.m in Sources */,
+				0FACD7C11594739C007F5F74 /* ConstantUtil.m in Sources */,
+				0FACD82115947A23007F5F74 /* GameView.m in Sources */,
+				0FACD8721594916A007F5F74 /* Chess.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThreeChessGame_Prefix.pch;
+				INFOPLIST_FILE = "ThreeChessGame-Info.plist";
+				PRODUCT_NAME = ThreeChessGame;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ThreeChessGame_Prefix.pch;
+				INFOPLIST_FILE = "ThreeChessGame-Info.plist";
+				PRODUCT_NAME = ThreeChessGame;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "ThreeChessGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "ThreeChessGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

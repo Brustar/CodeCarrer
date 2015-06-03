@@ -1,0 +1,529 @@
+// !$*UTF8*$!
+{
+	0F26452C1595B834000918D1 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* ThreeChessGame-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/brustar/Desktop/chesses/ThreeChessGame/ThreeChessGame-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	0F525E801594C60700D1F8D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F525E811594C60700D1F8D6 /* NSArray.h */;
+		name = "NSArray.h: 112";
+		rLen = 36;
+		rLoc = 4998;
+		rType = 0;
+		vrLen = 1548;
+		vrLoc = 4041;
+	};
+	0F525E811594C60700D1F8D6 /* NSArray.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSArray.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSArray.h;
+		sourceTree = "<absolute>";
+	};
+	0F5C2AFA15A931B900AC1EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F5C2AFB15A931B900AC1EC8 /* NSString.h */;
+		name = "NSString.h: 142";
+		rLen = 59;
+		rLoc = 7975;
+		rType = 0;
+		vrLen = 2681;
+		vrLoc = 6526;
+	};
+	0F5C2AFB15A931B900AC1EC8 /* NSString.h */ = {
+		isa = PBXFileReference;
+		name = NSString.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSString.h;
+		sourceTree = "<absolute>";
+	};
+	0F5C2B1315A9B67A00AC1EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD82015947A23007F5F74 /* GameView.m */;
+		name = "GameView.m: 458";
+		rLen = 0;
+		rLoc = 9306;
+		rType = 0;
+		vrLen = 780;
+		vrLoc = 8584;
+	};
+	0F5C2B1415A9B67A00AC1EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD81F15947A23007F5F74 /* GameView.h */;
+		name = "GameView.h: 20";
+		rLen = 13;
+		rLoc = 299;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 0;
+	};
+	0F5C2B1615A9BA2900AC1EC8 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD81F15947A23007F5F74 /* GameView.h */;
+		name = "GameView.h: 17";
+		rLen = 11;
+		rLoc = 262;
+		rType = 0;
+		vrLen = 531;
+		vrLoc = 0;
+	};
+	0F709C941596B3B900670CB3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F709C951596B3B900670CB3 /* UIButton.h */;
+		name = "UIButton.h: 17";
+		rLen = 56;
+		rLoc = 319;
+		rType = 0;
+		vrLen = 1405;
+		vrLoc = 87;
+	};
+	0F709C951596B3B900670CB3 /* UIButton.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = UIButton.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h;
+		sourceTree = "<absolute>";
+	};
+	0F709D051596C32100670CB3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FACD7CD1594754B007F5F74 /* start.png */;
+	};
+	0F709D061596C32100670CB3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FACD7CE1594754B007F5F74 /* stop.png */;
+	};
+	0F709D071596C32100670CB3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FACD7CB1594754B007F5F74 /* chess_RS.png */;
+	};
+	0F709DC51597186900670CB3 /* chess_Box_R.png */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{15, 51}, {1175, 727}}";
+		};
+	};
+	0F709DCC15971C8F00670CB3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* ThreeChessGameViewController.h */;
+		name = "ThreeChessGameViewController.h: 9";
+		rLen = 0;
+		rLoc = 181;
+		rType = 0;
+		vrLen = 299;
+		vrLoc = 0;
+	};
+	0F7EB26815956F3B00DB01B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD7BF1594739C007F5F74 /* ConstantUtil.h */;
+		name = "ConstantUtil.h: 19";
+		rLen = 0;
+		rLoc = 508;
+		rType = 0;
+		vrLen = 1454;
+		vrLoc = 0;
+	};
+	0F7EB26D15956F3B00DB01B9 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0F7EB26E15956F3B00DB01B9 /* NSValue.h */;
+		name = "NSValue.h: 36";
+		rLen = 30;
+		rLoc = 778;
+		rType = 0;
+		vrLen = 940;
+		vrLoc = 0;
+	};
+	0F7EB26E15956F3B00DB01B9 /* NSValue.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSValue.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSValue.h;
+		sourceTree = "<absolute>";
+	};
+	0F7EB26F15956F3B00DB01B9 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0FACD7C91594754B007F5F74 /* chess_R_B.png */;
+	};
+	0FACD79D159470DF007F5F74 /* ThreeChessGame */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = ThreeChessGame;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	0FACD7A9159470F7007F5F74 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	0FACD7AA159470F7007F5F74 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	0FACD7B7159472BE007F5F74 /* UIMakerUtil.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 988}}";
+			sepNavSelRange = "{3142, 6}";
+			sepNavVisRange = "{37, 1850}";
+		};
+	};
+	0FACD7B8159472BE007F5F74 /* UIMakerUtil.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1342, 5252}}";
+			sepNavSelRange = "{13973, 33}";
+			sepNavVisRange = "{12975, 1290}";
+		};
+	};
+	0FACD7BF1594739C007F5F74 /* ConstantUtil.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 858}}";
+			sepNavSelRange = "{508, 0}";
+			sepNavVisRange = "{0, 1454}";
+		};
+	};
+	0FACD7C01594739C007F5F74 /* ConstantUtil.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1196}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1043}";
+		};
+	};
+	0FACD81F15947A23007F5F74 /* GameView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 569}}";
+			sepNavSelRange = "{262, 11}";
+			sepNavVisRange = "{0, 531}";
+		};
+	};
+	0FACD82015947A23007F5F74 /* GameView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 5993}}";
+			sepNavSelRange = "{9306, 0}";
+			sepNavVisRange = "{8584, 780}";
+			sepNavWindowFrame = "{{15, 51}, {1175, 727}}";
+		};
+	};
+	0FACD83715947DFD007F5F74 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD7C01594739C007F5F74 /* ConstantUtil.m */;
+		name = "ConstantUtil.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1043;
+		vrLoc = 0;
+	};
+	0FACD8701594916A007F5F74 /* Chess.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 611}}";
+			sepNavSelRange = "{169, 0}";
+			sepNavVisRange = "{0, 901}";
+		};
+	};
+	0FACD8711594916A007F5F74 /* Chess.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {926, 3536}}";
+			sepNavSelRange = "{443, 0}";
+			sepNavVisRange = "{444, 945}";
+		};
+	};
+	0FACD876159492B5007F5F74 /* NSIndexPath.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = NSIndexPath.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSIndexPath.h;
+		sourceTree = "<absolute>";
+	};
+	0FACD88F159494EA007F5F74 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD890159494EA007F5F74 /* UITableView.h */;
+		name = "UITableView.h: 413";
+		rLen = 50;
+		rLoc = 22371;
+		rType = 0;
+		vrLen = 2365;
+		vrLoc = 20108;
+	};
+	0FACD890159494EA007F5F74 /* UITableView.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = UITableView.h;
+		path = /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h;
+		sourceTree = "<absolute>";
+	};
+	0FACD8961594956F007F5F74 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD876159492B5007F5F74 /* NSIndexPath.h */;
+		name = "NSIndexPath.h: 26";
+		rLen = 52;
+		rLoc = 756;
+		rType = 0;
+		vrLen = 1096;
+		vrLoc = 0;
+	};
+	0FC14C7C15A91A83004D8813 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* ThreeChessGameViewController.m */;
+		name = "ThreeChessGameViewController.m: 35";
+		rLen = 0;
+		rLoc = 966;
+		rType = 0;
+		vrLen = 1067;
+		vrLoc = 60;
+	};
+	0FC14C9415A91D71004D8813 /* GameView.m:177 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 0FACD82015947A23007F5F74 /* GameView.m */;
+		functionName = "-hasEmptySiblingChess:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 177;
+		location = ThreeChessGame;
+		modificationTime = 363404658.045113;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0FCF698915A8783B002377D6 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0F709DC41597186900670CB3 /* chess_Box_B.png */;
+	};
+	0FCF698A15A8783B002377D6 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 0F709DC51597186900670CB3 /* chess_Box_R.png */;
+	};
+	0FCF699E15A88404002377D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD8711594916A007F5F74 /* Chess.m */;
+		name = "Chess.m: 21";
+		rLen = 0;
+		rLoc = 443;
+		rType = 0;
+		vrLen = 945;
+		vrLoc = 444;
+	};
+	0FCF699F15A88404002377D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD7B8159472BE007F5F74 /* UIMakerUtil.m */;
+		name = "UIMakerUtil.m: 391";
+		rLen = 33;
+		rLoc = 13973;
+		rType = 0;
+		vrLen = 1290;
+		vrLoc = 12975;
+	};
+	0FCF69D115A892BC002377D6 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD8701594916A007F5F74 /* Chess.h */;
+		name = "Chess.h: 10";
+		rLen = 0;
+		rLoc = 169;
+		rType = 0;
+		vrLen = 901;
+		vrLoc = 0;
+	};
+	0FCF69F415A89A34002377D6 /* GameView.m:96 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 0FACD82015947A23007F5F74 /* GameView.m */;
+		functionName = "-endGame";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 96;
+		location = ThreeChessGame;
+		modificationTime = 363404460.360655;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0FCF69F915A89A69002377D6 /* GameView.m:104 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 0FACD82015947A23007F5F74 /* GameView.m */;
+		functionName = "-endGame";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 104;
+		location = ThreeChessGame;
+		modificationTime = 363404460.360829;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	0FE6ACED159F132A00B61E3D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0FACD7B7159472BE007F5F74 /* UIMakerUtil.h */;
+		name = "UIMakerUtil.h: 72";
+		rLen = 6;
+		rLoc = 3142;
+		rType = 0;
+		vrLen = 1850;
+		vrLoc = 37;
+	};
+	1D6058900D05DD3D006BFB54 /* ThreeChessGame */ = {
+		activeExec = 0;
+		executables = (
+			0FACD79D159470DF007F5F74 /* ThreeChessGame */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* ThreeChessGameViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 569}}";
+			sepNavSelRange = "{181, 0}";
+			sepNavVisRange = "{0, 299}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* ThreeChessGameViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 637}}";
+			sepNavSelRange = "{966, 0}";
+			sepNavVisRange = "{60, 1067}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 0FACD79D159470DF007F5F74 /* ThreeChessGame */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* ThreeChessGame */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* ThreeChessGame */,
+		);
+		breakpoints = (
+			0FCF69F415A89A34002377D6 /* GameView.m:96 */,
+			0FCF69F915A89A69002377D6 /* GameView.m:104 */,
+			0FC14C9415A91D71004D8813 /* GameView.m:177 */,
+		);
+		codeSenseManager = 0FACD7AA159470F7007F5F74 /* Code sense */;
+		executables = (
+			0FACD79D159470DF007F5F74 /* ThreeChessGame */,
+		);
+		expressions = (
+		);
+		perUserDictionary = {
+			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					20,
+					198,
+					20,
+					99,
+					99,
+					29,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBreakpointsDataSource_ActionID,
+					PBXBreakpointsDataSource_TypeID,
+					PBXBreakpointsDataSource_BreakpointID,
+					PBXBreakpointsDataSource_UseID,
+					PBXBreakpointsDataSource_LocationID,
+					PBXBreakpointsDataSource_ConditionID,
+					PBXBreakpointsDataSource_IgnoreCountID,
+					PBXBreakpointsDataSource_ContinueID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					748,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 363409504;
+			PBXWorkspaceStateSaveDate = 363409504;
+		};
+		perUserProjectItems = {
+			0F26452C1595B834000918D1 /* PlistBookmark */ = 0F26452C1595B834000918D1 /* PlistBookmark */;
+			0F525E801594C60700D1F8D6 /* PBXTextBookmark */ = 0F525E801594C60700D1F8D6 /* PBXTextBookmark */;
+			0F5C2AFA15A931B900AC1EC8 /* PBXTextBookmark */ = 0F5C2AFA15A931B900AC1EC8 /* PBXTextBookmark */;
+			0F5C2B1315A9B67A00AC1EC8 /* PBXTextBookmark */ = 0F5C2B1315A9B67A00AC1EC8 /* PBXTextBookmark */;
+			0F5C2B1415A9B67A00AC1EC8 /* PBXTextBookmark */ = 0F5C2B1415A9B67A00AC1EC8 /* PBXTextBookmark */;
+			0F5C2B1615A9BA2900AC1EC8 /* PBXTextBookmark */ = 0F5C2B1615A9BA2900AC1EC8 /* PBXTextBookmark */;
+			0F709C941596B3B900670CB3 /* PBXTextBookmark */ = 0F709C941596B3B900670CB3 /* PBXTextBookmark */;
+			0F709D051596C32100670CB3 /* PBXBookmark */ = 0F709D051596C32100670CB3 /* PBXBookmark */;
+			0F709D061596C32100670CB3 /* PBXBookmark */ = 0F709D061596C32100670CB3 /* PBXBookmark */;
+			0F709D071596C32100670CB3 /* PBXBookmark */ = 0F709D071596C32100670CB3 /* PBXBookmark */;
+			0F709DCC15971C8F00670CB3 /* PBXTextBookmark */ = 0F709DCC15971C8F00670CB3 /* PBXTextBookmark */;
+			0F7EB26815956F3B00DB01B9 /* PBXTextBookmark */ = 0F7EB26815956F3B00DB01B9 /* PBXTextBookmark */;
+			0F7EB26D15956F3B00DB01B9 /* PBXTextBookmark */ = 0F7EB26D15956F3B00DB01B9 /* PBXTextBookmark */;
+			0F7EB26F15956F3B00DB01B9 /* PBXBookmark */ = 0F7EB26F15956F3B00DB01B9 /* PBXBookmark */;
+			0FACD83715947DFD007F5F74 /* PBXTextBookmark */ = 0FACD83715947DFD007F5F74 /* PBXTextBookmark */;
+			0FACD88F159494EA007F5F74 /* PBXTextBookmark */ = 0FACD88F159494EA007F5F74 /* PBXTextBookmark */;
+			0FACD8961594956F007F5F74 /* PBXTextBookmark */ = 0FACD8961594956F007F5F74 /* PBXTextBookmark */;
+			0FC14C7C15A91A83004D8813 /* PBXTextBookmark */ = 0FC14C7C15A91A83004D8813 /* PBXTextBookmark */;
+			0FCF698915A8783B002377D6 /* PBXBookmark */ = 0FCF698915A8783B002377D6 /* PBXBookmark */;
+			0FCF698A15A8783B002377D6 /* PBXBookmark */ = 0FCF698A15A8783B002377D6 /* PBXBookmark */;
+			0FCF699E15A88404002377D6 /* PBXTextBookmark */ = 0FCF699E15A88404002377D6 /* PBXTextBookmark */;
+			0FCF699F15A88404002377D6 /* PBXTextBookmark */ = 0FCF699F15A88404002377D6 /* PBXTextBookmark */;
+			0FCF69D115A892BC002377D6 /* PBXTextBookmark */ = 0FCF69D115A892BC002377D6 /* PBXTextBookmark */;
+			0FE6ACED159F132A00B61E3D /* PBXTextBookmark */ = 0FE6ACED159F132A00B61E3D /* PBXTextBookmark */;
+		};
+		sourceControlManager = 0FACD7A9159470F7007F5F74 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}

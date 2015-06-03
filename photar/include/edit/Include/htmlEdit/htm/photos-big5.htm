@@ -1,0 +1,766 @@
+
+
+<HTML>
+<!--
+My Photos Component
+Copyright 2000 Microsoft Corporation
+Author: Scott Isaacs
+-->
+<HEAD>
+<META HTTP-EQUIV="Content-Type" Content="text/html; Charset=big5">
+<STYLE>
+    BODY {border: none;margin:0pt;padding:2pt;background: #EEEEEE}
+    .tabpage {display: none;overflow: auto;}
+    .tablabel  {font: bold 9pt PMingLiU;cursor: hand; text-align: center; color: white}
+    .tablabel A {text-decoration: none; color: white}
+    .tablabel IMG {vertical-align: middle}
+    #page {vertical-align: top; width: 150px;background: white}
+    .tabpage A {text-decoration: none; color: black;cursor:  hand;}
+    .tabpage A.comm {font-weight: bold}
+    .tabpage A:hover {text-decoration: underline; color: black}
+    #clipAlbums {background: #FFFFE5; margin: 5pt}
+    #contentWindow {width: 100%}
+    .imageList, .albumList {padding-left: 10pt;display: none; font-size: 75%}
+    P {margin:0px;padding:0px;font: 9pt PMingLiU}
+    #page P {margin-left: 5pt; text-indent: -5pt}
+    .EmptyAlbum {color: gray}
+    .imgHolder {width: 68;font:9pt PMingLiU;text-align: center;margin: 5pt}
+    .imgHolder TD {font: 9pt PMingLiU;text-align: center}
+    .tabpage IMG {border: 1px white solid;cursor:hand}
+    .tabpage IMG.selected {border: 1px red solid}
+    #label {color: white; margin-left: 5px; font: bold 9pt PMingLiU}
+    #waitcontent {font: bold 9pt PMingLiU;text-align: center}
+    #tblocalpage P {font-weight: bold}
+    #tbonlinepage P {font-weight: bold}
+    #paneWrapper {overflow:auto;height: 100%}
+</STYLE>
+<STYLE ID=IE5ONLY DISABLED>
+    #page .tabpage {position: absolute;overflow: hidden}
+    #pageWrapper {overflow:auto;WIDTH:150;height: 100%}
+</STYLE>
+<STYLE ID=IE4ONLY DISABLED>
+    #page .tabpage {height: 100%}
+</STYLE>
+<LINK REL="stylesheet" HREF="/central/helium/en-us/uni/themes/default/CommandBar.css"><!--bugbug: Need to implement new command buttons-->
+<!--CommandBar.css"-->
+<STYLE>
+HR.CommandSeparator
+{
+    COLOR: #2060ab
+}
+A.Command, 
+A.DisabledCommand
+{
+    COLOR: #2060ab;
+    FONT: bold 9pt PMingLiU;
+    TEXT-DECORATION: none;
+    CURSOR: hand;
+}
+A.Command:hover
+{
+    COLOR: #003366;
+    TEXT-DECORATION: underline;
+}
+.CommandBar A.Command:hover
+{
+    TEXT-DECORATION: underline;
+}
+.DisabledCommandBar A.Command,
+A.DisabledCommand
+{
+    COLOR: #bbbbbb;
+    TEXT-DECORATION: none;
+    CURSOR: default;
+}
+.HelpArea
+{
+  MARGIN-TOP:  8;
+}
+.HelpIcon
+{
+  BACKGROUND: #c2dcf4;
+  BORDER: #2060ab 1px solid;
+  WIDTH: 72;
+  HEIGHT: 72;
+}
+
+.HelpText
+{
+    COLOR:          #2060ab;
+    FONT:           9pt PMingLiU;
+    BACKGROUND:     #dfedf9;
+    BORDER:         #2060ab 1px solid;
+    BORDER-LEFT:    none;
+    PADDING:        4pt;
+}
+
+.Submenu {
+    BACKGROUND:     #c2dcf4;
+    BORDER:         #2060ab 1px solid;
+    BORDER-RIGHT:   none;
+    WIDTH:          150;
+    PADDING:        4;
+    LINE-HEIGHT:    50px;
+}
+.Submenu A.Command {
+    FONT-WEIGHT:    normal;
+    COLOR:          black;
+}
+.DisabledCommandBar .Submenu A.Command 
+{
+    COLOR: #808080;
+}
+.Command
+{
+    COLOR: #2060ab;
+    FONT-FAMILY: PMingLiU
+    FONT-SIZE: 9pt;
+    FONT-STYLE: normal;
+    FONT-VARIANT: normal;
+    FONT-WEIGHT: bold
+}
+
+.Button
+{
+    CURSOR: hand;
+}
+.ButtonLabel
+{
+    BACKGROUND-COLOR: transparent;
+    BORDER: 0;
+    COLOR: black;
+    CURSOR: hand;
+    FONT: bold 9pt PMingLiU;
+    TEXT-DECORATION: none;
+}
+
+TABLE.DropDownCtrlBar
+{
+    BACKGROUND: #ffffff
+}
+TABLE.DropDownCtrlBar A.Command
+{
+    FONT: bold 12pt PMingLiU;
+}
+TABLE.DropDownCtrlBar A.Command:hover
+{
+    FONT: bold 12pt PMingLiU;
+    TEXT-DECORATION: underline;
+}
+
+TABLE.DropDown
+{
+    BACKGROUND: #ffffff;
+    BORDER-TOP: #dddddd 2px solid;
+    BORDER-LEFT: #dddddd 2px solid;
+    BORDER-BOTTOM: #003366 2px solid; 
+    BORDER-RIGHT: #003366 2px solid;
+}
+TABLE.DropDown A.Command
+{
+    FONT: bold 9pt PMingLiU;
+}
+TABLE.DropDown A.Command:hover
+{
+    FONT: bold 9pt PMingLiU;
+    TEXT-DECORATION: none;
+}
+TABLE.DropDown TD.HilightedEntry
+{ 
+    BACKGROUND-COLOR: #dfedf9; 
+}
+TABLE.DropDown TD.NormalEntry
+{ 
+    BACKGROUND-COLOR: #ffffff; 
+}
+</STYLE>
+
+<SCRIPT>
+    window.returnValue=""
+
+    function IsUplevel() {
+        return true
+    }
+
+    if (navigator.appVersion.indexOf("MSIE 4")==-1) 
+        document.styleSheets.IE5ONLY.disabled = false
+    else    {
+        document.styleSheets.IE4ONLY.disabled = false
+        self.focus()
+    }
+
+    var LocLang = ACS_Url = ""
+    
+    window.status = "MSN My Photos"
+</SCRIPT>
+
+    <script>
+    
+var L_RTEUCSELECTCAT_TEXT = '選擇類別：';
+var L_RTEUCSELECTPIC_TEXT = '選擇要加入到網頁中的圖片：';
+
+var L_RTEUCADDPICTURE_TEXT = '新增圖片';
+var L_RTEUCCANCEL_TEXT = '取消';
+var L_RTEUCANIMAL_TEXT = '動物';
+var L_RTEUCBUILDING_TEXT = '建築物';
+var L_RTEUCCOMPUTER_TEXT = '電腦';
+var L_RTEUCCONSTRUCTION_TEXT = '營造';
+var L_RTEUCCOOKING_TEXT = '烹飪';
+var L_RTEUCENTERTAINMENT_TEXT = '娛樂';
+var L_RTEUCFAMILY_TEXT = '家庭';
+var L_RTEUCFLOWERS_TEXT = '花卉';
+var L_RTEUCFOOD_TEXT = '食物';
+var L_RTEUCGAME_TEXT = '遊戲';
+var L_RTEUCHOLIDAY_TEXT = '假日';
+var L_RTEUCHOME_TEXT = '家庭';
+var L_RTEUCKIDS_TEXT = '兒童';
+var L_RTEUCOUTDOOR_TEXT = '戶外';
+var L_RTEUCPEOPLE_TEXT = '人物';
+var L_RTEUCPET_TEXT = '寵物';
+var L_RTEUCRECREATION_TEXT = '休閒娛樂';
+var L_RTEUCSCIENCE_TEXT = '科學';
+var L_RTEUCSPORT_TEXT = '運動';
+var L_RTEUCTOOLS_TEXT = '工具';
+var L_RTEUCTRANSPORTATION_TEXT = '交通工具';
+var L_RTEUCTRAVEL_TEXT = '旅行';
+var L_RTEUCWIDGETS_TEXT = '裝飾物';
+var L_RTEUCWORKPLACE_TEXT = '工作場所';
+var L_RTEUCSELECTPICT_TEXT = '選擇要加入到網頁中的圖片：';
+
+var clipList = new Array;
+clipList[0] = new Array(49, L_RTEUCANIMAL_TEXT, 'Animal');
+clipList[1] = new Array(20, L_RTEUCBUILDING_TEXT, 'Building');
+clipList[2] = new Array(5, L_RTEUCCOMPUTER_TEXT, 'Computer');
+clipList[3] = new Array(7, L_RTEUCCONSTRUCTION_TEXT,'Construction');
+clipList[4] = new Array(26, L_RTEUCCOOKING_TEXT, 'Cooking');
+clipList[5] = new Array(30, L_RTEUCENTERTAINMENT_TEXT,'Entertainment');
+clipList[6] = new Array(24, L_RTEUCFAMILY_TEXT, 'Family');
+clipList[7] = new Array(19, L_RTEUCFLOWERS_TEXT, 'Flowers');
+clipList[8] = new Array(33, L_RTEUCFOOD_TEXT, 'Food');
+clipList[9] = new Array(8, L_RTEUCGAME_TEXT, 'Game');
+clipList[10] = new Array(18,L_RTEUCHOLIDAY_TEXT, 'Holiday');
+clipList[11] = new Array(44,L_RTEUCHOME_TEXT, 'Home');
+clipList[12] = new Array(17,L_RTEUCKIDS_TEXT, 'Kids');
+clipList[13] = new Array(33,L_RTEUCOUTDOOR_TEXT, 'Outdoor');
+clipList[14] = new Array(33,L_RTEUCPEOPLE_TEXT, 'People');
+clipList[15] = new Array(8, L_RTEUCPET_TEXT, 'Pet');
+clipList[16] = new Array(31,L_RTEUCRECREATION_TEXT, 'Recreation');
+clipList[17] = new Array(7, L_RTEUCSCIENCE_TEXT, 'Science');
+clipList[18] = new Array(39,L_RTEUCSPORT_TEXT, 'Sport');
+clipList[19] = new Array(19,L_RTEUCTOOLS_TEXT, 'Tools');
+clipList[20] = new Array(25,L_RTEUCTRANSPORTATION_TEXT,'Transportation');
+clipList[21] = new Array(23,L_RTEUCTRAVEL_TEXT, 'Travel');
+clipList[22] = new Array(26,L_RTEUCWIDGETS_TEXT, 'Widgets');
+clipList[23] = new Array(20,L_RTEUCWORKPLACE_TEXT, 'Workplace');
+
+function _RenderAlbum(intID) {
+    var sHTML = ""
+    for (i = 1; i <= clipList[intID][0]; i++)
+    {
+        var url = 'images/clipart/' + clipList[intID][2] + '/' + i + '.gif';;
+
+        sHTML += '<IMG ONCLICK=\"selectImg(this)\" border=0 SRC="' + url + '" width=50 height=50> ';
+    }
+    tbclipart_content.innerHTML = sHTML
+}
+
+function _SelectClip(intID) {
+    _RenderAlbum(intID)
+}
+
+function _RenderClipList() {
+    var sHTML = ""
+    for (var i=0;i<clipList.length;i++)
+        sHTML +="<P><A HREF=\"#\" ONCLICK=\"_SelectClip(" + i + ")\">" + clipList[i][1] + "</A><BR>"
+    return sHTML
+}
+
+
+
+    
+//
+// Upload Control: uc_photos.js  (more above)
+//
+
+var L_RTEUCMYCOMPUTER_TEXT = '我的電腦';
+var L_RTEUCMYONLINE_TEXT = '我的線上相片';
+var L_RTEUCCLIPART_TEXT = '美工圖案藝廊';
+var L_RTEUCLOADING_TEXT = '下載...';
+var L_RTEUCUPLOAD_TEXT = '上載新的相片';
+var L_RTEUCNOIMAGES_TEXT = '這個相簿中沒有相片。';
+var L_RTEUCPASSPORTEUCRR_TEXT = '.NET Passport 錯誤。您不是以 .NET Passport 帳號登入。';
+var L_RTEUCAUTHERR_TEXT = '驗證錯誤。您沒有足夠的權限。';
+var L_RTEUCSAVE_TEXT = '新增相片';
+var L_RTEUCCANCEL_TEXT = '取消';
+var L_RTEUCPHOTOSELECT_TEXT = '選擇相片之後，按一下 [新增相片]。';
+var L_RTEUCNOFILE_TEXT = '請先選擇一個檔案上載。';
+var L_RTEUCERROR_TEXT = '錯誤';
+var L_RTEUCUNKNOWNERR_TEXT = '有錯誤發生，請稍侯再試。';
+var L_RTEUCWAIT_TEXT = '請稍侯... 我們正在新增您的相片。';
+var L_RTEUCQUOTAERR_TEXT = '您的空間已滿，請先刪除一些相片後再繼續。';
+var L_RTEUCTITLE_TEXT = 'MSN 相簿';
+
+var bLoaded = false
+
+function _CState() {
+
+    this.sitePath = ""
+    this.defaultTab = "tbonline"
+    this.lastTab = null
+    this.communityList = null
+    this.albumList = new Object()
+    this.imageList = new Object()
+
+    this.clipPath = "images/clipart/";
+ 
+    // only grab upto [xxx;xxx]&
+
+    this.CS_URL = "/isapi/fetch.dll?"
+}
+
+var g_state = new _CState()
+
+
+function setSitePath(szPath) {
+    g_state.sitePath = szPath
+}
+
+function setClipartPath(szPath) {
+    g_state.clipPath = szPath
+}
+
+function setHeight(iHeight) {
+    document.all.contentWindow.style.pixelHeight = iHeight - document.all.tabBar.offsetHeight - 40
+}
+
+function setDefaultTab(szTab) {
+    if (document.all[szTab])
+        g_state.defaultTab = szTab
+}
+
+function setBGColor(szColor) {
+    document.body.bgColor = g_state.bgColor = szColor
+}
+
+function setAdultCookie()
+{
+    if (document.cookie.indexOf("AdultWarn") < 0)
+    {
+        window.onunload = resetAdultCookie;  
+        document.cookie = 'AdultWarn=1;path=/;';
+    }   
+}
+
+function resetAdultCookie()
+{
+    document.cookie = 'AdultWarn=1;path=/; expires=Fri, 1 Sep 2000 23:42:14 UTC;';
+}
+
+function closePickerWindow(sReturnValue, sUploadFileName, nMsgAttachId)
+{
+    var returnArray = new Array(sReturnValue, sUploadFileName, nMsgAttachId);
+
+    if (g_state.modal) 
+    {
+        returnValue= returnArray;
+        window.close()
+    }   
+    else if (parent.IMAGESelect)
+    {
+        parent.IMAGESelect(self,returnArray)   
+    }
+    else
+    {
+        if ((window.opener) && (!window.opener.closed)) 
+        {
+            window.opener.IMAGESelect(self,returnArray)
+            window.opener.focus()
+            window.close()
+        }
+    }
+}
+
+function BuildImageString(arList) {
+    var sHTML=""
+    for (var i=0;i<arList.length;i++)
+        sHTML += "<IMG SRC=\"" + arList[i][0] + "\"> ";
+    closePickerWindow(sHTML, "", -1);
+}
+
+function BuildMsgAttachImageString(sImageUrl, sUploadFileName, nMsgAttachId) {
+    var sHTML = "";
+    
+    if (sImageUrl != "")
+        sHTML += "<IMG SRC=\"" + sImageUrl + "\"> ";
+        
+    closePickerWindow(sHTML, sUploadFileName, nMsgAttachId);
+}
+
+function saveImages() {
+    if (!bLoaded) return
+    switch (g_state.lastTab.id) {
+        case "tbclipart":
+            var sHTML = ""
+            var images = tbclipart_content.all.tags("IMG")
+            for (var i=0;i<images.length;i++)
+                if (images[i].className=="selected")
+                    sHTML += "<IMG SRC=\"" + images[i].src + "\"> "
+            closePickerWindow(sHTML, "", -1);
+            break;
+        case "tbonline":
+            var sSource=""
+            var images = tbonline_content.all.tags("IMG")
+            var sComm = "";
+            var iAlbum;
+            for (var i=0;i<images.length;i++)
+                if (images[i].className=="selected") {
+                    iAlbum = images[i].ALBUMID;
+                    sComm = images[i].COMMID;
+                    sSource += images[i].id + ","
+                }
+            if (sSource.length > 0)
+                makeRequest("GetPubURL",sComm,iAlbum,sSource)
+            else
+                window.close();
+            break;
+        case "tblocal":
+            if (uploadForm.document.forms.fUpload.PhotoFile.value!="") {
+                uploadForm.bAdded = true
+                uploadForm.document.forms.fUpload.ID_Community.value = '';
+                uploadForm.document.forms.fUpload.submit()
+                document.all.uploadForm.style.display = "none"
+                DisplayWait()
+            }
+            else
+                alert(L_RTEUCNOFILE_TEXT)           
+            break;
+    }
+}
+
+function cancelImages() {
+    closePickerWindow("", "", -1);
+}
+
+function _delayTab(elTab) {
+    setTimeout("_setTab(null,'" + elTab.id + "')",0)
+}
+
+
+function _setTab(elTab,elID) {
+    if (elID) elTab=document.all[elID]
+    if ((!g_state.lastTab) || ((g_state.lastTab) && (g_state.lastTab!=elTab))) {
+        if (elTab.CHILD=="tab1") 
+            document.all.pageWrapper.style.display = ""     
+        else
+            document.all.pageWrapper.style.display = "none"
+        if (g_state.lastTab) {
+            document.all[g_state.lastTab.id+"_content"].style.display =document.all[g_state.lastTab.id+"page"].style.display = ""
+            g_state.lastTab.style.background = "URL(images/border/MyPhoto/tab_mid.gif)"
+            if (g_state.lastTab.CHILD=="tab3") {
+                document.all[g_state.lastTab.CHILD].style.background =  "URL(images/border/MyPhoto/tab_right.gif)" 
+                                if (document.all.tab2)
+                    document.all.tab2.style.background =  "URL(images/border/MyPhoto/tab_bt.gif)" 
+            }
+            else 
+                document.all[g_state.lastTab.CHILD].style.background =  "URL(images/richedit/border/MyPhoto/tab_bt.gif)"
+            if (elTab.CHILD=="tab3") {
+                                if (document.all.tab2)
+                {
+                    document.all.tab1.style.background = "URL(images/border/MyPhoto/tab_bt.gif)"
+                    document.all.tab2.style.background = "URL(images/border/MyPhoto/tab_bt_sel_left.gif)"
+                }
+                else
+                {
+                    document.all.tab1.style.background = "URL(images/border/MyPhoto/tab_bt_sel_left.gif)"
+                }
+            }
+
+        }
+        document.all[elTab.id+"_content"].style.display = document.all[elTab.id+"page"].style.display = "block"
+        elTab.style.background = "URL(images/border/MyPhoto/tab_mid_sel.gif)"
+        document.all[elTab.CHILD].style.background = elTab.CHILD=="tab3" ? "URL(images/border/MyPhoto/tab_right_sel.gif)" : "URL(images/border/MyPhoto/tab_bt_sel_right.gif)"
+        if (elTab.CHILD=="tab2") document.all.tab1.style.background="URL(images/border/MyPhoto/tab_bt_sel_left.gif)"
+    }
+    g_state.lastTab = elTab
+}
+
+function DisplayWait() {
+    if (g_state.lastTab)
+        document.all[g_state.lastTab.id+"_content"].style.display = ""
+    document.all["waitcontent"].style.display = "block" 
+}
+
+function _Init() {
+    window.returnValue=""
+    setHeight(document.body.offsetHeight)   
+    document.all[g_state.defaultTab].click()
+    g_state.modal = window.dialogArguments
+    if (parent.IMAGELoaded)
+        parent.IMAGELoaded(self)
+    bLoaded = true
+    document.body.style.visibility = ""
+}
+
+
+function makeRequest(actionCode,CommunityID,AlbumID,sPhotoList) {
+    switch (actionCode) {
+        case "Groups":
+            sAction = "action=MyPhotos_Communities"
+            break;  
+        case "Albums":
+            sAction = "action=MyPhotos_Albums&ID_Community=" + CommunityID
+            break;
+        case "Photos":
+            sAction = "action=MyPhotos_Photos&ID_Community=" + CommunityID + "&albumid=" + AlbumID
+            break;
+        case "GetPubURL":
+            sAction = "action=MyPhotos_GetPubURL&ID_Community=" + CommunityID + "&albumid=" + AlbumID + "&Source=" + sPhotoList
+            DisplayWait()
+            break;          
+    }
+    httpRequest.location.replace(g_state.CS_URL + sAction)
+}
+
+
+function _SelectCommunity(idx) {
+    if (g_state.albumList[idx]==null)
+        makeRequest("Albums",idx)
+    document.all["albumList" + idx].style.display = document.all["albumList" + idx].style.display=="" ? "block" : ""
+}
+
+function replace(str, replace_what, replace_with)
+{
+  var ndx = str.indexOf(replace_what);
+  var delta = replace_with.length - replace_what.length;
+
+  while (ndx >= 0)
+  {
+    str = str.substring(0,ndx) + replace_with + str.substring(ndx + replace_what.length);
+    ndx = str.indexOf(replace_what, ndx + delta + 1);
+  }
+  return str;
+}
+
+
+
+function BuildCommunityList(arList) {
+    var sHTML = "",sCleanID
+    for (var i=0;i<arList.length;i++) {
+        if (arList[i].sId!=g_state.userID)
+        sHTML +='<P><A CLASS=comm href="#" ONCLICK=\"_SelectCommunity(\'' + arList[i].sId + '\')\">' + arList[i].sName  + '</A> <DIV CLASS=albumList ID="albumList' + arList[i].sId  + '">' + L_RTEUCLOADING_TEXT + '</DIV>'
+    }
+
+    tbonlinepage.innerHTML = sHTML
+}
+
+function _SelectImage(el) {
+    el.className = (el.className=="") ? "selected" : ""
+}
+
+function _SelectAlbum(commID,albumID) {
+    if (g_state.imageList[commID + "/" + albumID]==null)
+        makeRequest("Photos",commID,albumID)
+    tbonline_content.style.display = "block"
+    tbonline_content.innerHTML = document.all["imageList" + commID + "/" + albumID].innerHTML
+}
+
+function BuildAlbumList(commID,arList) {
+    var sHTML = sEmptyHTML = ""
+    for (var i=0;i<arList.length;i++)
+        if (arList[i].nPhotos==0)
+            sEmptyHTML +='<P CLASS=EmptyAlbum>' + arList[i].sName + ' (' + arList[i].nPhotos + ')'
+        else {
+            sHTML +='<P><A href="#" ONCLICK=\"_SelectAlbum(\'' + commID + '\',\'' + arList[i].iId + '\')\">' + arList[i].sName + ' (' + arList[i].nPhotos + ')</A> '
+            if (!((commID==g_state.userID) && (arList[i].iId==1)))
+                sHTML += '<DIV CLASS=imageList ID="imageList' + commID + "/" + arList[i].iId + '">' + L_RTEUCLOADING_TEXT + '</DIV>'
+        }
+    document.all["albumList" + commID].innerHTML = sHTML + sEmptyHTML
+}
+
+function BuildImageList(commID,albumID, arList) {
+    var sHTML = ""
+    if (arList.length==0) 
+        sHTML = L_RTEUCNOIMAGES_TEXT        
+    else
+        for (var i=0;i<arList.length;i++)
+            sHTML +='<SPAN CLASS=imgHolder style=\"vertical-align: top;\"><TABLE ALIGN=center><TR><TH><IMG TITLE=\"' + arList[i].sName + '\" ALIGN=center VALIGN=top ONCLICK=\"selectImg(this)\" ID=\"' + arList[i].iId + '\" ALBUMID=\"' + albumID + '\" COMMID=\"' + commID + '\" _SRC=\"' + arList[i].sUrl + '\" SRC=\"' + arList[i].sUrl + '"></TH></TR><TR><TD>' + arList[i].sCaption + '</TD></TR></TABLE></SPAN>'
+    tbonline_content.innerHTML = document.all["imageList" + commID + "/" + albumID].innerHTML = sHTML   
+}
+
+
+function selectImg(el) {
+    el.className = (el.className=="selected" ? "" : "selected")
+}
+
+function onHTTPResponse(oResponse) {
+    switch (oResponse.successCode) {
+        case 0:
+            switch (oResponse.action) {
+                case "Groups":
+                    if (!g_state.communityList) {
+                        g_state.communityList = new Array
+                        g_state.userID = oResponse.value.userId
+                        BuildCommunityList(oResponse.value.groups)
+                        setAdultCookie();
+                    }
+                    break
+                case "Albums":
+                    var commID = oResponse.value.commID
+                    if (!g_state.albumList[commID]) {
+                        g_state.albumList[commID] = true
+                        BuildAlbumList(oResponse.value.commID,oResponse.value.albums)
+                    }
+                    break;
+                case "Photos":
+                    var commID = oResponse.value.commID
+                    var albumID = oResponse.value.albumID 
+                    if (!g_state.imageList[commID + "/" + albumID]) {
+                        g_state.imageList[commID + "/" + albumID] = oResponse.value.bPublicComm
+                        BuildImageList(commID,albumID,oResponse.value.photos)
+                    }
+                    break;
+                case "GetPubURL":
+                    BuildImageString(oResponse.value)
+                    break;
+                case "New":
+                    BuildMsgAttachImageString(oResponse.value[0], oResponse.value[1], oResponse.value[2]);
+                    break;
+            }
+            break;
+        case 1:
+            alert(L_RTEUCPASSPORTEUCRR_TEXT)
+            tbonlinepage.innerHTML = L_RTEUCERROR_TEXT
+            break;
+        case 2:
+            alert(L_RTEUCUNKNOWNERR_TEXT)
+            cancelImages()
+            break;
+        case 3:
+            alert(L_RTEUCAUTHERR_TEXT)
+            cancelImages()
+            break;
+        case 4:
+            alert(L_RTEUCQUOTAERR_TEXT)
+            cancelImages()
+            break;
+    }
+}
+
+function renderRTEButton(sText, sAction)
+{
+    var imgPath = 'images/cmd/';
+
+    return '<TABLE border=0 cellpadding=0 cellspacing=0>' +
+             '<TR>' + 
+                '<TD nowrap><IMG border=0 src="' + imgPath + 'sbl_clr.gif"></TD>' +
+                '<TD nowrap background="' + imgPath + 'sbm_clr.gif">' +
+                  '<A class=Command onClick="javascript:'+ sAction + '">' + sText + '</A>' +
+                '</TD>' + 
+                '<TD nowrap><IMG border=0 src="' + imgPath + 'sbr_clr.gif"></TD>' +
+             '</TR>' +
+           '</TABLE>';
+}
+
+window.onload = _Init
+
+
+    </script>
+
+<SCRIPT>
+    document.write("<TITLE>MSN 相簿</TITLE>")
+</SCRIPT>
+</HEAD>
+<BODY class=ThmBgStandard oncontextmenu="return false" ONSELECTSTART="return false" ONDRAGSTART="return false" STYLE="visibility:hidden">
+<TABLE CELLSPACING=0 CELLPADDING=0 ID=tabBar WIDTH="100%">
+  <tr height=29>
+    <td width="4" background="images/border/MyPhoto/tab_left_sel.gif"><IMG height=1 src="images/c.gif" width=4></td>
+    <td CLASS=tablabel ID=tbonline ONCLICK="_delayTab(this)" _setTab(this)" background="images/border/MyPhoto/tab_mid_sel.gif" NOWRAP CHILD="tab1">
+    <NOBR><A href="#"><IMG border=0 height=16 src="images/border/MyPhoto/icon_myphotos.gif" width=16  valign="middle">
+    <SCRIPT>
+    document.write(L_RTEUCMYONLINE_TEXT)
+    </SCRIPT></A></NOBR>
+    </td>
+    <td  width="9" ID=tab1 background="images/border/MyPhoto/tab_right_sel.gif"><IMG height=1 src="images/c.gif" width=9></td>
+    <td CLASS=tablabel ID=tbclipart ONCLICK="_delayTab(this)" background="images/border/MyPhoto/tab_mid.gif" NOWRAP CHILD="tab3">
+    <NOBR><A href="#">
+    <IMG border=0 height=16 src="images/border/MyPhoto/icon_clipart.gif" width=16>    
+    <SCRIPT>
+    document.write(L_RTEUCCLIPART_TEXT)
+    </SCRIPT></A></NOBR>
+    </td>
+    <td width="9" ID=tab3 background="images/border/MyPhoto/tab_right.gif"><IMG height=1 src="images/c.gif" width=9></td>
+    <td width="100%" ALIGN=right valign=center background="images/border/MyPhoto/tab_stretch_blank.gif">&nbsp;</td>
+  </tr>
+</TABLE>
+
+<TABLE BGCOLOR=#6699cc HEIGHT=4 WIDTH="100%" CELLSPACING=0 CELLPADDING=0>
+<TR><TD></TD></TR>
+</TABLE>
+
+
+<TABLE BGCOLOR=#6699cc WIDTH="100%" CELLSPACING=0 CELLPADDING=0>
+<TR><TD><P ID=label>
+<SCRIPT>
+document.write(L_RTEUCPHOTOSELECT_TEXT)
+</SCRIPT></P>
+</TD><TD ALIGN=right STYLE="PADDING-RIGHT: 6px">
+    <TABLE HEIGHT=24 CELLSPACING=0 CELLPADDING=0><TR>
+          <TD>
+    <SCRIPT>
+    document.write(renderRTEButton(L_RTEUCSAVE_TEXT, "saveImages()") + "</TD><TD>&nbsp;&nbsp;</TD><TD>")
+    document.write(renderRTEButton(L_RTEUCCANCEL_TEXT, "cancelImages()"))
+    </SCRIPT>
+    </TD></TR></TABLE>
+</TD>
+</TR></TABLE>
+<TABLE CELLSPACING=0 CELLPADDING=0 ID=contentWindow><TR>
+<TD WIDTH=5 BGCOLOR=#6699cc><IMG src="images/c.gif" width=5></TD>
+<TD NOWRAP ID=page>
+    <DIV CLASS=tabpage ID=tblocalpage>
+        <SCRIPT>
+            document.write("<P>" + L_RTEUCUPLOAD_TEXT)
+        </SCRIPT>
+    </DIV>
+    <DIV ID="pageWrapper">
+    <DIV CLASS=tabpage ID=tbonlinepage>
+        <SCRIPT>
+            document.write("<P>" + L_RTEUCLOADING_TEXT)
+        </SCRIPT>
+    </DIV>
+    </DIV>
+    <DIV CLASS=tabpage ID=tbclipartpage>
+        <SCRIPT>
+            document.write(_RenderClipList())
+        </SCRIPT>
+    </DIV>
+    </TD>
+    <TD WIDTH=5 BGCOLOR=#6699cc><IMG src="images/c.gif" width=5></TD>
+    
+    <TD WIDTH="100%" ID=clipAlbums VALIGN=top>
+        <DIV CLASS=tabpage ID=tblocal_content>
+        <SCRIPT>
+            document.write("<IFRAME SRC=\"_uc_upload.msnw\" WIDTH=\"100%\" HEIGHT=\"100%\" STYLE=\"BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-RIGHT: medium none; BORDER-TOP: medium none\" ID=uploadForm></IFRAME>")
+        </SCRIPT>
+        </DIV>
+        <DIV ID=paneWrapper>
+            <DIV CLASS=tabpage ID=tbonline_content>
+            </DIV>
+            <DIV CLASS=tabpage ID=tbclipart_content>
+            </DIV>
+        </DIV>
+        <DIV CLASS=tabpage ID=waitcontent>
+        <SCRIPT>
+            document.write(L_RTEUCWAIT_TEXT)
+        </SCRIPT>
+        </DIV>
+    </TD>
+    <TD WIDTH=5 BGCOLOR=#6699cc><IMG src="images/c.gif" width=5></TD>
+</TR></TABLE>
+<TABLE BGCOLOR=#6699cc HEIGHT=4 WIDTH="100%" CELLSPACING=0 CELLPADDING=0>
+<TR><TD></TD></TR>
+</TABLE>
+<SCRIPT>
+    document.write("<IFRAME SRC=\"" + g_state.CS_URL + "action=MyPhotos_Communities\" STYLE=\"display: none\" NAME=httpRequest></IFRAME>")
+</SCRIPT>
+</BODY></HTML>
+

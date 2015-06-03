@@ -1,0 +1,694 @@
+import "ServerBasePB.proto";
+
+//http://lxgame.lexun.com/interface/lobbyupvs.aspx
+//根据upvs与本地upvs判断，大于的话需要更新游戏大厅数据
+message PBGameLobbyConfig {
+    optional int32 upvs = 1;// 更新标识
+    optional string lastupdate = 2;// 最后更新时间
+}
+
+message PBGameLobby {
+    optional int32 gameid = 1;// 游戏id
+    optional string gamename = 2;// 游戏名称
+    optional string gamelogo = 3;// 游戏LOGO
+    optional string description = 4;// 游戏说明
+    optional string filepath = 5;// 游戏资源文件
+    optional int32 version = 6;// 游戏版本
+    optional int32 istop = 7;// 是否固顶
+    optional int32 isopen = 8;// 是否开启
+    optional string addtime = 9;// 时间
+	optional string filemd5 = 10;//游戏资源文件MD5
+	optional string logomd5 = 11;//LOGO MD5
+}
+
+
+//游戏大厅
+//http://lxgame.lexun.com/interface/gamelist.aspx
+message PBGameLobbyList {
+    repeated PBGameLobby list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+//检查游戏是否更新(服务返回对象：PBGameLobby)
+//http://lxgame.lexun.com/interface/upgrade.aspx
+message PBGameUpdateParams{
+    optional int32 gameid = 1;//游戏id
+}
+
+//用户游戏记录
+message PBUserGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional int32 gameid = 3;// 游戏id
+    optional int32 times = 4;// 游戏次数
+    optional int32 days = 5;// 连续玩游戏的天数
+    optional string dateflag = 6;// 时间
+}
+
+//用户获得的礼包
+message PBUserGiftbag {
+    optional int32 ubid = 1;// 礼包id
+    optional int32 userid = 2;// 用户id
+    optional int32 gameid = 3;// 游戏id
+    optional int32 acrid = 4;// 活动id
+    optional int32 isget = 5;// 是否领取
+    optional int32 relationid = 6;// 奖项id或礼包id
+    optional int32 awardtype = 7;// 奖励类型
+    optional string remark = 8;// 备注
+    optional string writetime = 9;// 时间
+    optional string dateflag = 10;
+}
+
+//用户礼包列表
+//http://lxgame.lexun.com/interface/giftbaglist.aspx
+//参数：PBUserGiftbag_Params
+message PBUserGiftbagList {
+    repeated PBUserGiftbag list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBUserGiftbag_Params{
+	optional int32 isget = 1; //0:未领取 1:已领取
+    optional PBPageInfo pageinfo = 2;
+}
+
+//用户礼包详情记录
+message PBUserGiftbagLog {
+    optional int32 rid = 1;// rid
+    optional int32 ubid = 2;// 礼包id
+    optional int32 giftid = 3;// 奖品id
+    optional string giftname = 4;// 奖品名称
+    optional string writetime = 5;// 时间
+}
+message PBUserGiftbagLogList {
+    repeated PBUserGiftbagLog list = 1; //列表
+}
+
+//领取礼包
+//http://lxgame.lexun.com/interface/getgiftbag.aspx
+//返回：PBMessage
+message PBGetUserGiftBag_Params{
+	optional int32 ubid = 1;//获得的礼包id
+}
+
+//////////////Start-------疯狂找字////////////////
+message PBCrazywordsLevels {
+    optional int32 levelid = 1;// 关卡
+    optional int32 sqrtnum = 2;// 每行字数
+}
+
+//http://lxgame.lexun.com/interface/CrazyWords/levellist.aspx
+message PBCrazywordsLevelsList {
+    repeated PBCrazywordsLevels list = 1; //列表
+}
+
+message PBCrazywordsWords {
+    optional string word1 = 1;// 词一
+    optional string word2 = 2;// 词二
+}
+
+//http://lxgame.lexun.com/interface/CrazyWords/textlist.aspx
+message PBCrazywordsWordsList {
+    repeated PBCrazywordsWords list = 1; //列表
+}
+
+message PBCrazywordsGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 levels = 6;// 过关数
+    optional int32 costtime = 7;// 耗时
+    optional string dateflag = 8;// 时间标识
+    optional string addtime = 9;// 时间
+    optional string ip = 10;// IP
+    optional string imei = 11;// IMEI
+    optional string mac = 12;// MAC
+}
+//游戏记录
+message PBCrazywordsGamelogList {
+    repeated PBCrazywordsGamelog list = 1; //列表
+	optional PBPageInfo pageinfo = 2;
+}
+
+message PBCrazywordsBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 levels = 4;// 过关数
+    optional int32 costtime = 5;// 耗时
+    optional int32 gamerid = 6;// 游戏id
+	optional int32 rank = 7;//排名
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+
+//今日成绩排行
+//http://lxgame.lexun.com/interface/CrazyWords/rank.aspx
+//传参数：PBPageInfo
+message PBCrazywordsBestscoreList {
+    repeated PBCrazywordsBestscore list = 1; //列表
+	optional PBPageInfo pageinfo = 2;
+	optional PBCrazywordsBestscore bestscore = 3; //用户当天最好成绩
+}
+
+
+//提交游戏记录到数据库所需参数
+//http://lxgame.lexun.com/interface/CrazyWords/updategamelog.aspx
+//返回：PBCrazywordsBestscore_Return
+message PBCrazywordsGamelog_Update_Params{
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+	optional int32 levels = 3;// 过关数
+    optional int32 costtime = 4;// 耗时
+}
+
+message PBCrazywordsBestscore_Return{
+    optional PBCrazywordsBestscore bestscore = 1;//返回当日最好成绩
+	optional PBMessage msginfo = 2;//返回消息
+}
+
+/////////////End-----疯狂找字////////////////////
+
+
+
+//////////////Start-------疯狂迷宫////////////////
+message PBMazeBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 levels = 4;// 过关数
+    optional int32 stepnum = 5;// 步数
+    optional int32 gamerid = 6;// 游戏记录id
+	optional int32 rank = 7;//排名
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+
+//每日排行
+//http://lxgame.lexun.com/interface/maze/rank.aspx
+//参数：PBPageInfo
+message PBMazeBestscoreList {
+    repeated PBMazeBestscore list = 1; //列表
+	optional PBPageInfo pageinfo = 2;
+	optional PBMazeBestscore bestscore = 3;//用户当日最好成绩
+}
+
+//提交游戏记录到数据库所需参数
+//http://lxgame.lexun.com/interface/maze/updategamelog.aspx
+message PBMazeGamelog_Update_Params{
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+	optional int32 levels = 3;// 过关数
+    optional int32 stepnum = 4;// 步数
+}
+
+message PBMazeGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 levels = 6;// 过关数
+    optional int32 stepnum = 7;// 步数
+    optional string dateflag = 8;// 时间标识
+    optional string addtime = 9;// 时间
+    optional string ip = 10;// IP
+    optional string imei = 11;// IMEI
+    optional string mac = 12;// MAC
+}
+
+//游戏记录
+message PBMazeGamelogList {
+    repeated PBMazeGamelog list = 1; //列表
+	optional PBPageInfo pageinfo = 2;
+}
+//////////////End-------疯狂迷宫////////////////
+
+
+
+//////////////Start-------神经猫////////////////
+message PBCatBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 stepnum = 4;// 步数
+    optional int32 costtime = 5;// 耗时
+    optional int32 gamerid = 6;// 游戏记录id
+	optional int32 rank = 7;//排名
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+
+//每日排行
+//http://lxgame.lexun.com/interface/cat/rank.aspx
+//参数：PBPageInfo
+message PBCatBestscoreList {
+    repeated PBCatBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBCatBestscore bestscore = 3;//用户当天最好成绩
+}
+
+//提交游戏记录到数据库所需参数
+//http://lxgame.lexun.com/interface/cat/updategamelog.aspx
+message PBCatGamelog_Update_Params{
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 stepnum = 3;// 步数
+	optional int32 costtime = 4;// 耗时
+	optional int32 iscatch = 5;// 是否围住神经猫
+}
+
+message PBCatGamelog_Update_Return{
+    optional PBCatBestscore bestscore = 1;//返回当日最好成绩
+	optional PBMessage msginfo = 2;//返回消息
+}
+
+message PBCatGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 stepnum = 6;// 步数
+    optional int32 costtime = 7;// 耗时
+	optional int32 iscatch = 8;// 是否围住神经猫
+    optional string dateflag = 9;// 时间标识
+    optional string addtime = 10;// 时间
+    optional string ip = 11;// IP
+    optional string imei = 12;// IMEI
+    optional string mac = 13;// MAC
+}
+
+message PBCatGamelogList {
+    repeated PBCatGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//////////////End-------神经猫////////////////
+
+
+//////////////Start-------五子棋////////////////
+message PBGobangGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 stepnum = 6;// 步数
+    optional int32 costtime = 7;// 耗时
+	optional int32 iswin = 8;// 是否胜利
+    optional string dateflag = 9;// 时间标识
+    optional string addtime = 10;// 时间
+    optional string ip = 11;// IP
+    optional string imei = 12;// IMEI
+    optional string mac = 13;// MAC
+}
+
+//更新游戏数据
+//http://lxgame.lexun.com/interface/gobang/updategamelog.aspx
+message PBGobangGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 stepnum = 3;// 步数
+    optional int32 costtime = 4;// 耗时
+	optional int32 iswin = 5;// 是否胜利
+}
+
+//游戏记录
+message PBGobangGamelogList {
+    repeated PBGobangGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBGobangBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 stepnum = 4;// 步数
+    optional int32 costtime = 5;// 耗时
+    optional int32 gamerid = 6;// 游戏记录id
+	optional int32 rank = 7;
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+
+//每日排行
+//http://lxgame.lexun.com/interface/gobang/rank.aspx
+//参数：PBPageInfo
+message PBGobangBestscoreList {
+    repeated PBGobangBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBGobangBestscore bestscore = 3; //用户当日最好成绩
+}
+//////////////End-------五子棋////////////////
+
+
+//////////////Start-------一笔画////////////////
+//更新游戏数据
+//http://lxgame.lexun.com/interface/onepath/updategamelog.aspx
+message PBOnepathGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 levels = 3;// 过关数
+    optional int32 costtime = 4;// 耗时
+}
+
+message PBOnepathGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 levels = 6;// 过关数
+    optional int32 costtime = 7;// 耗时
+    optional string dateflag = 8;// 时间标识
+    optional string addtime = 9;// 时间
+    optional string ip = 10;// IP
+    optional string imei = 11;// IMEI
+    optional string mac = 12;// MAC
+}
+
+//游戏记录
+message PBOnepathGamelogList {
+    repeated PBOnepathGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBOnepathBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 levels = 4;// 过关数
+    optional int32 costtime = 5;// 耗时
+    optional int32 gamerid = 6;// 游戏id
+	optional int32 rank = 7;
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+
+//每日排行
+//http://lxgame.lexun.com/interface/onepath/rank.aspx
+//参数：PBPageInfo
+message PBOnepathBestscoreList {
+    repeated PBOnepathBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBOnepathBestscore bestscore = 3; //用户当天最好成绩
+}
+//////////////End-------一笔画////////////////
+
+
+//////////////Start-------飞得更高////////////////
+//更新游戏数据
+//http://lxgame.lexun.com/interface/flyjump/updategamelog.aspx
+message PBFlyjumpGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 height = 3;// 高度
+    optional int32 costtime = 4;// 耗时
+}
+
+message PBFlyjumpGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 height = 6;// 高度
+    optional int32 costtime = 7;// 耗时
+    optional string dateflag = 8;// 时间标识
+    optional string addtime = 9;// 时间
+    optional string ip = 10;// IP
+    optional string imei = 11;// IMEI
+    optional string mac = 12;// MAC
+}
+message PBFlyjumpGamelogList {
+    repeated PBFlyjumpGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBFlyjumpBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 height = 4;// 高度
+    optional int32 costtime = 5;// 耗时
+    optional int32 gamerid = 6;// 游戏记录id
+	optional int32 rank = 7;// 排名
+    optional string dateflag = 8;// 时间标识
+	optional string headimg = 9;// 头像
+}
+message PBFlyjumpBestscoreList {
+    repeated PBFlyjumpBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBFlyjumpBestscore bestscore = 3; //用户当天最好成绩
+}
+
+//////////////End-------飞得更高////////////////
+
+
+//////////////Start-------气球砰砰砰////////////////
+//http://lxgame.lexun.com/interface/balloon/updategamelog.aspx
+//参数：PBBalloonGamelog_Update_Params
+message PBBalloonGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 score = 3;// 分数
+    optional int32 maxchain = 4;// 最大链接数
+    optional int32 balloons = 5;// 爆破气球数
+}
+
+message PBBalloonGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 score = 6;// 分数
+    optional int32 maxchain = 7;// 最大链接数
+    optional int32 balloons = 8;// 爆破气球数
+    optional string dateflag = 9;// 时间标识
+    optional string addtime = 10;// 时间
+    optional string ip = 11;// IP
+    optional string imei = 12;// IMEI
+    optional string mac = 13;// MAC
+}
+
+message PBBalloonGamelogList {
+    repeated PBBalloonGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+//每日得分排行
+message PBBalloonBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 score = 4;// 分数
+    optional int32 maxchain = 5;// 最大链接数
+    optional int32 balloons = 6;// 爆破气球数
+    optional int32 gamerid = 7;// 游戏记录id
+	optional int32 rank = 8;// 排名
+    optional string dateflag = 9;// 时间标识
+	optional string headimg = 10;// 头像
+}
+
+//http://lxgame.lexun.com/interface/balloon/rank.aspx
+//参数：PBPageInfo
+message PBBalloonBestscoreList {
+    repeated PBBalloonBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBBalloonBestscore bestscore = 3; //用户当天最好成绩
+}
+
+message PBBalloonRankDay_List_Params {
+    optional int32 orderflag = 1;//1:得分排行，2：爆破气球数排行 3：链接数排行
+	optional PBPageInfo pageinfo = 2;
+}
+
+message PBBalloonRankDay {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+	optional string nick = 3;// 昵称
+    optional int32 score = 4;// 分数
+    optional int32 maxchain = 5;// 最大链接数
+    optional int32 balloons = 6;// 爆破气球数
+    optional string dateflag = 7;// 时间标识
+}
+
+//每日得分，链接数，气球数排行
+//http://lxgame.lexun.com/interface/balloon/rankbyday.aspx
+//参数：PBBalloonRankDay_List_Params
+message PBBalloonRankDayList {
+    repeated PBBalloonRankDay list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//////////////End-------气球砰砰砰////////////////
+
+
+
+//////////////Start-------超级魔法墙////////////////
+
+message PBMagicwallBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string headimg = 4;// 头像
+    optional int32 stepnum = 5;// 步数
+    optional int32 costtime = 6;// 耗时
+    optional int32 gamerid = 7;// 游戏记录id
+    optional int32 rank = 8;// 排名
+    optional string dateflag = 9;// 时间标识
+}
+
+//排行榜
+//http://lxgame.lexun.com/interface/magicwall/rank.aspx
+message PBMagicwallBestscoreList {
+    repeated PBMagicwallBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBMagicwallBestscore bestscore = 3; //用户当天最好成绩
+}
+
+//http://lxgame.lexun.com/interface/magicwall/updategamelog.aspx
+//返回：PBMessage
+message PBMagicwallGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 stepnum = 3;// 步数
+    optional int32 costtime = 4;// 耗时
+}
+message PBMagicwallGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 stepnum = 6;// 步数
+    optional int32 costtime = 7;// 耗时
+    optional string dateflag = 8;// 时间标识
+    optional string addtime = 9;// 时间
+    optional string ip = 10;// IP
+    optional string imei = 11;// IMEI
+    optional string mac = 12;// MAC
+}
+message PBMagicwallGamelogList {
+    repeated PBMagicwallGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+//////////////End-------超级魔法墙////////////////
+
+
+//////////////Start-------华容道方块////////////////
+//http://lxgame.lexun.com/interface/blocked/updategamelog.aspx
+//返回：PBMessage
+message PBBlockedGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 levels = 3;// 关卡数
+    optional int32 starnum = 4;// 星星总数
+    optional int32 stepnum = 5;// 步数
+    optional int32 costtime = 6;// 耗时
+}
+
+message PBBlockedGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 levels = 6;// 关卡数
+    optional int32 starnum = 7;// 星星总数
+    optional int32 stepnum = 8;// 步数
+    optional int32 costtime = 9;// 耗时
+    optional string dateflag = 10;// 时间标识
+    optional string addtime = 11;// 时间
+    optional string ip = 12;// IP
+    optional string imei = 13;// IMEI
+    optional string mac = 14;// MAC
+}
+
+message PBBlockedGamelogList {
+    repeated PBBlockedGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBBlockedBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string headimg = 4;// 头像
+    optional int32 levels = 5;// 关卡数
+    optional int32 starnum = 6;// 星星总数
+    optional int32 stepnum = 7;// 步数
+    optional int32 costtime = 8;// 耗时
+    optional int32 gamerid = 9;// 游戏记录id
+    optional int32 rank = 10;// 排名
+    optional string dateflag = 11;// 时间标识
+}
+
+//排行榜
+//http://lxgame.lexun.com/interface/blocked/rank.aspx
+message PBBlockedBestscoreList {
+    repeated PBBlockedBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBBlockedBestscore bestscore = 3; //用户当天最好成绩
+}
+//////////////End-------华容道方块////////////////
+
+
+
+//////////////Start-------公主与勇士////////////////
+//提交游戏记录
+//http://lxgame.lexun.com/interface/warrior/updategamelog.aspx
+message PBWarriorGamelog_Update_Params {
+    optional string starttime = 1;// 开始时间
+    optional string endtime = 2;// 结束时间
+    optional int32 levels = 3;// 关卡数
+    optional int32 starnum = 4;// 星星总数
+    optional int32 stepnum = 5;// 步数
+    optional int32 costtime = 6;// 耗时
+}
+
+message PBWarriorGamelog {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string starttime = 4;// 开始时间
+    optional string endtime = 5;// 结束时间
+    optional int32 levels = 6;// 关卡数
+    optional int32 starnum = 7;// 星星总数
+    optional int32 stepnum = 8;// 步数
+    optional int32 costtime = 9;// 耗时
+    optional string dateflag = 10;// 时间标识
+    optional string addtime = 11;// 时间
+    optional string ip = 12;// IP
+    optional string imei = 13;// IMEI
+    optional string mac = 14;// MAC
+}
+message PBWarriorGamelogList {
+    repeated PBWarriorGamelog list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+}
+
+message PBWarriorBestscore {
+    optional int32 rid = 1;// rid
+    optional int32 userid = 2;// 用户id
+    optional string nick = 3;// 昵称
+    optional string headimg = 4;// 头像
+    optional int32 levels = 5;// 关卡数
+    optional int32 starnum = 6;// 星星总数
+    optional int32 stepnum = 7;// 步数
+    optional int32 costtime = 8;// 耗时
+    optional int32 gamerid = 9;// 游戏记录id
+    optional int32 rank = 10;// 排名
+    optional string dateflag = 11;// 时间标识
+}
+
+//排行榜
+//http://lxgame.lexun.com/interface/warrior/rank.aspx
+message PBWarriorBestscoreList {
+    repeated PBWarriorBestscore list = 1; //列表
+    optional PBPageInfo pageinfo = 2;
+	optional PBWarriorBestscore bestscore = 3; //用户当天最好成绩
+}
+//////////////End-------公主与勇士////////////////

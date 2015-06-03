@@ -1,0 +1,17 @@
+UserData = {}
+UserData.userid = nil            --用户id
+UserData.lxt = nil				 --串号
+UserData.nick = nil				 --用户昵称
+UserData.facesmall = nil		 --小头像
+UserData.facemiddle = nil        --中头像 
+UserData.facebig = nil           --大头像
+UserData.viprank = nil			 --vip等级
+UserData.vipimage = nil          --vip等级图标地址
+UserData.lxlevel = nil           --乐级
+UserData.stone = nil 			 --乐币
+UserData.signature = nil		 --签名
+UserData.lxage = nil			 --乐龄
+UserData.phone = nil			 --手机号码
+UserData.initpwd = nil			 --标示是第一次修改密码
+UserData.isbind = nil			 --是否绑定手机
+UserData.sex = nil				 --性别 0:女，1:男	

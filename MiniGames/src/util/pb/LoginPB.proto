@@ -1,0 +1,117 @@
+import "ServerBasePB.proto";
+
+//自动注册客户端需要提交的参数
+message PBAutoRegisterParams{
+	optional string randkey = 1;//客户端生成随机码
+	optional string sign = 2;//MD5签名
+}
+
+//自动注册或登录后返回给客户端的信息
+message PBUserInfo{
+	optional int32 userid = 1;//用户id
+	optional string lxt = 2;//串号
+	optional string nick = 3;//用户昵称
+	optional string facesmall = 4;//小头像
+	optional string facemiddle = 5;//中头像
+	optional string facebig = 6;//大头像
+	optional int32 viprank = 7; //VIP等级
+	optional string vipimage = 8;//VIP等级图标地址
+	optional int32 lxlevel = 9; //乐级
+	optional int64 stone = 10; //乐币
+	optional string signature = 11;//签名
+	optional int32 lxage = 12;//乐龄，单位(天)
+	optional string phone = 13;//手机号码
+	optional int32 initpwd = 14;//1：标识是第一次修改密码
+	optional int32 isbind = 15;//是否绑定手机
+	optional int32 sex = 16;//性别0:女，1:男
+}
+
+message PBUserList{
+	repeated PBUserInfo userlist = 1;//用户集合
+	optional PBMessage msginfo = 2;//返回消息
+}
+
+//登录参数
+//http://lxgame.lexun.com/login/login.aspx
+message PBLoginParams{
+	optional string account = 1;//登录帐号(乐讯iD，邮箱，手机号码)
+	optional string password = 2;//登录密码
+}
+
+//绑定手机参数
+//http://lxgame.lexun.com/login/bindphone.aspx
+message PBBindingParams{
+	optional string mobilenum = 1;//手机号码
+	optional string code = 2;//验证码
+	optional int32 optype = 3;//1:提交手机号接收验证码 2:验证验证码，提交数据
+}
+
+//修改密码
+//http://lxgame.lexun.com/login/modifypwd.aspx
+message PBModifyPasswordParams{
+	optional string oldpwd = 1;//旧密码
+	optional string newpwd = 2;//新密码
+	optional string pwdconfirm = 3;//新密码
+}
+
+//修改密码后返回给客户端消息
+message PBModifyPasswordReturn{
+	optional string newlxt = 1;//新的串号
+	optional PBMessage msginfo = 2;//返回消息
+}
+
+//找回密码
+//http://lxgame.lexun.com/login/findpwd.aspx
+message PBFindPasswordParams{
+	optional string mobilenum = 1;//手机号码
+	optional int32 userid  = 2;//用户id
+	optional int32 optype = 3;//1:收验证码 2:验证验证码  3:重置密码
+	optional string code = 4;//验证码
+	optional string password = 5;//重置的新密码	
+}
+
+//获取用户信息
+//http://lxgame.lexun.com/login/userinfo.aspx
+message PBGetUserParams{
+	optional int32 userid = 1;//乐讯id
+}
+
+
+//用户修改基本信息(昵称，性别，签名)
+//http://lxgame.lexun.com/login/editnick.aspx  修改昵称
+//http://lxgame.lexun.com/login/editsex.aspx   修改性别
+//http://lxgame.lexun.com/login/editsignature.aspx  修改签名
+message PBEditUserBaseParams{
+	optional string nick = 1;//昵称
+	optional int32 sex = 2;//性别 0:女，1:男
+	optional string signature = 3;//签名
+}
+
+//查询乐币日志参数
+//http://lxgame.lexun.com/login/stonelog.aspx
+//返回：PBStoneLogList
+message PBStoneLogInquiryParams{
+    optional string starttime = 1;//时间格式: yyyy-MM-dd(2015-03-01)
+	optional string endtime = 2;
+	optional PBPageInfo pageinfo = 3;
+}
+
+message PBStoneLogInfo{
+	optional int32 userid = 1;//用户id
+	optional int32 relationuserid = 2;//相关id
+	optional int64 addstone = 3;//乐币修改数
+	optional int64 stone = 4;//乐币数
+	optional string remark = 5;//备注
+	optional string writetime = 6;
+	optional int32 sid = 7;//业务id
+	optional string appname = 8;//业务id名称
+}
+
+message PBStoneLogList{
+	repeated PBStoneLogInfo list = 1;
+	optional PBPageInfo pageinfo = 2;
+}
+
+
+
+

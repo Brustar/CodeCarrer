@@ -1,0 +1,37 @@
+A.SystemLink{FONT: bold 9pt PMingLiU;}A.SystemLink:hover{FONT: bold 9pt PMingLiU;}
+A.FrameLink{FONT: bold 9pt PMingLiU;}
+A.SubLink{FONT: 9pt PMingLiU;}
+A.NavLink{FONT: bold 9pt PMingLiU;}A.ChildLink{FONT: 9pt PMingLiU;}A.Command{FONT: bold 9pt PMingLiU;}
+A.LargeCommand{FONT: bold 9pt PMingLiU;}
+A.MsgLink{FONT: bold 9pt PMingLiU;TEXT-DECORATION: none;}A.MsgLink:hover{TEXT-DECORATION: underline;}A.MsgLink:visited{FONT-WEIGHT: normal;}
+A.TitleLink{FONT: bold 9pt PMingLiU;}
+A.StdLink{FONT: 9pt PMingLiU;}
+A.HeaderLink{FONT: 9pt PMingLiU;TEXT-DECORATION: none;}A.HeaderLink:hover{TEXT-DECORATION: underline;}
+A.FooterLink{FONT: 9pt PMingLiU;TEXT-DECORATION: none;}
+A.Cat{FONT: bold 9pt PMingLiU;}
+A.SubCat{FONT: 9pt PMingLiU;}
+A.LgtCmd{FONT: bold 9pt PMingLiU;}
+A.MSNLink{FONT: bold 9pt PMingLiU;TEXT-DECORATION: none;}
+SELECT.Standard{FONT: 9pt PMingLiU;}
+BODY {font-family:PMingLiU;}
+.FRHdTitle{font:Bold 12pt PMingLiU; color:#ffffff;}
+.FRHdLink {font: 9pt PMingLiU; text-decoration:none; color:#ffffff}
+.FRHdLink:hover {text-decoration:underline}
+.FRHdLeft {font:PMingLiU; color:#ffffcc;}
+.FRHdName{font:9pt PMingLiU; color:#ffffff;}
+.FRHdPgTitle{font:Bold 9pt PMingLiU; color:#ffffff;}
+.FRHdUser{font:9pt PMingLiU; color:#ffffcc;}
+.FRHdTop7{font:Bold 9pt PMingLiU; color:#ffffff; text-decoration:none;}
+.FRHdTop7:hover{text-decoration:underline;}
+A.FRFtrLink{color:#ffffff; font: 9pt PMingLiU; text-decoration:none;}
+A.FRFtrLink:hover{text-decoration:underline;}
+.FRMore{font-weight: Bold; font-size: 9pt; COLOR: #ffffff; FONT-FAMILY: PMingLiU; text-decoration: none}
+.FRMore:hover{text-decoration:underline;}
+.FRGoBtn{font-size: 9pt; font-family: PMingLiU;}
+.FRSm{font-size: 9pt; font-family: PMingLiU; COLOR: #ffffff;}
+.FRBr{font-size: 9pt; color: #bdbebd; font-family: PMingLiU; text-decoration: none;}
+.FRtb {font-size:9pt;}
+.FRvnav td {font-size:9pt;}
+.frLeftNavTopLinkFont {
+	FONT: Bold 9pt PMingLiU; 
+}
